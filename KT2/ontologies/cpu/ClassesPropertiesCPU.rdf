@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20/"
+     xml:base="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20">
+        <owl:imports rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuMemoryCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuMemoryCompatibility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CacheSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CacheSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ClockSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ClockSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CoreCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CoreCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L1CacheSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L1CacheSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CacheSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L2CacheSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L2CacheSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CacheSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L3CacheSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L3CacheSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CacheSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsHyperthreading -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsHyperthreading">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsSimultaneousMultithreading -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsSimultaneousMultithreading">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#TDP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#TDP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ThreadCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ThreadCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#OverclockingSupport -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#OverclockingSupport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

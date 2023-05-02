@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17/"
+     xml:base="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ComputerManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ComputerManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Manufacturer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Manufacturer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Manufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Manufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>DESKTOP</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>LAPTOP</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ReleaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ReleaseDate">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SoftwareManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SoftwareManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Manufacturer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Asus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Asus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Mac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Mac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOSVentura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOSVentura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Asus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Mac"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

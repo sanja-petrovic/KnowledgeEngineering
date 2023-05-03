@@ -17,6 +17,77 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CASLatency -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CASLatency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Frequency -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Frequency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OverclockingSupport -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OverclockingSupport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMBandwidth -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMBandwidth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMModuleCount -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMModuleCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMSize -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMSize"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////

@@ -564,6 +564,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+    
+
+
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Intel300SeriesChipset -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Intel300SeriesChipset">

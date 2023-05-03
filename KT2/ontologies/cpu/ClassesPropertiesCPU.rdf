@@ -5,10 +5,28 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20">
-        <owl:imports rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name"/>
     
 
 
@@ -27,16 +45,20 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Chipset"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuMemoryCompatibility -->
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#MotherboardChipset -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuMemoryCompatibility">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#MotherboardChipset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility"/>
     
 
 
@@ -64,7 +86,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ClockSpeed">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -78,10 +99,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+    
+
+
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -115,6 +143,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsHyperthreading">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -124,6 +153,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsSimultaneousMultithreading">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -143,6 +173,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
     
 
 
@@ -169,6 +205,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Athlon</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -177,6 +224,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>AthlonII</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -185,6 +243,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>AthlonX4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -193,6 +262,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+                        <owl:hasValue>AMD</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
     </owl:Class>
     
@@ -201,6 +281,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>K6-2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -209,6 +300,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>PhenomII</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -217,6 +319,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Ryzen3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -225,6 +338,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Ryzen5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -233,6 +357,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Ryzen7</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -241,6 +376,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Ryzen9</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -249,6 +395,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Sempron</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -257,6 +414,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>SeriesA</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -265,6 +433,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>SeriesFX</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
     </owl:Class>
     
@@ -273,7 +452,36 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Threadripper</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SoftwareManufacturer"/>
+                        <owl:hasValue>Apple</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -281,6 +489,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+                        <owl:hasValue>Apple</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
     </owl:Class>
     
@@ -294,9 +513,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+    
+
+
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Celeron</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -305,6 +541,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Core2Duo</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -313,6 +560,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Core2Extreme</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -321,6 +579,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Core2Quad</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -329,6 +598,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>CoreDuo</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -337,6 +617,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Corei3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -345,6 +636,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Corei5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -353,6 +655,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Corei7</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -361,6 +674,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Corei9</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -369,6 +693,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+                        <owl:hasValue>Intel</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU"/>
     </owl:Class>
     
@@ -377,6 +712,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Pentium</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
     </owl:Class>
     
@@ -385,7 +731,38 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Xeon</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -393,6 +770,17 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>M1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
     </owl:Class>
     
@@ -401,8 +789,80 @@
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>M2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SoftwareManufacturer"/>
+                        <owl:hasValue>Microsoft</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOS">
+        <untitled-ontology-2:Name>MacOS</untitled-ontology-2:Name>
+        <untitled-ontology-2:SoftwareManufacturer>Apple</untitled-ontology-2:SoftwareManufacturer>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu">
+        <untitled-ontology-2:Name>Ubuntu</untitled-ontology-2:Name>
+        <untitled-ontology-2:SoftwareManufacturer>Canonical</untitled-ontology-2:SoftwareManufacturer>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows10">
+        <untitled-ontology-2:Name>Windows 10</untitled-ontology-2:Name>
+        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows11">
+        <untitled-ontology-2:Name>Windows 11</untitled-ontology-2:Name>
+        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows7">
+        <untitled-ontology-2:Name>Windows 7</untitled-ontology-2:Name>
+        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
+    </rdf:Description>
     
 
 
@@ -414,6 +874,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Windows"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

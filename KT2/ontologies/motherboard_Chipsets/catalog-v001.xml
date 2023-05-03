@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1683109673594" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26/" uri="MBCClassesProperties.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1683109673594" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9/" uri="MotherboardChipsets.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683137321529" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26/" uri="MBCClassesProperties.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683137321529" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9/" uri="MotherboardChipsets.rdf"/>
     </group>
 </catalog>

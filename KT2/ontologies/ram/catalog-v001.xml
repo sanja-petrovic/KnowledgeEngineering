@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17" uri="file:/C:/Users/Sanja/Documents/KnowledgeEngineering/KT2/ontologies/ClassesPropertiesGeneral.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19" uri="ClassesPropertiesRAM.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1683143860729" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19/" uri="ClassesPropertiesRAM.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683143860729" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21/" uri="IndividualsRAM.rdf"/>
+    </group>
+</catalog>

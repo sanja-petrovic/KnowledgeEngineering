@@ -221,6 +221,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon64 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon64">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Athlon64</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon64X2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon64X2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Athlon64X2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII">
@@ -231,6 +269,25 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
                         <owl:hasValue>AthlonII</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>AthlonX2</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -402,6 +459,25 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
                         <owl:hasValue>Sempron</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron64 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron64">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                        <owl:hasValue>Sempron64</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -838,30 +914,55 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOS -->
+
     <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOS">
-        <untitled-ontology-2:Name>MacOS</untitled-ontology-2:Name>
         <untitled-ontology-2:SoftwareManufacturer>Apple</untitled-ontology-2:SoftwareManufacturer>
+        <untitled-ontology-2:Name>MacOS</untitled-ontology-2:Name>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu -->
+
     <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu">
-        <untitled-ontology-2:Name>Ubuntu</untitled-ontology-2:Name>
         <untitled-ontology-2:SoftwareManufacturer>Canonical</untitled-ontology-2:SoftwareManufacturer>
+        <untitled-ontology-2:Name>Ubuntu</untitled-ontology-2:Name>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows10 -->
+
     <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows10">
+        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
         <untitled-ontology-2:Name>Windows 10</untitled-ontology-2:Name>
-        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows11 -->
+
     <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows11">
+        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
         <untitled-ontology-2:Name>Windows 11</untitled-ontology-2:Name>
-        <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows7 -->
+
     <rdf:Description rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Windows7">
-        <untitled-ontology-2:Name>Windows 7</untitled-ontology-2:Name>
         <untitled-ontology-2:SoftwareManufacturer>Microsoft</untitled-ontology-2:SoftwareManufacturer>
+        <untitled-ontology-2:Name>Windows 7</untitled-ontology-2:Name>
     </rdf:Description>
     
 

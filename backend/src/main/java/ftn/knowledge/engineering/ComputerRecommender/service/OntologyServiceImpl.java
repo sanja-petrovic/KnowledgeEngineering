@@ -22,7 +22,7 @@ public class OntologyServiceImpl implements OntologyService {
     @Override
     @PostConstruct
     public void test() {
-        this.repository.loadFromFile(new File("C:\\Users\\Sanja\\Documents\\KnowledgeEngineering\\KT2\\ontologies\\ClassesPropertiesGeneral.rdf"));
-        OWLOntology ontology = this.repository.loadFromFile(new File(FilePaths.ramIndividuals));
+        //this.repository.loadFromFile(new File("C:\\Users\\Sanja\\Documents\\KnowledgeEngineering\\KT2\\ontologies\\ClassesPropertiesGeneral.rdf"));
+        OWLOntology ontology = this.repository.loadFromFile(new File(FilePaths.knowledgeBase));
     }
 }

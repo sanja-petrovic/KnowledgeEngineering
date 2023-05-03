@@ -1,0 +1,1133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#"
+     xmlns:untitled-ontology-20="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10">
+        <owl:imports rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CoreCount -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CoreCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HasIntegratedGraphics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L1CacheSize -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L1CacheSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L2CacheSize -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L2CacheSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L3CacheSize -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#L3CacheSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OverclockingSupport -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OverclockingSupport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ReleaseDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ReleaseDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsHyperthreading -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsHyperthreading"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsSimultaneousMultithreading -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#SupportsSimultaneousMultithreading"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#TDP -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#TDP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ThreadCount -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ThreadCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#OverclockingSupport -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#OverclockingSupport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystemCompatibility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ClockSpeed -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#ClockSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#CpuGeneration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OperatingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Software"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDA10-9700 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDA10-9700">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD A10-9700</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>SeriesA</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlon3000G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlon3000G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Athlon 3000G</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Athlon</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonIIX4-630 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonIIX4-630">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Athlon II X4 630</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>AthlonII</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Athlon X4 860K</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>AthlonX4</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDFX-8350 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDFX-8350">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD FX-8350</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">455</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</untitled-ontology-2:TDP>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>SeriesFX</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDK6-2-500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDK6-2-500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD K6-2 500</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>K6-2</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDPhenomIIX2-550 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDPhenomIIX2-550">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.1</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Phenom II X2 550</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>PhenomII</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen3-3200G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen3-3200G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen 3 3200G</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen3</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen5-5600G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen5-5600G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen 5 5600G</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen5</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-5800X3D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-5800X3D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen™ 7 5800X3D</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">675</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen7</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-7700 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-7700">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen 7 7700</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen7</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-3900X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-3900X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen™ 9 3900X</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">385</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen9</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-5950X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-5950X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">499</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Ryzen9</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzenThreadripperPRO-5965WX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzenThreadripperPRO-5965WX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.50</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Ryzen Threadripper PRO 5965WX</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Threadripper</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDSempron2650 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDSempron2650">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.45</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>AMD Sempron 2650</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">168</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Sempron</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelB760 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelB760"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelZ790"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.40</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Celeron G6900</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-20:CpuGeneration>Celeron</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.66</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™2 Duo Processor E8200</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Core2Duo</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.93</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Core 2 Extreme QX6800</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Core2Extreme</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2QuadQ9550 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2QuadQ9550">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.83</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Core 2 Quad Q9550</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">323</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</untitled-ontology-2:TDP>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Core2Quad</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.00</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™ Duo Processor T2500</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>CoreDuo</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.50</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Core i3-13100</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei3</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.30</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™ i5-13400</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei5</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH670"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.10</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Core i5-13600K</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei5</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei7-13700K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei7-13700K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelB760"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelZ790"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.40</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™ i7-13700K</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">477</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei7</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-11900K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-11900K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.50</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™ i9-11900K</untitled-ontology-2:Name>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">550</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</untitled-ontology-2:TDP>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei9</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.40</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Core™ i9-9980XE Extreme Edition</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2135</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">165</untitled-ontology-2:TDP>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Corei9</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH670 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH670"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelH770"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.70</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel Pentium Gold G7400</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Pentium</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelXeonGold5317 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelXeonGold5317">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelZ790"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.00</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Intel® Xeon® Gold 5317</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1239</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</untitled-ontology-2:TDP>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>Xeon</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelZ790 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelZ790"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Chip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Chip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1Chipset"/>
+        <untitled-ontology-2:ChipsetType>M1</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipMax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipMax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1Chipset"/>
+        <untitled-ontology-2:ChipsetType>M1</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipPro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipPro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1Chipset"/>
+        <untitled-ontology-2:ChipsetType>M1</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipUltra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipUltra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1Chipset"/>
+        <untitled-ontology-2:ChipsetType>M1</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Cpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Cpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Chip"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M1</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-10T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M1</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1MaxCpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1MaxCpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipMax"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M1 Max</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-11-18T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M1</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ProCpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ProCpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipPro"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M1 Pro</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-11-18T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M1</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1UltraCpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1UltraCpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipUltra"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M1 Ultra</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-08T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M1</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Chip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Chip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2Chipset"/>
+        <untitled-ontology-2:ChipsetType>M2</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ChipMax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ChipMax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2Chipset"/>
+        <untitled-ontology-2:ChipsetType>M2</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ChipPro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ChipPro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2Chipset"/>
+        <untitled-ontology-2:ChipsetType>M2</untitled-ontology-2:ChipsetType>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Cpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Cpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Chip"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M2</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-24T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M2</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M2 Max</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-17T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M2</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
+        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
+        <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:HasIntegratedGraphics>
+        <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L1CacheSize>
+        <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L2CacheSize>
+        <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L3CacheSize>
+        <untitled-ontology-2:Name>Apple M2 Pro</untitled-ontology-2:Name>
+        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:ReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-17T00:00:00</untitled-ontology-2:ReleaseDate>
+        <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:ThreadCount>
+        <untitled-ontology-20:CpuGeneration>M2</untitled-ontology-20:CpuGeneration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

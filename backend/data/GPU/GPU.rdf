@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21/"
+     xml:base="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#"
+     xmlns:untitled-ontology-29="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21">
+        <owl:imports rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1050 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1050">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1354.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1455.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1650 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1650">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1485.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1665.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1650_Super -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1650_Super">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1530.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">215.99</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1725.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1660_Super -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_1660_Super">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">229.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1785.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_780 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_780">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">863.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">902.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_970 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_970">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1050.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">329.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1178.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_980 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_980">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1127.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">549.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1216.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_980_Ti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_GTX_980_Ti">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">649.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1076.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3050 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3050">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1552.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">356.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1750.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3080_Ti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3080_Ti">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1365.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1199.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1665.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3090 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3090">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1219.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1695.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3090_Ti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_3090_Ti">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1560.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1999.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1860.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4070_Ti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4070_Ti">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2310.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">799.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2610.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4080 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4080">
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1199.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2205.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2505.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:VRAMSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4090 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#GeForce_RTX_4090">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2235.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1599.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2520.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_R9_390 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_R9_390">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1941.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">359.99</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2450.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_R9_Fury_X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_R9_Fury_X">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">549.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_5500_XT_4GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_5500_XT_4GB">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1607.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1845.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_560_4GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_560_4GB">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1074.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">99.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1226.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_570_4GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_570_4GB">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1168.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1750.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_580_8GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_580_8GB">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1257.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1340.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">229.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-2:VRAMSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6400">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1923.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2321.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6500_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6500_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2310.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2815.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6600_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6600_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1968.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">379.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2589.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6800_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6800_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1825.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">649.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2250.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6900_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6900_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1825.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">999.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2250.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6950_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_6950_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1860.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1099.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2310.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_7900_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_7900_XT">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">899.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2394.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_7900_XTX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21#Radeon_RX_7900_XTX">
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1855.0</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
+        <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">999.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2499.0</untitled-ontology-29:BoostClockSpeed>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

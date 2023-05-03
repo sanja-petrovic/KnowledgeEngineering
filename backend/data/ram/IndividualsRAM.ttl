@@ -1,0 +1,550 @@
+@prefix : <http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix untitled-ontology-2: <http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#> .
+@base <http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21/> .
+
+<http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17> ,
+                                                                                       <http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CASLatency
+untitled-ontology-2:CASLatency rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Frequency
+untitled-ontology-2:Frequency rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#HardwareManufacturer
+untitled-ontology-2:HardwareManufacturer rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name
+untitled-ontology-2:Name rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#OverclockingSupport
+untitled-ontology-2:OverclockingSupport rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility
+untitled-ontology-2:PlatformCompatibility rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PriceEur
+untitled-ontology-2:PriceEur rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMBandwidth
+untitled-ontology-2:RAMBandwidth rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMModuleCount
+untitled-ontology-2:RAMModuleCount rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAMSize
+untitled-ontology-2:RAMSize rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#AdataXPGLancer
+:AdataXPGLancer rdf:type owl:NamedIndividual ,
+                         untitled-ontology-2:DDR5 ;
+                untitled-ontology-2:CASLatency 40 ;
+                untitled-ontology-2:Frequency 6000 ;
+                untitled-ontology-2:HardwareManufacturer "Adata" ;
+                untitled-ontology-2:Name "Adata XPG Lancer" ;
+                untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                untitled-ontology-2:PriceEur 135 ;
+                untitled-ontology-2:RAMModuleCount 2 ;
+                untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR4
+:CorsairDominatorPlatinumDDR4 rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-2:DDR4 ;
+                              untitled-ontology-2:CASLatency 16 ;
+                              untitled-ontology-2:Frequency 3200 ;
+                              untitled-ontology-2:HardwareManufacturer "Corsair" ;
+                              untitled-ontology-2:Name "Corsair Dominator Platinum RGB 32GB DDR4-3200" ;
+                              untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                              untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                              untitled-ontology-2:PriceEur 143 ;
+                              untitled-ontology-2:RAMModuleCount 2 ;
+                              untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR5
+:CorsairDominatorPlatinumDDR5 rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-2:DDR5 ;
+                              untitled-ontology-2:CASLatency 38 ;
+                              untitled-ontology-2:Frequency 5200 ;
+                              untitled-ontology-2:HardwareManufacturer "Corsair" ;
+                              untitled-ontology-2:Name "Corsair Dominator Platinum" ;
+                              untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                              untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                              untitled-ontology-2:PriceEur 320 ;
+                              untitled-ontology-2:RAMModuleCount 2 ;
+                              untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeance
+:CorsairVengeance rdf:type owl:NamedIndividual ,
+                           untitled-ontology-2:DDR5 ;
+                  untitled-ontology-2:CASLatency 40 ;
+                  untitled-ontology-2:Frequency 4800 ;
+                  untitled-ontology-2:HardwareManufacturer "Crucial" ;
+                  untitled-ontology-2:Name "Corsair Vengeance" ;
+                  untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                  untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                  untitled-ontology-2:PriceEur 127 ;
+                  untitled-ontology-2:RAMModuleCount 2 ;
+                  untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceLPX
+:CorsairVengeanceLPX rdf:type owl:NamedIndividual ,
+                              untitled-ontology-2:DDR4 ;
+                     untitled-ontology-2:CASLatency 16 ;
+                     untitled-ontology-2:Frequency 3600 ;
+                     untitled-ontology-2:HardwareManufacturer "Corsair" ;
+                     untitled-ontology-2:Name "Corsair Vengeance LPX" ;
+                     untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                     untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                     untitled-ontology-2:PriceEur 139 ;
+                     untitled-ontology-2:RAMModuleCount 2 ;
+                     untitled-ontology-2:RAMSize 64 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3
+:CorsairVengeanceProDDR3 rdf:type owl:NamedIndividual ,
+                                  untitled-ontology-2:DDR3 ;
+                         untitled-ontology-2:CASLatency 9 ;
+                         untitled-ontology-2:Frequency 1600 ;
+                         untitled-ontology-2:HardwareManufacturer "Corsair" ;
+                         untitled-ontology-2:Name "CORSAIR Vengeance Pro DDR3" ;
+                         untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                         untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                         untitled-ontology-2:PriceEur 174 ;
+                         untitled-ontology-2:RAMModuleCount 4 ;
+                         untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialBallistix
+:CrucialBallistix rdf:type owl:NamedIndividual ,
+                           untitled-ontology-2:DDR4 ;
+                  untitled-ontology-2:CASLatency 16 ;
+                  untitled-ontology-2:Frequency 3200 ;
+                  untitled-ontology-2:HardwareManufacturer "Crucial" ;
+                  untitled-ontology-2:Name "Crucial Ballistix" ;
+                  untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                  untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                  untitled-ontology-2:PriceEur 234 ;
+                  untitled-ontology-2:RAMModuleCount 2 ;
+                  untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCL40
+:CrucialCL40 rdf:type owl:NamedIndividual ,
+                      untitled-ontology-2:DDR5 ;
+             untitled-ontology-2:CASLatency 40 ;
+             untitled-ontology-2:Frequency 4800 ;
+             untitled-ontology-2:HardwareManufacturer "Crucial" ;
+             untitled-ontology-2:Name "Crucial 2x32GB DDR5-4800 CL40" ;
+             untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+             untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+             untitled-ontology-2:PriceEur 175 ;
+             untitled-ontology-2:RAMModuleCount 2 ;
+             untitled-ontology-2:RAMSize 64 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCT12864Z40B
+:CrucialCT12864Z40B rdf:type owl:NamedIndividual ,
+                             untitled-ontology-2:DDR ;
+                    untitled-ontology-2:CASLatency 3 ;
+                    untitled-ontology-2:Frequency 400 ;
+                    untitled-ontology-2:HardwareManufacturer "Crucial" ;
+                    untitled-ontology-2:Name "Crucial CT12864Z40B" ;
+                    untitled-ontology-2:OverclockingSupport "false"^^xsd:boolean ;
+                    untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                    untitled-ontology-2:PriceEur 19 ;
+                    untitled-ontology-2:RAMModuleCount 1 ;
+                    untitled-ontology-2:RAMSize 1 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#G.SkillTridentZRoyal
+:G.SkillTridentZRoyal rdf:type owl:NamedIndividual ,
+                               untitled-ontology-2:DDR4 ;
+                      untitled-ontology-2:CASLatency 15 ;
+                      untitled-ontology-2:Frequency 4000 ;
+                      untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                      untitled-ontology-2:Name "G.Skill Trident Z Royal" ;
+                      untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                      untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                      untitled-ontology-2:PriceEur 185 ;
+                      untitled-ontology-2:RAMModuleCount 2 ;
+                      untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres
+:GSkillAres rdf:type owl:NamedIndividual ,
+                     untitled-ontology-2:DDR3 ;
+            untitled-ontology-2:CASLatency 9 ;
+            untitled-ontology-2:Frequency 1600 ;
+            untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+            untitled-ontology-2:Name "G.Skill Ares" ;
+            untitled-ontology-2:OverclockingSupport "false" ;
+            untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+            untitled-ontology-2:PriceEur 42 ;
+            untitled-ontology-2:RAMModuleCount 2 ;
+            untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillFlareX5
+:GSkillFlareX5 rdf:type owl:NamedIndividual ,
+                        untitled-ontology-2:DDR5 ;
+               untitled-ontology-2:CASLatency 30 ;
+               untitled-ontology-2:Frequency 6000 ;
+               untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+               untitled-ontology-2:Name "G.SKILL Flare X5" ;
+               untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+               untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+               untitled-ontology-2:PriceEur 119 ;
+               untitled-ontology-2:RAMModuleCount 2 ;
+               untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsS5
+:GSkillRipjawsS5 rdf:type owl:NamedIndividual ,
+                          untitled-ontology-2:DDR5 ;
+                 untitled-ontology-2:CASLatency 32 ;
+                 untitled-ontology-2:Frequency 6400 ;
+                 untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                 untitled-ontology-2:Name "G.SKILL Ripjaws S5" ;
+                 untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                 untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                 untitled-ontology-2:PriceEur 254 ;
+                 untitled-ontology-2:RAMModuleCount 2 ;
+                 untitled-ontology-2:RAMSize 64 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsV
+:GSkillRipjawsV rdf:type owl:NamedIndividual ,
+                         untitled-ontology-2:DDR4 ;
+                untitled-ontology-2:CASLatency 18 ;
+                untitled-ontology-2:Frequency 3600 ;
+                untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                untitled-ontology-2:Name "G.Skill Ripjaws V" ;
+                untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                untitled-ontology-2:PriceEur 103 ;
+                untitled-ontology-2:RAMModuleCount 2 ;
+                untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper
+:GSkillSniper rdf:type owl:NamedIndividual ,
+                       untitled-ontology-2:DDR3 ;
+              untitled-ontology-2:CASLatency 10 ;
+              untitled-ontology-2:Frequency 1600 ;
+              untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+              untitled-ontology-2:Name "G.Skill Sniper" ;
+              untitled-ontology-2:OverclockingSupport "false"^^xsd:boolean ;
+              untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+              untitled-ontology-2:PriceEur 35 ;
+              untitled-ontology-2:RAMModuleCount 2 ;
+              untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillTridentZ5
+:GSkillTridentZ5 rdf:type owl:NamedIndividual ,
+                          untitled-ontology-2:DDR5 ;
+                 untitled-ontology-2:CASLatency 36 ;
+                 untitled-ontology-2:Frequency 5200 ;
+                 untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                 untitled-ontology-2:Name "G.Skill Trident Z5" ;
+                 untitled-ontology-2:PriceEur 187 ;
+                 untitled-ontology-2:RAMModuleCount 2 ;
+                 untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillTridentZNeo
+:GSkillTridentZNeo rdf:type owl:NamedIndividual ,
+                            untitled-ontology-2:DDR4 ;
+                   untitled-ontology-2:CASLatency 18 ;
+                   untitled-ontology-2:Frequency 3600 ;
+                   untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                   untitled-ontology-2:Name "G.Skill Trident Z Neo" ;
+                   untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                   untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                   untitled-ontology-2:PriceEur 215 ;
+                   untitled-ontology-2:RAMBandwidth 2 ;
+                   untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillZetaR5-128
+:GSkillZetaR5-128 rdf:type owl:NamedIndividual ,
+                           untitled-ontology-2:DDR5 ;
+                  untitled-ontology-2:CASLatency 32 ;
+                  untitled-ontology-2:Frequency 51200 ;
+                  untitled-ontology-2:HardwareManufacturer "G.Skill" ;
+                  untitled-ontology-2:Name "G.SKILL Zeta R5 Series 128GB" ;
+                  untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                  untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                  untitled-ontology-2:PriceEur 1199 ;
+                  untitled-ontology-2:RAMModuleCount 8 ;
+                  untitled-ontology-2:RAMSize 128 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GeIL-EVO-V
+:GeIL-EVO-V rdf:type owl:NamedIndividual ,
+                     untitled-ontology-2:DDR5 ;
+            untitled-ontology-2:CASLatency 38 ;
+            untitled-ontology-2:Frequency 8000 ;
+            untitled-ontology-2:HardwareManufacturer "GeIL" ;
+            untitled-ontology-2:Name "GeIL EVO V" ;
+            untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+            untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+            untitled-ontology-2:PriceEur 395 ;
+            untitled-ontology-2:RAMModuleCount 2 ;
+            untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#Kingston-KVR667D2N5K2_4G
+:Kingston-KVR667D2N5K2_4G rdf:type owl:NamedIndividual ,
+                                   untitled-ontology-2:DDR2 ;
+                          untitled-ontology-2:CASLatency 5 ;
+                          untitled-ontology-2:Frequency 667 ;
+                          untitled-ontology-2:HardwareManufacturer "Kingston" ;
+                          untitled-ontology-2:Name "Kingston KVR667D2N5K2/4G" ;
+                          untitled-ontology-2:OverclockingSupport "false"^^xsd:boolean ;
+                          untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                          untitled-ontology-2:PriceEur 15 ;
+                          untitled-ontology-2:RAMModuleCount 2 ;
+                          untitled-ontology-2:RAMSize 4 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#Kingston-KVR800D2N6_2G
+:Kingston-KVR800D2N6_2G rdf:type owl:NamedIndividual ,
+                                 untitled-ontology-2:DDR2 ;
+                        untitled-ontology-2:CASLatency 6 ;
+                        untitled-ontology-2:Frequency 800 ;
+                        untitled-ontology-2:HardwareManufacturer "Kingston" ;
+                        untitled-ontology-2:Name "Kingston KVR800D2N6/2G" ;
+                        untitled-ontology-2:OverclockingSupport "false"^^xsd:boolean ;
+                        untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                        untitled-ontology-2:PriceEur 20 ;
+                        untitled-ontology-2:RAMModuleCount 1 ;
+                        untitled-ontology-2:RAMSize 2 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonFuryBeastDDR4
+:KingstonFuryBeastDDR4 rdf:type owl:NamedIndividual ,
+                                untitled-ontology-2:DDR4 ;
+                       untitled-ontology-2:CASLatency 16 ;
+                       untitled-ontology-2:Frequency 3200 ;
+                       untitled-ontology-2:HardwareManufacturer "Kingston" ;
+                       untitled-ontology-2:Name "Kingston FURY Beast DDR4" ;
+                       untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                       untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                       untitled-ontology-2:PriceEur 59 ;
+                       untitled-ontology-2:RAMModuleCount 2 ;
+                       untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonFuryBeastDDR5
+:KingstonFuryBeastDDR5 rdf:type owl:NamedIndividual ,
+                                untitled-ontology-2:DDR5 ;
+                       untitled-ontology-2:CASLatency 40 ;
+                       untitled-ontology-2:Frequency 6000 ;
+                       untitled-ontology-2:HardwareManufacturer "Kingston" ;
+                       untitled-ontology-2:Name "Kingston Fury Beast 32GB DDR5-6000 C40" ;
+                       untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                       untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                       untitled-ontology-2:PriceEur 159 ;
+                       untitled-ontology-2:RAMModuleCount 2 ;
+                       untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonKTD-PE432ES8_16G
+:KingstonKTD-PE432ES8_16G rdf:type owl:NamedIndividual ,
+                                   untitled-ontology-2:DDR4 ;
+                          untitled-ontology-2:CASLatency 22 ;
+                          untitled-ontology-2:Frequency 25600 ;
+                          untitled-ontology-2:HardwareManufacturer "Kingston" ;
+                          untitled-ontology-2:Name "Kingston Server Memory KTD-PE432ES8/16G" ;
+                          untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                          untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                          untitled-ontology-2:PriceEur 51 ;
+                          untitled-ontology-2:RAMModuleCount 2 ;
+                          untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto
+:MushkinEnhancedRedlineStiletto rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-2:DDR4 ;
+                                untitled-ontology-2:CASLatency 14 ;
+                                untitled-ontology-2:Frequency 3600 ;
+                                untitled-ontology-2:HardwareManufacturer "Mushkin" ;
+                                untitled-ontology-2:Name "Mushkin Enhanced Redline Stiletto" ;
+                                untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                                untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                                untitled-ontology-2:PriceEur 54 ;
+                                untitled-ontology-2:RAMModuleCount 8 ;
+                                untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixRAM32ServerMemory
+:NemixRAM32ServerMemory rdf:type owl:NamedIndividual ,
+                                 untitled-ontology-2:DDR4 ;
+                        untitled-ontology-2:Frequency 21300 ,
+                                                      22 ;
+                        untitled-ontology-2:HardwareManufacturer "Nemix" ;
+                        untitled-ontology-2:Name "NEMIX RAM 32 Server Memory" ;
+                        untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                        untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                        untitled-ontology-2:PriceEur 135 ;
+                        untitled-ontology-2:RAMModuleCount 2 ;
+                        untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixUnbufferedServerMemory
+:NemixUnbufferedServerMemory rdf:type owl:NamedIndividual ,
+                                      untitled-ontology-2:DDR4 ;
+                             untitled-ontology-2:CASLatency 17 ;
+                             untitled-ontology-2:Frequency 25600 ;
+                             untitled-ontology-2:HardwareManufacturer "Nemix" ;
+                             untitled-ontology-2:Name "Unbuffered Server Memory by NEMIX RAM" ;
+                             untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                             untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                             untitled-ontology-2:PriceEur 238 ;
+                             untitled-ontology-2:RAMModuleCount 2 ;
+                             untitled-ontology-2:RAMSize 64 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyBlade
+:OLOyBlade rdf:type owl:NamedIndividual ,
+                    untitled-ontology-2:DDR5 ;
+           untitled-ontology-2:CASLatency 32 ;
+           untitled-ontology-2:Frequency 6400 ;
+           untitled-ontology-2:HardwareManufacturer "OLOy" ;
+           untitled-ontology-2:Name "OLOy Blade" ;
+           untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+           untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+           untitled-ontology-2:PriceEur 129 ;
+           untitled-ontology-2:RAMModuleCount 2 ;
+           untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyOWL
+:OLOyOWL rdf:type owl:NamedIndividual ,
+                  untitled-ontology-2:DDR4 ;
+         untitled-ontology-2:CASLatency 14 ;
+         untitled-ontology-2:Frequency 3600 ;
+         untitled-ontology-2:HardwareManufacturer "OLOy" ;
+         untitled-ontology-2:Name "OLOy OWL" ;
+         untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+         untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+         untitled-ontology-2:PriceEur 131 ;
+         untitled-ontology-2:RAMModuleCount 2 ;
+         untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroDR412L-CL02-LR32
+:SuperMicroDR412L-CL02-LR32 rdf:type owl:NamedIndividual ,
+                                     untitled-ontology-2:DDR4 ;
+                            untitled-ontology-2:CASLatency 22 ;
+                            untitled-ontology-2:Frequency 25600 ;
+                            untitled-ontology-2:HardwareManufacturer "SuperMicro" ;
+                            untitled-ontology-2:Name "SuperMicro 128GB DR412L-CL02-LR32" ;
+                            untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                            untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                            untitled-ontology-2:PriceEur 849 ;
+                            untitled-ontology-2:RAMModuleCount 8 ;
+                            untitled-ontology-2:RAMSize 128 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroMEM-DR564L-HL01-ER48
+:SuperMicroMEM-DR564L-HL01-ER48 rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-2:DDR5 ;
+                                untitled-ontology-2:CASLatency 40 ;
+                                untitled-ontology-2:Frequency 38400 ;
+                                untitled-ontology-2:HardwareManufacturer "SuperMicro" ;
+                                untitled-ontology-2:Name "SuperMicro MEM-DR564L-HL01-ER48" ;
+                                untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                                untitled-ontology-2:PlatformCompatibility "SERVER" ;
+                                untitled-ontology-2:PriceEur 245 ;
+                                untitled-ontology-2:RAMModuleCount 2 ;
+                                untitled-ontology-2:RAMSize 64 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamXtreemC14
+:TeamXtreemC14 rdf:type owl:NamedIndividual ,
+                        untitled-ontology-2:DDR4 ;
+               untitled-ontology-2:CASLatency 14 ;
+               untitled-ontology-2:Frequency 3600 ;
+               untitled-ontology-2:HardwareManufacturer "Teamgroup" ;
+               untitled-ontology-2:Name "TEAM XTREEM ARGB 16GB DDR4-3600 C14" ;
+               untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+               untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+               untitled-ontology-2:PriceEur 106 ;
+               untitled-ontology-2:RAMModuleCount 2 ;
+               untitled-ontology-2:RAMSize 16 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceDelta
+:TeamgroupTForceDelta rdf:type owl:NamedIndividual ,
+                               untitled-ontology-2:DDR5 ;
+                      untitled-ontology-2:CASLatency 40 ;
+                      untitled-ontology-2:Frequency 6400 ;
+                      untitled-ontology-2:HardwareManufacturer "Teamgroup" ;
+                      untitled-ontology-2:Name "Teamgroup T-Force Delta" ;
+                      untitled-ontology-2:PlatformCompatibility "DESKTOP" ,
+                                                                "true" ;
+                      untitled-ontology-2:PriceEur 178 ;
+                      untitled-ontology-2:RAMModuleCount 2 ;
+                      untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceVulcanZ
+:TeamgroupTForceVulcanZ rdf:type owl:NamedIndividual ,
+                                 untitled-ontology-2:DDR4 ;
+                        untitled-ontology-2:CASLatency 16 ;
+                        untitled-ontology-2:Frequency 3200 ;
+                        untitled-ontology-2:HardwareManufacturer "Teamgroup" ;
+                        untitled-ontology-2:Name "TEAMGROUP T-Force Vulcan Z" ;
+                        untitled-ontology-2:OverclockingSupport "true"^^xsd:boolean ;
+                        untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                        untitled-ontology-2:PriceEur 132 ;
+                        untitled-ontology-2:RAMModuleCount 2 ;
+                        untitled-ontology-2:RAMSize 32 .
+
+
+###  http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#VisiontekAdrenaline
+:VisiontekAdrenaline rdf:type owl:NamedIndividual ,
+                              untitled-ontology-2:DDR2 ;
+                     untitled-ontology-2:CASLatency 5 ;
+                     untitled-ontology-2:Frequency 800 ;
+                     untitled-ontology-2:HardwareManufacturer "Visiontek" ;
+                     untitled-ontology-2:Name "Visiontek Adrenaline" ;
+                     untitled-ontology-2:OverclockingSupport "false"^^xsd:boolean ;
+                     untitled-ontology-2:PlatformCompatibility "DESKTOP" ;
+                     untitled-ontology-2:PriceEur 25 ;
+                     untitled-ontology-2:RAMModuleCount 1 ;
+                     untitled-ontology-2:RAMSize 2 .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

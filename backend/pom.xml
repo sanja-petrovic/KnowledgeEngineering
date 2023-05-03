@@ -44,12 +44,12 @@
 		<dependency>
 			<groupId>net.sourceforge.owlapi</groupId>
 			<artifactId>owlapi-distribution</artifactId>
-			<version>5.0.0</version>
+			<version>5.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.owlapi</groupId>
 			<artifactId>org.semanticweb.hermit</artifactId>
-			<version>1.3.8.500</version>
+			<version>1.4.5.519</version>
 		</dependency>
 	</dependencies>
 

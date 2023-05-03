@@ -23,6 +23,7 @@ public class OntologyController {
     @GetMapping
     @ApiOperation(value = "Test.", httpMethod = "GET")
     public ResponseEntity<?> test() {
+        this.service.test();
         return ResponseEntity.ok().body("Test succeeded");
     }
 

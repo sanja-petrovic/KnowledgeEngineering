@@ -1,8 +1,11 @@
 package ftn.knowledge.engineering.ComputerRecommender.service;
 
 import ftn.knowledge.engineering.ComputerRecommender.repository.OntologyRepository;
+import org.semanticweb.owlapi.model.OWLOntology;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.io.File;
 
 @Service
 public class OntologyServiceImpl implements OntologyService {
@@ -11,5 +14,11 @@ public class OntologyServiceImpl implements OntologyService {
     @Autowired
     public OntologyServiceImpl(OntologyRepository repository) {
         this.repository = repository;
+    }
+
+
+    @Override
+    public void test() {
+        OWLOntology ontology = this.repository.loadFromFile(new File("C:\\Users\\Sanja\\Documents\\KnowledgeEngineering\\KT2\\ontologies\\ClassesPropertiesGeneral.rdf"));
     }
 }

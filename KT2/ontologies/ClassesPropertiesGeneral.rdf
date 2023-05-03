@@ -89,7 +89,13 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
                                 <rdf:first>LAPTOP</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>SERVER</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
@@ -240,17 +246,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOSVentura -->
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOS -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOSVentura">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#MacOS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Apple"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu_22 -->
+    <!-- http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu_22">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17#Ubuntu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Linux"/>
     </owl:NamedIndividual>
     

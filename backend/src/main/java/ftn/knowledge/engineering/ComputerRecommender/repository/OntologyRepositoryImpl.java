@@ -17,10 +17,6 @@ import java.io.FileOutputStream;
 public class OntologyRepositoryImpl implements OntologyRepository {
     private OWLOntologyManager manager;
 
-    @Autowired
-    public OntologyRepositoryImpl() {
-        //
-    }
     @Override
     public OWLOntology loadFromFile(File file) {
         this.initializeManager();

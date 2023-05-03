@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21/"
-     xml:base="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21/"
+<rdf:RDF xmlns="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211/"
+     xml:base="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-2="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#"
      xmlns:untitled-ontology-29="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-21">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211">
         <owl:imports rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29"/>
     </owl:Ontology>
     

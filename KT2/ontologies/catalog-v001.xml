@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211/" uri="GPU/GPU.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26/" uri="motherboard_Chipsets/MBCClassesProperties.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29/" uri="GPU/GPUClassesProperties.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10/" uri="cpu/Individuals_CPU.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17/" uri="ClassesPropertiesGeneral.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19/" uri="ram/ClassesPropertiesRAM.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20/" uri="cpu/ClassesPropertiesCPU.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21/" uri="ram/IndividualsRAM.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153308282" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9/" uri="motherboard_Chipsets/MotherboardChipsets.rdf"/>
+    </group>
+</catalog>

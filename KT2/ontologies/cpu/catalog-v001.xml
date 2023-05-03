@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17" uri="file:/C:/Users/Sanja/Documents/KnowledgeEngineering/KT2/ontologies/ClassesPropertiesGeneral.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20" uri="ClassesPropertiesCPU.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26" uri="file:/C:/Users/Sanja/Documents/KnowledgeEngineering/KT2/ontologies/motherboard_Chipsets/MBCClassesProperties.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1683149787618" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10/" uri="Individuals_CPU.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1683149787618" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20/" uri="ClassesPropertiesCPU.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153141607" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10/" uri="Individuals_CPU.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683153141607" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20/" uri="ClassesPropertiesCPU.rdf"/>
     </group>
 </catalog>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42" uri="ClassesPropertiesPOWERSUPPLY.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-17" uri="file:/D:/Desktop/Desktop/KnowledgeEngineering/KT2/ontologies/ClassesPropertiesGeneral.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1683217276859" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42/" uri="ClassesPropertiesPOWERSUPPLY.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683217276859" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44/" uri="IndividualsPOWERSUPPLY.rdf"/>
+    </group>
+</catalog>

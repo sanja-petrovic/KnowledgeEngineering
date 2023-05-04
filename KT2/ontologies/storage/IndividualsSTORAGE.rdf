@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32/"
+     xml:base="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-24="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32">
+        <owl:imports rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#DT01ABA300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#DT01ABA300">
+        <untitled-ontology-24:HardwareManufacturer>TOSHIBA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">120.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Dekstar7K3000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Dekstar7K3000">
+        <untitled-ontology-24:HardwareManufacturer>HITACHI</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">121.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ExtremePro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ExtremePro">
+        <untitled-ontology-24:HardwareManufacturer>SANDISK</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">73.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">406.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Gold12TB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Gold12TB">
+        <untitled-ontology-24:HardwareManufacturer>WESTERNDIGITAL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">258.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">197.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDS721010DLE630 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDS721010DLE630">
+        <untitled-ontology-24:HardwareManufacturer>HITACHI</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">121.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDS721050CLA660 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDS721050CLA660">
+        <untitled-ontology-24:HardwareManufacturer>HITACHI</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">113.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">98.8</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDT725025VLA380 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HDT725025VLA380">
+        <untitled-ontology-24:HardwareManufacturer>HITACHI</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.3</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HTS547564A9E384 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#HTS547564A9E384">
+        <untitled-ontology-24:HardwareManufacturer>HITACHI</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">640</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">53.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.7</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MD04ACA600 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MD04ACA600">
+        <untitled-ontology-24:HardwareManufacturer>TOSHIBA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">327.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK1059GSMP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK1059GSMP">
+        <untitled-ontology-24:HardwareManufacturer>TOSHIBA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">125.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.9</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK3265GSX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK3265GSX">
+        <untitled-ontology-24:HardwareManufacturer>TOSHIBA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">320</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">33.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">62.5</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK6461GSY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MK6461GSY">
+        <untitled-ontology-24:HardwareManufacturer>TOSHIBA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">640</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.1</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Pro6000p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Pro6000p">
+        <untitled-ontology-24:HardwareManufacturer>INTEL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">98.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">519.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Red4TB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Red4TB">
+        <untitled-ontology-24:HardwareManufacturer>WESTERNDIGITAL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">125.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST2000VM003-1CT164 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST2000VM003-1CT164">
+        <untitled-ontology-24:HardwareManufacturer>SEAGATE</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">133.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST31000520AS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST31000520AS">
+        <untitled-ontology-24:HardwareManufacturer>SEAGATE</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">86.1</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST3500630AS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST3500630AS">
+        <untitled-ontology-24:HardwareManufacturer>SEAGATE</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">68.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">49.2</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST9160827AS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST9160827AS">
+        <untitled-ontology-24:HardwareManufacturer>SEAGATE</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">44.3</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST960821A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ST960821A">
+        <untitled-ontology-24:HardwareManufacturer>SEAGATE</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.5</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU635 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU635">
+        <untitled-ontology-24:HardwareManufacturer>ADATA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">480</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">349.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650">
+        <untitled-ontology-24:HardwareManufacturer>ADATA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">256.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltimateSU800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltimateSU800">
+        <untitled-ontology-24:HardwareManufacturer>ADATA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">115.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">422.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Ultra3D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Ultra3D">
+        <untitled-ontology-24:HardwareManufacturer>SANDISK</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">48.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">410.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltraII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltraII">
+        <untitled-ontology-24:HardwareManufacturer>SANDISK</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">480</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">172.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">392.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD2500BB-98DWA0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD2500BB-98DWA0">
+        <untitled-ontology-24:HardwareManufacturer>WESTERNDIGITAL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.4</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD7502AAEX-00Y9A0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD7502AAEX-00Y9A0">
+        <untitled-ontology-24:HardwareManufacturer>WESTERNDIGITAL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">750</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">54.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">99.6</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD800JB-00JJC0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#WD800JB-00JJC0">
+        <untitled-ontology-24:HardwareManufacturer>WESTERNDIGITAL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">68.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>hdd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.3</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#X300s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#X300s">
+        <untitled-ontology-24:HardwareManufacturer>SANDISK</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">377.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#X400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#X400">
+        <untitled-ontology-24:HardwareManufacturer>SANDISK</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">128</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">232.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200">
+        <untitled-ontology-24:HardwareManufacturer>ADATA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">480</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">682.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200Pro">
+        <untitled-ontology-24:HardwareManufacturer>ADATA</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1494.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#600p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#600p">
+        <untitled-ontology-24:HardwareManufacturer>INTEL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">550.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#660p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#660p">
+        <untitled-ontology-24:HardwareManufacturer>INTEL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">124.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1394.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p">
+        <untitled-ontology-24:HardwareManufacturer>INTEL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">59.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1660.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p">
+        <untitled-ontology-24:HardwareManufacturer>INTEL</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">256</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">898.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo">
+        <untitled-ontology-24:HardwareManufacturer>SAMSUNG</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">434.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo">
+        <untitled-ontology-24:HardwareManufacturer>SAMSUNG</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">440.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo">
+        <untitled-ontology-24:HardwareManufacturer>SAMSUNG</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">405.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#970EvoPlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#970EvoPlus">
+        <untitled-ontology-24:HardwareManufacturer>SAMSUNG</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2034.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro">
+        <untitled-ontology-24:HardwareManufacturer>SAMSUNG</untitled-ontology-24:HardwareManufacturer>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#double">73.0</untitled-ontology-24:PriceEur>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2792.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

@@ -60,33 +60,6 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         }
     }
 
-    /*@Override
-    public NodeSet<OWLNamedIndividual> getIndividuals(OWLOntology ontology, String className) {
-        OWLDataFactory df = this.manager.getOWLDataFactory();
-        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
-        OWLClass owlClass = df.getOWLClass("http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU");
-        for (OWLClassExpression a : EntitySearcher.getSubClasses(owlClass, ontology).toList()) {
-            OWLClass cls = a.asOWLClass();
-            if (cls.getIRI().getFragment().equalsIgnoreCase(className)) {
-                System.out.println("My class is : " + cls.getIRI().getShortForm());
-                System.out.println("The IRI of my class is : " + cls);
-                System.out.println("-----------------------");
-
-                NodeSet<OWLNamedIndividual> instances = reasoner.getInstances(cls, true);
-                System.out.println("The Individuals of my class : ");
-
-                for (OWLNamedIndividual i : instances.getFlattened()) {
-                    System.out.println(i.getIRI().getFragment());
-                }
-
-                return instances;
-            }
-        }
-
-        return null;
-    }*/
-
     @Override
     public List<OWLNamedIndividual> getCpuIndividuals() {
         OWLDataFactory df = this.manager.getOWLDataFactory();
@@ -121,12 +94,6 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }
 
     public List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri) {
-        var bla = EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
-        return bla;
-    }
-
-    @Override
-    public List<OWLNamedIndividual> getRecommendedCpus(CPU properties) {
-        return null;
+        return EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
     }
 }

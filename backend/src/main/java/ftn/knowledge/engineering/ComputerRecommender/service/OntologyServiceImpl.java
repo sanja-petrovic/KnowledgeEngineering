@@ -52,6 +52,8 @@ public class OntologyServiceImpl implements OntologyService {
         return recommendations;
     }
 
+
+
     @Override
     public List<String> recommendRams(String type, Integer size, Integer latency, Integer frequency, String manufacturer, Double minimumPrice, Double maximumPrice) {
         List<OWLNamedIndividual> ramIndividuals = repository.getRamIndividuals();
@@ -82,5 +84,48 @@ public class OntologyServiceImpl implements OntologyService {
         }
 
         return recommendations;
+    }
+
+    public OWLNamedIndividual getIndividual(List<OWLNamedIndividual> individuals, String name) {
+        for (OWLNamedIndividual individual : individuals) {
+            if (individual.getIRI().getShortForm().equals(name)) {
+                return individual;
+            }
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<String> recommendCpuUpgrades(String cpuModel) {
+        List<OWLNamedIndividual> cpuIndividuals = this.repository.getCpuIndividuals();
+        List<String> possibleUpgrades = new ArrayList<>();
+
+        OWLNamedIndividual enteredCpu = this.getIndividual(cpuIndividuals, cpuModel);
+        String enteredCpuManufacturer = this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.hardwareManufacturerIri).get(0).getLiteral();
+        double enteredCpuClockSpeed = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.clockSpeedIri).get(0).getLiteral());
+        int enteredCoreCount = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.coreCountIri).get(0).getLiteral());
+
+        for (OWLNamedIndividual cpu : cpuIndividuals) {
+            if (cpu.getIRI().equals(enteredCpu.getIRI())) continue;
+            var cs = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.clockSpeedIri);
+            double individualClockSpeed = cs.size() > 0 ? Double.parseDouble(cs.get(0).getLiteral()) : 0.0;
+
+            var cc = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.coreCountIri);
+            int individualCoreCount = cc.size() > 0 ? Integer.parseInt(cc.get(0).getLiteral()) : 0;
+
+            var m = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.hardwareManufacturerIri);
+            String individualManufacturer = m.size() > 0 ? m.get(0).getLiteral() : "";
+
+            boolean isSameManufacturer = enteredCpuManufacturer.equals(individualManufacturer);
+            boolean isBetterClockSpeed = individualClockSpeed > enteredCpuClockSpeed;
+            boolean isBetterCoreCount = individualCoreCount > enteredCoreCount;
+
+            if (isSameManufacturer && (isBetterClockSpeed || isBetterCoreCount)) {
+                possibleUpgrades.add(cpu.getIRI().getShortForm());
+            }
+        }
+
+        return possibleUpgrades;
     }
 }

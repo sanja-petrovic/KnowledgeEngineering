@@ -9,4 +9,5 @@ import java.util.List;
 public interface OntologyService {
     List<String> recommendCpus(Double clockSpeed, Integer coreCount, String manufacturer, Double minimumPrice, Double maximumPrice);
     List<String> recommendRams(String type, Integer size, Integer latency, Integer frequency, String manufacturer, Double minimumPrice, Double maximumPrice);
+    List<String> recommendCpuUpgrades(String cpuModel);
 }

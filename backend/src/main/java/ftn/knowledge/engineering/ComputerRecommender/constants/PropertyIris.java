@@ -9,4 +9,5 @@ public class PropertyIris {
     public final static String frequencyIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Frequency";
     public final static String casLatencyIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CASLatency";
     public final static String ramTypeIri = "http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19#RAMType";
+    public final static String nameIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Name";
 }

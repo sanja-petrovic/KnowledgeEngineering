@@ -2918,6 +2918,7 @@
         <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
         <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>

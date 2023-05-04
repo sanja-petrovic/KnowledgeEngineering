@@ -2,7 +2,7 @@ package ftn.knowledge.engineering.ComputerRecommender.repository;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.ClassIris;
 import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;
-import org.eclipse.rdf4j.model.vocabulary.OWL;
+import ftn.knowledge.engineering.ComputerRecommender.model.CPU;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.*;
@@ -12,7 +12,6 @@ import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.search.EntitySearcher;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
@@ -121,8 +120,13 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         return ramIndividuals;
     }
 
+    public List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri) {
+        var bla = EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
+        return bla;
+    }
+
     @Override
-    public List<OWLNamedIndividual> getRecommendedCpus() {
+    public List<OWLNamedIndividual> getRecommendedCpus(CPU properties) {
         return null;
     }
 }

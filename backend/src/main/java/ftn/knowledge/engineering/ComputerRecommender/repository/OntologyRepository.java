@@ -1,11 +1,14 @@
 package ftn.knowledge.engineering.ComputerRecommender.repository;
 
-import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLOntology;
+import ftn.knowledge.engineering.ComputerRecommender.model.CPU;
+import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 
 import java.io.File;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public interface OntologyRepository {
     OWLOntology loadFromFile(File file);
@@ -14,5 +17,6 @@ public interface OntologyRepository {
     //NodeSet<OWLNamedIndividual> getIndividuals(OWLOntology ontology, String className);
     List<OWLNamedIndividual> getCpuIndividuals();
     List<OWLNamedIndividual> getRamIndividuals();
-    List<OWLNamedIndividual> getRecommendedCpus();
+    List<OWLNamedIndividual> getRecommendedCpus(CPU properties);
+    List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri);
 }

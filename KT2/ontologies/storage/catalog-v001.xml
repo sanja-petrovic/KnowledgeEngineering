@@ -2,7 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24" uri="ClassesPropertiesSTORAGE.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1683194323199" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24/" uri="ClassesPropertiesSTORAGE.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1683194323199" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32/" uri="IndividualsSTORAGE.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683241346261" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24/" uri="ClassesPropertiesSTORAGE.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683241346261" name="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32/" uri="IndividualsSTORAGE.rdf"/>
     </group>
 </catalog>

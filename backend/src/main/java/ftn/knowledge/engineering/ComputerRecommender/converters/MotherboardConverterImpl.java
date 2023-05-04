@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.Converter;
+package ftn.knowledge.engineering.ComputerRecommender.converters;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import ftn.knowledge.engineering.ComputerRecommender.model.Motherboard;

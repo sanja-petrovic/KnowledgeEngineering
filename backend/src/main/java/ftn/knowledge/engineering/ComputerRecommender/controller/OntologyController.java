@@ -1,7 +1,6 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
-import ftn.knowledge.engineering.ComputerRecommender.Converter.MotherboardConverter;
-import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
+import ftn.knowledge.engineering.ComputerRecommender.converters.MotherboardConverter;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.service.OntologyService;
 import io.swagger.annotations.Api;

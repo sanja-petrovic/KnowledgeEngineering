@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1683242007641" name="duplicate:http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base" uri="knowledge-base-copy.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1683242007641" name="duplicate:http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base" uri="knowledge-base.rdf"/>
+    </group>
+</catalog>

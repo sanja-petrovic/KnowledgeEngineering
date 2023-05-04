@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-2="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-19#"
      xmlns:untitled-ontology-20="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-20#"
      xmlns:untitled-ontology-26="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26#"
      xmlns:untitled-ontology-29="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29#">
@@ -2918,6 +2919,7 @@
         <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:ClockSpeed>
+        <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:HasIntegratedGraphics rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:HasIntegratedGraphics>
         <untitled-ontology-2:L1CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:L1CacheSize>
@@ -3746,6 +3748,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3763,6 +3766,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">143</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3780,6 +3784,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">320</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3797,6 +3802,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">127</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3814,6 +3820,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3831,6 +3838,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">174</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR3</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3848,6 +3856,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">234</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3865,6 +3874,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3882,6 +3892,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3899,6 +3910,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">185</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3916,6 +3928,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR3</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3933,6 +3946,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">119</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3950,6 +3964,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">254</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3967,6 +3982,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3984,6 +4000,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR3</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -3999,6 +4016,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">187</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4015,6 +4033,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">215</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
         <untitled-ontology-2:RAMBandwidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMBandwidth>
     </owl:NamedIndividual>
     
@@ -4033,6 +4052,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1199</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4050,6 +4070,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">395</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4067,6 +4088,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR2</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4084,6 +4106,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR2</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4101,6 +4124,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4118,6 +4142,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">159</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4135,6 +4160,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4152,6 +4178,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4169,6 +4196,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4186,6 +4214,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">238</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4203,6 +4232,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4220,6 +4250,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">131</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4237,6 +4268,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">849</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4254,6 +4286,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">245</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4271,6 +4304,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4287,6 +4321,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">178</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR5</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4304,6 +4339,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR4</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 
@@ -4321,6 +4357,7 @@
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:RAMModuleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:RAMModuleCount>
         <untitled-ontology-2:RAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:RAMSize>
+        <untitled-ontology-19:RAMType>DDR2</untitled-ontology-19:RAMType>
     </owl:NamedIndividual>
     
 

@@ -20,31 +20,29 @@ public class OntologyController {
         this.service = service;
     }
 
-    @GetMapping
-    @ApiOperation(value = "Test.", httpMethod = "GET")
-    public ResponseEntity<?> test() {
-        this.service.test();
-        return ResponseEntity.ok().body("Test succeeded");
-    }
-
     @GetMapping("/cpu/recommend")
     @ApiOperation(value = "Get recommended CPUs based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendCpus(@RequestParam(value = "clockSpeed", required = false) Double clockSpeed,
-                                           @RequestParam(value = "coreCount", required = false) Integer coreCount,
-                                           @RequestParam(value = "manufacturer", required = false) String manufacturer,
-                                           @RequestParam(value = "priceMin", required = false) Double minimumPrice,
-                                           @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
-        return ResponseEntity.ok(
-                this.service.recommendCpus(
-                        clockSpeed != null ? clockSpeed : 0,
-                        coreCount != null ? coreCount : 0,
-                        manufacturer != null ? manufacturer : "",
-                        minimumPrice != null ? minimumPrice : 0,
-                        maximumPrice != null ? maximumPrice : Integer.MAX_VALUE
-                )
-        );
+    public ResponseEntity<?> recommendCpus(
+            @RequestParam(value = "clockSpeed", required = false) Double clockSpeed,
+            @RequestParam(value = "coreCount", required = false) Integer coreCount,
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "priceMin", required = false) Double minimumPrice,
+            @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
+        return ResponseEntity.ok(this.service.recommendCpus(clockSpeed != null ? clockSpeed : 0, coreCount != null ? coreCount : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
     }
 
+    @GetMapping("/ram/recommend")
+    @ApiOperation(value = "Get recommended RAMs based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendRams(
+            @RequestParam(value = "type", required = false) String type,
+            @RequestParam(value = "size", required = false) Integer size,
+            @RequestParam(value = "latency", required = false) Integer latency,
+            @RequestParam(value = "frequency", required = false) Integer frequency,
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "priceMin", required = false) Double minimumPrice,
+            @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
+        return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : 0, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
+    }
 
 
 }

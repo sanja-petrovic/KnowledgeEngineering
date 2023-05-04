@@ -92,7 +92,7 @@ public class OntologyServiceImpl implements OntologyService {
             var ct =  this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri);
             String chipsetType = ct.get(0).getLiteral();
             if (chipset.getType().toString().equals(chipsetType)) {
-                if (!chipset.getName().equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.nameIri).get(0).getLiteral())) {
+                if (!chipset.getName().equals(individual.getIRI().getShortForm())) {
                     upgrades.add(individual);
                 }
             }
@@ -134,14 +134,15 @@ public class OntologyServiceImpl implements OntologyService {
     @Override
     public List<OWLNamedIndividual> upgradeGPU(GPU gpu) {
         List<OWLNamedIndividual> upgradeCandidates = getGPUByManufacturer(gpu.getManufacturer());
+        List<OWLNamedIndividual> upgrades = new ArrayList<>();
         for(OWLNamedIndividual individual : upgradeCandidates){
             if(Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral())> gpu.getVRAMSize()){
-                upgradeCandidates.add(individual);
+                upgrades.add(individual);
             } else if (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral())>gpu.getBoostClockSpeed()) {
-                upgradeCandidates.add(individual);
+                upgrades.add(individual);
             }
         }
-        return upgradeCandidates;
+        return upgrades;
     }
 
 }

@@ -1,19 +1,12 @@
 package ftn.knowledge.engineering.ComputerRecommender.service;
 
-import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
-import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.repository.OntologyRepository;
-import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.search.EntitySearcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,6 +45,8 @@ public class OntologyServiceImpl implements OntologyService {
         return recommendations;
     }
 
+
+
     @Override
     public List<String> recommendRams(String type, Integer size, Integer latency, Integer frequency, String manufacturer, Double minimumPrice, Double maximumPrice) {
         List<OWLNamedIndividual> ramIndividuals = repository.getRamIndividuals();
@@ -82,6 +77,82 @@ public class OntologyServiceImpl implements OntologyService {
         }
 
         return recommendations;
+    }
+
+    public OWLNamedIndividual getIndividual(List<OWLNamedIndividual> individuals, String name) {
+        for (OWLNamedIndividual individual : individuals) {
+            if (individual.getIRI().getShortForm().equals(name)) {
+                return individual;
+            }
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<String> recommendCpuUpgrades(String cpuModel) {
+        List<OWLNamedIndividual> cpuIndividuals = this.repository.getCpuIndividuals();
+        List<String> possibleUpgrades = new ArrayList<>();
+
+        OWLNamedIndividual enteredCpu = this.getIndividual(cpuIndividuals, cpuModel);
+        String enteredCpuManufacturer = this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.hardwareManufacturerIri).get(0).getLiteral();
+        double enteredCpuClockSpeed = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.clockSpeedIri).get(0).getLiteral());
+        int enteredCoreCount = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.coreCountIri).get(0).getLiteral());
+
+        for (OWLNamedIndividual cpu : cpuIndividuals) {
+            if (cpu.getIRI().equals(enteredCpu.getIRI())) continue;
+            var cs = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.clockSpeedIri);
+            double individualClockSpeed = cs.size() > 0 ? Double.parseDouble(cs.get(0).getLiteral()) : 0.0;
+
+            var cc = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.coreCountIri);
+            int individualCoreCount = cc.size() > 0 ? Integer.parseInt(cc.get(0).getLiteral()) : 0;
+
+            var m = this.repository.getDataPropertyValueOfIndividual(cpu, PropertyIris.hardwareManufacturerIri);
+            String individualManufacturer = m.size() > 0 ? m.get(0).getLiteral() : "";
+
+            boolean isSameManufacturer = enteredCpuManufacturer.equals(individualManufacturer);
+            boolean isBetterClockSpeed = individualClockSpeed > enteredCpuClockSpeed;
+            boolean isBetterCoreCount = individualCoreCount > enteredCoreCount;
+
+            if (isSameManufacturer && (isBetterClockSpeed || isBetterCoreCount)) {
+                possibleUpgrades.add(cpu.getIRI().getShortForm());
+            }
+        }
+
+        return possibleUpgrades;
+    }
+
+    @Override
+    public List<String> recommendRamUpgrades(String ramModel) {
+        List<OWLNamedIndividual> ramIndividuals = this.repository.getRamIndividuals();
+        List<String> possibleUpgrades = new ArrayList<>();
+
+        OWLNamedIndividual enteredRam = this.getIndividual(ramIndividuals, ramModel);
+        int enteredRamSize = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.ramSizeIri).get(0).getLiteral());
+        double enteredFrequency = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.frequencyIri).get(0).getLiteral());
+        String enteredRamType = this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.ramTypeIri).get(0).getLiteral();
+
+        for (OWLNamedIndividual ram : ramIndividuals) {
+            if (ram.getIRI().equals(enteredRam.getIRI())) continue;
+            var f = this.repository.getDataPropertyValueOfIndividual(ram, PropertyIris.frequencyIri);
+            double individualFrequency = f.size() > 0 ? Double.parseDouble(f.get(0).getLiteral()) : 0.0;
+
+            var rs = this.repository.getDataPropertyValueOfIndividual(ram, PropertyIris.ramSizeIri);
+            int individualRamSize = rs.size() > 0 ? Integer.parseInt(rs.get(0).getLiteral()) : 0;
+
+            var rt = this.repository.getDataPropertyValueOfIndividual(ram, PropertyIris.ramTypeIri);
+            String individualRamType = rt.size() > 0 ? rt.get(0).getLiteral() : "";
+
+            boolean isSameOrBetterType = RAMType.valueOf(individualRamType).ordinal() >= RAMType.valueOf(enteredRamType).ordinal();
+            boolean isBiggerSize = individualRamSize > enteredRamSize;
+            boolean isBetterFrequency = individualFrequency > enteredFrequency;
+
+            if (isSameOrBetterType && (isBiggerSize || isBetterFrequency)) {
+                possibleUpgrades.add(ram.getIRI().getShortForm());
+            }
+        }
+
+        return possibleUpgrades;
     }
 
     @Override

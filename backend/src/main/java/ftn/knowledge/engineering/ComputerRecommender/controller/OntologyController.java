@@ -53,8 +53,21 @@ public class OntologyController {
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "priceMin", required = false) Double minimumPrice,
             @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
-        return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : 0, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
+        return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : Integer.MAX_VALUE, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
     }
+
+    @GetMapping("/cpu/{model}/upgrade")
+    @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")
+    public ResponseEntity<?> upgradeCpus(@PathVariable("model") String model) {
+        return ResponseEntity.ok(this.service.recommendCpuUpgrades(model));
+    }
+
+    @GetMapping("/ram/{model}/upgrade")
+    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "GET")
+    public ResponseEntity<?> upgradeRams(@PathVariable("model") String model) {
+        return ResponseEntity.ok(this.service.recommendRamUpgrades(model));
+    }
+
     @GetMapping("/chipset/upgrade")
     @ApiOperation(value = "Get upgrades for chipset.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesChipset(

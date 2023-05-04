@@ -1,6 +1,8 @@
 package ftn.knowledge.engineering.ComputerRecommender.repository;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.ClassIris;
+import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;
+import org.eclipse.rdf4j.model.vocabulary.OWL;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.*;
@@ -10,6 +12,7 @@ import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.search.EntitySearcher;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
@@ -18,10 +21,19 @@ import java.util.List;
 @Repository
 public class OntologyRepositoryImpl implements OntologyRepository {
     private OWLOntologyManager manager;
+    private OWLOntology ontology;
+
+    public OntologyRepositoryImpl() {
+        this.manager = OWLManager.createOWLOntologyManager();
+        try {
+            this.ontology = this.manager.loadOntologyFromOntologyDocument(new File(FilePaths.knowledgeBase));
+        } catch (OWLOntologyCreationException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public OWLOntology loadFromFile(File file) {
-        this.initializeManager();
         try {
             return this.manager.loadOntologyFromOntologyDocument(file);
         } catch (OWLOntologyCreationException e) {
@@ -32,7 +44,6 @@ public class OntologyRepositoryImpl implements OntologyRepository {
 
     @Override
     public OWLOntology loadFromUri(String uri) {
-        this.initializeManager();
         try {
             return this.manager.loadOntology(IRI.create(uri));
         }  catch (OWLOntologyCreationException e) {
@@ -42,10 +53,9 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }
 
     @Override
-    public void saveToFile(OWLOntology ontology, File file) {
-        this.initializeManager();
+    public void saveToFile(File file) {
         try {
-            this.manager.saveOntology(ontology, new TurtleDocumentFormat(), new FileOutputStream(file));
+            this.manager.saveOntology(this.ontology, new TurtleDocumentFormat(), new FileOutputStream(file));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -79,14 +89,14 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }*/
 
     @Override
-    public List<OWLNamedIndividual> getCpuIndividuals(OWLOntology ontology) {
+    public List<OWLNamedIndividual> getCpuIndividuals() {
         OWLDataFactory df = this.manager.getOWLDataFactory();
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
         OWLClass cpuClass = df.getOWLClass(ClassIris.cpuIri);
         List<OWLNamedIndividual> cpuIndividuals = new ArrayList<>();
-        for (OWLClassExpression cpuType : EntitySearcher.getSubClasses(cpuClass, ontology).toList()) {
-            for(OWLClassExpression cpuSubClass : EntitySearcher.getSubClasses(cpuType.asOWLClass(), ontology).toList()) {
+        for (OWLClassExpression cpuType : EntitySearcher.getSubClasses(cpuClass, this.ontology).toList()) {
+            for(OWLClassExpression cpuSubClass : EntitySearcher.getSubClasses(cpuType.asOWLClass(), this.ontology).toList()) {
                 var instances = reasoner.getInstances(cpuSubClass.asOWLClass(), true);
                 cpuIndividuals.addAll(instances.getFlattened());
             }
@@ -97,13 +107,13 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }
 
     @Override
-    public List<OWLNamedIndividual> getRamIndividuals(OWLOntology ontology) {
+    public List<OWLNamedIndividual> getRamIndividuals() {
         OWLDataFactory df = this.manager.getOWLDataFactory();
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
         OWLClass ramClass = df.getOWLClass(ClassIris.ramIri);
         List<OWLNamedIndividual> ramIndividuals = new ArrayList<>();
-        for (OWLClassExpression ramType : EntitySearcher.getSubClasses(ramClass, ontology).toList()) {
+        for (OWLClassExpression ramType : EntitySearcher.getSubClasses(ramClass, this.ontology).toList()) {
             var instances = reasoner.getInstances(ramType.asOWLClass(), true);
             ramIndividuals.addAll(instances.getFlattened());
         }
@@ -111,7 +121,8 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         return ramIndividuals;
     }
 
-    private void initializeManager() {
-        if(this.manager == null) this.manager = OWLManager.createOWLOntologyManager();
+    @Override
+    public List<OWLNamedIndividual> getRecommendedCpus() {
+        return null;
     }
 }

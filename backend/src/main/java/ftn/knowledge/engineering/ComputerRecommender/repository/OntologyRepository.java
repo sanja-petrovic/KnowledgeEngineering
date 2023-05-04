@@ -10,8 +10,9 @@ import java.util.List;
 public interface OntologyRepository {
     OWLOntology loadFromFile(File file);
     OWLOntology loadFromUri(String uri);
-    void saveToFile(OWLOntology ontology, File file);
+    void saveToFile(File file);
     //NodeSet<OWLNamedIndividual> getIndividuals(OWLOntology ontology, String className);
-    List<OWLNamedIndividual> getCpuIndividuals(OWLOntology ontology);
-    List<OWLNamedIndividual> getRamIndividuals(OWLOntology ontology);
+    List<OWLNamedIndividual> getCpuIndividuals();
+    List<OWLNamedIndividual> getRamIndividuals();
+    List<OWLNamedIndividual> getRecommendedCpus();
 }

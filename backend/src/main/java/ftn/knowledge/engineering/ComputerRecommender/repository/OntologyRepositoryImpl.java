@@ -129,4 +129,47 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     public List<OWLNamedIndividual> getRecommendedCpus(CPU properties) {
         return null;
     }
+    @Override
+    public List<OWLNamedIndividual>getChipsetIndividuals(){
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass chipsetClass = df.getOWLClass(ClassIris.chipsetIri);
+        List<OWLNamedIndividual> chipsetIndividuals = new ArrayList<>();
+        for (OWLClassExpression chipsetType : EntitySearcher.getSubClasses(chipsetClass, this.ontology).toList()) {
+            var instances = reasoner.getInstances(chipsetType.asOWLClass(), true);
+            chipsetIndividuals.addAll(instances.getFlattened());
+        }
+
+        return chipsetIndividuals;
+    }
+    @Override
+    public List<OWLNamedIndividual>getMotherboardIndividuals(){
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass motherboardClass = df.getOWLClass(ClassIris.motherboardIri);
+        List<OWLNamedIndividual> motherboardIndividuals = new ArrayList<>();
+        for (OWLClassExpression motherboardType : EntitySearcher.getSubClasses(motherboardClass, this.ontology).toList()) {
+            for(OWLClassExpression motherboardSubClass : EntitySearcher.getSubClasses(motherboardType.asOWLClass(), this.ontology).toList()) {
+                var instances = reasoner.getInstances(motherboardSubClass.asOWLClass(), true);
+                motherboardIndividuals.addAll(instances.getFlattened());
+            }
+        }
+
+        return motherboardIndividuals;
+    }
+    @Override
+    public List<OWLNamedIndividual>getGPUIndividuals(){
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass gpuClass = df.getOWLClass(ClassIris.gpuIri);
+        List<OWLNamedIndividual> gpuIndividuals = new ArrayList<>();
+        for (OWLClassExpression gpuType : EntitySearcher.getSubClasses(gpuClass, this.ontology).toList()) {
+                var instances = reasoner.getInstances(gpuClass.asOWLClass(), true);
+                gpuIndividuals.addAll(instances.getFlattened());
+        }
+        return gpuIndividuals;
+    }
 }

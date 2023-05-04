@@ -9,13 +9,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Motherboard extends Base{
-private int numberOfRAMSlots;
-private MotherboardType type;
+public class Motherboard extends Base {
+    private int numberOfRAMSlots;
+    private MotherboardType type;
 
-public Motherboard(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility, int numberOfRAMSlots,MotherboardType type){
-    super(name, manufacturer, priceEur, platformCompatibility);
-    this.numberOfRAMSlots = numberOfRAMSlots;
-    this.type = type;
-}
+    public Motherboard(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility, int numberOfRAMSlots, MotherboardType type) {
+        super(name, manufacturer, priceEur, platformCompatibility);
+        this.numberOfRAMSlots = numberOfRAMSlots;
+        this.type = type;
+    }
 }

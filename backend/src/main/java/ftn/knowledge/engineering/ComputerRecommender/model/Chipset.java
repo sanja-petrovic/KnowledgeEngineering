@@ -9,10 +9,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Chipset extends Base{
+public class Chipset extends Base {
     private ChipsetType type;
 
-    public Chipset(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility,ChipsetType type){
+    public Chipset(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility, ChipsetType type) {
         super(name, manufacturer, priceEur, platformCompatibility);
         this.type = type;
     }

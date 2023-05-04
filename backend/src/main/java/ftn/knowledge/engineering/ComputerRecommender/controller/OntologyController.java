@@ -1,10 +1,8 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
-import ftn.knowledge.engineering.ComputerRecommender.converters.MotherboardConverter;
-import ftn.knowledge.engineering.ComputerRecommender.Converter.ChipsetConverter;
-import ftn.knowledge.engineering.ComputerRecommender.Converter.GPUConverter;
-import ftn.knowledge.engineering.ComputerRecommender.Converter.MotherboardConverter;
-import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
+import ftn.knowledge.engineering.ComputerRecommender.converter.ChipsetConverter;
+import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
+import ftn.knowledge.engineering.ComputerRecommender.converter.MotherboardConverter;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.service.OntologyService;
 import io.swagger.annotations.Api;
@@ -24,6 +22,7 @@ public class OntologyController {
     private final MotherboardConverter motherboardConverter;
     private final GPUConverter gpuConverter;
     private final ChipsetConverter chipsetConverter;
+
     @Autowired
     public OntologyController(OntologyService service, MotherboardConverter motherboardConverter, GPUConverter gpuConverter,
                               ChipsetConverter chipsetConverter) {
@@ -77,20 +76,22 @@ public class OntologyController {
         Chipset chipset = new Chipset();
         chipset.setType(ChipsetType.valueOf(type));
         chipset.setName(name);
-        return ResponseEntity.ok(this.chipsetConverter.ConvertFromOwlIndividuals(this.service.upgradeChipset(chipset)));
+        return ResponseEntity.ok(this.chipsetConverter.convertFromOwlIndividuals(this.service.upgradeChipset(chipset)));
     }
+
     @GetMapping("/gpu/upgrade")
     @ApiOperation(value = "Get upgrades for GPU.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesGPU(
             @RequestParam(value = "manufacturer", required = true) String manufacturer,
             @RequestParam(value = "boostClock", required = true) double boostClockSpeed,
-            @RequestParam(value = "VRAMSize", required = true) int VRAM){
+            @RequestParam(value = "VRAMSize", required = true) int VRAM) {
         GPU gpu = new GPU();
         gpu.setManufacturer(manufacturer);
         gpu.setBoostClockSpeed(boostClockSpeed);
         gpu.setVRAMSize(VRAM);
-        return ResponseEntity.ok(this.gpuConverter.ConvertFromOwlIndividuals(this.service.upgradeGPU(gpu)));
+        return ResponseEntity.ok(this.gpuConverter.convertFromOwlIndividuals(this.service.upgradeGPU(gpu)));
     }
+
     @GetMapping("/motherboard/upgrade")
     @ApiOperation(value = "Get upgrades for Motherboard.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesMotherboard(
@@ -100,7 +101,7 @@ public class OntologyController {
         motherboard.setType(MotherboardType.valueOf(motherboardType));
         motherboard.setNumberOfRAMSlots(numberOfRAMSlots);
         List<OWLNamedIndividual> mbs = this.service.upgradeMotherboard(motherboard);
-        List<Motherboard> mb = this.motherboardConverter.ConvertFromOwlIndividuals(mbs);
+        List<Motherboard> mb = this.motherboardConverter.convertFromOwlIndividuals(mbs);
         return ResponseEntity.ok(mb);
     }
 

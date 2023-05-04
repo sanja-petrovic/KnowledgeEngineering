@@ -1,7 +1,9 @@
 package ftn.knowledge.engineering.ComputerRecommender.model;
 
-import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;

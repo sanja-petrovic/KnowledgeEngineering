@@ -13,7 +13,6 @@ public interface OntologyRepository {
     void saveToFile(File file);
     List<OWLNamedIndividual> getCpuIndividuals();
     List<OWLNamedIndividual> getRamIndividuals();
-    List<OWLNamedIndividual> getRecommendedCpus(CPU properties);
     List<OWLNamedIndividual>getChipsetIndividuals();
     List<OWLNamedIndividual>getMotherboardIndividuals();
     List<OWLNamedIndividual>getGPUIndividuals();

@@ -3,7 +3,7 @@ package ftn.knowledge.engineering.ComputerRecommender.service;
 import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
-import ftn.knowledge.engineering.ComputerRecommender.model.CPU;
+import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.repository.OntologyRepository;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
@@ -83,4 +83,65 @@ public class OntologyServiceImpl implements OntologyService {
 
         return recommendations;
     }
+
+    @Override
+    public List<OWLNamedIndividual> upgradeChipset(Chipset chipset) {
+        List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
+        List<OWLNamedIndividual> upgrades = new ArrayList<>();
+        for (OWLNamedIndividual individual : chipsets) {
+            var ct =  this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri);
+            String chipsetType = ct.get(0).getLiteral();
+            if (chipset.getType().toString().equals(chipsetType)) {
+                if (!chipset.getName().equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.nameIri).get(0).getLiteral())) {
+                    upgrades.add(individual);
+                }
+            }
+        }
+        return upgrades;
+    }
+    public List<OWLNamedIndividual> getMotherboardsByType(MotherboardType type){
+        List<OWLNamedIndividual> motherboards = repository.getMotherboardIndividuals();
+        List<OWLNamedIndividual> motherboardsByType = new ArrayList<>();
+        for (OWLNamedIndividual individual : motherboards) {
+            if (type.toString().equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.motherboardTypeIri).get(0).getLiteral())) {
+                motherboardsByType.add(individual);
+            }
+        }
+        return motherboardsByType;
+    }
+
+    @Override
+    public List<OWLNamedIndividual> upgradeMotherboard(Motherboard motherboard) {
+        List<OWLNamedIndividual> upgradeCandidates = getMotherboardsByType(motherboard.getType());
+        List<OWLNamedIndividual> upgrades = new ArrayList<>();
+        for(OWLNamedIndividual individual : upgradeCandidates){
+            if(Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.numberOfRAMSlotsIri).get(0).getLiteral())> motherboard.getNumberOfRAMSlots()){
+                upgrades.add(individual);
+            }
+        }
+        return upgrades;
+    }
+    public List<OWLNamedIndividual> getGPUByManufacturer(String manufacturer){
+        List<OWLNamedIndividual> GPUs = repository.getGPUIndividuals();
+        List<OWLNamedIndividual> GPUsByManufacturer = new ArrayList<>();
+        for(OWLNamedIndividual individual : GPUs){
+            if(manufacturer.equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.hardwareManufacturerIri).get(0).getLiteral())){
+                GPUsByManufacturer.add(individual);
+            }
+        }
+        return GPUsByManufacturer;
+        }
+    @Override
+    public List<OWLNamedIndividual> upgradeGPU(GPU gpu) {
+        List<OWLNamedIndividual> upgradeCandidates = getGPUByManufacturer(gpu.getManufacturer());
+        for(OWLNamedIndividual individual : upgradeCandidates){
+            if(Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral())> gpu.getVRAMSize()){
+                upgradeCandidates.add(individual);
+            } else if (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral())>gpu.getBoostClockSpeed()) {
+                upgradeCandidates.add(individual);
+            }
+        }
+        return upgradeCandidates;
+    }
+
 }

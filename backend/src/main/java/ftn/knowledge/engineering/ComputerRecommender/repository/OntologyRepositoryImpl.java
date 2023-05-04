@@ -137,8 +137,10 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         OWLClass chipsetClass = df.getOWLClass(ClassIris.chipsetIri);
         List<OWLNamedIndividual> chipsetIndividuals = new ArrayList<>();
         for (OWLClassExpression chipsetType : EntitySearcher.getSubClasses(chipsetClass, this.ontology).toList()) {
-            var instances = reasoner.getInstances(chipsetType.asOWLClass(), true);
-            chipsetIndividuals.addAll(instances.getFlattened());
+            for(OWLClassExpression chipsetSubClass : EntitySearcher.getSubClasses(chipsetType.asOWLClass(), this.ontology).toList()) {
+                var instances = reasoner.getInstances(chipsetSubClass.asOWLClass(), true);
+                chipsetIndividuals.addAll(instances.getFlattened());
+            }
         }
 
         return chipsetIndividuals;
@@ -167,8 +169,10 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         OWLClass gpuClass = df.getOWLClass(ClassIris.gpuIri);
         List<OWLNamedIndividual> gpuIndividuals = new ArrayList<>();
         for (OWLClassExpression gpuType : EntitySearcher.getSubClasses(gpuClass, this.ontology).toList()) {
-                var instances = reasoner.getInstances(gpuClass.asOWLClass(), true);
+
+                var instances = reasoner.getInstances(gpuType.asOWLClass(), true);
                 gpuIndividuals.addAll(instances.getFlattened());
+
         }
         return gpuIndividuals;
     }

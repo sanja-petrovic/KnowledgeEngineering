@@ -24,5 +24,6 @@ public class OntologyServiceImpl implements OntologyService {
     public void test() {
         //this.repository.loadFromFile(new File("C:\\Users\\Sanja\\Documents\\KnowledgeEngineering\\KT2\\ontologies\\ClassesPropertiesGeneral.rdf"));
         OWLOntology ontology = this.repository.loadFromFile(new File(FilePaths.knowledgeBase));
+        repository.getCpuIndividuals(ontology);
     }
 }

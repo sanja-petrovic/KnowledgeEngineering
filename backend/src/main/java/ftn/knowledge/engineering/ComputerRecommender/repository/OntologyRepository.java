@@ -13,4 +13,5 @@ public interface OntologyRepository {
     void saveToFile(OWLOntology ontology, File file);
     //NodeSet<OWLNamedIndividual> getIndividuals(OWLOntology ontology, String className);
     List<OWLNamedIndividual> getCpuIndividuals(OWLOntology ontology);
+    List<OWLNamedIndividual> getRamIndividuals(OWLOntology ontology);
 }

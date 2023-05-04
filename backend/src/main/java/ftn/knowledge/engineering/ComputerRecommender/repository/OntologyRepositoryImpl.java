@@ -1,25 +1,19 @@
 package ftn.knowledge.engineering.ComputerRecommender.repository;
 
-import org.checkerframework.checker.units.qual.A;
+import ftn.knowledge.engineering.ComputerRecommender.constants.ClassIris;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.*;
-import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
-import org.semanticweb.owlapi.reasoner.impl.OWLNamedIndividualNodeSet;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.search.EntitySearcher;
-import org.semanticweb.owlapi.search.Searcher;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Repository
 public class OntologyRepositoryImpl implements OntologyRepository {
@@ -89,7 +83,7 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         OWLDataFactory df = this.manager.getOWLDataFactory();
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
-        OWLClass cpuClass = df.getOWLClass("http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU");
+        OWLClass cpuClass = df.getOWLClass(ClassIris.cpuIri);
         List<OWLNamedIndividual> cpuIndividuals = new ArrayList<>();
         for (OWLClassExpression cpuType : EntitySearcher.getSubClasses(cpuClass, ontology).toList()) {
             for(OWLClassExpression cpuSubClass : EntitySearcher.getSubClasses(cpuType.asOWLClass(), ontology).toList()) {
@@ -100,6 +94,21 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         }
 
         return cpuIndividuals;
+    }
+
+    @Override
+    public List<OWLNamedIndividual> getRamIndividuals(OWLOntology ontology) {
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
+        OWLClass ramClass = df.getOWLClass(ClassIris.ramIri);
+        List<OWLNamedIndividual> ramIndividuals = new ArrayList<>();
+        for (OWLClassExpression ramType : EntitySearcher.getSubClasses(ramClass, ontology).toList()) {
+            var instances = reasoner.getInstances(ramType.asOWLClass(), true);
+            ramIndividuals.addAll(instances.getFlattened());
+        }
+
+        return ramIndividuals;
     }
 
     private void initializeManager() {

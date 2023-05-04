@@ -1,6 +1,10 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
 import ftn.knowledge.engineering.ComputerRecommender.converters.MotherboardConverter;
+import ftn.knowledge.engineering.ComputerRecommender.Converter.ChipsetConverter;
+import ftn.knowledge.engineering.ComputerRecommender.Converter.GPUConverter;
+import ftn.knowledge.engineering.ComputerRecommender.Converter.MotherboardConverter;
+import ftn.knowledge.engineering.ComputerRecommender.dto.CpuDto;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.service.OntologyService;
 import io.swagger.annotations.Api;
@@ -18,10 +22,15 @@ import java.util.List;
 public class OntologyController {
     private final OntologyService service;
     private final MotherboardConverter motherboardConverter;
+    private final GPUConverter gpuConverter;
+    private final ChipsetConverter chipsetConverter;
     @Autowired
-    public OntologyController(OntologyService service, MotherboardConverter motherboardConverter) {
+    public OntologyController(OntologyService service, MotherboardConverter motherboardConverter, GPUConverter gpuConverter,
+                              ChipsetConverter chipsetConverter) {
         this.service = service;
         this.motherboardConverter = motherboardConverter;
+        this.gpuConverter = gpuConverter;
+        this.chipsetConverter = chipsetConverter;
     }
 
     @GetMapping("/cpu/recommend")
@@ -45,19 +54,42 @@ public class OntologyController {
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "priceMin", required = false) Double minimumPrice,
             @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
-        return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : 0, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
+        return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : Integer.MAX_VALUE, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
     }
+
+    @GetMapping("/cpu/{model}/upgrade")
+    @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")
+    public ResponseEntity<?> upgradeCpus(@PathVariable("model") String model) {
+        return ResponseEntity.ok(this.service.recommendCpuUpgrades(model));
+    }
+
+    @GetMapping("/ram/{model}/upgrade")
+    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "GET")
+    public ResponseEntity<?> upgradeRams(@PathVariable("model") String model) {
+        return ResponseEntity.ok(this.service.recommendRamUpgrades(model));
+    }
+
     @GetMapping("/chipset/upgrade")
     @ApiOperation(value = "Get upgrades for chipset.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesChipset(
-            @RequestParam(value = "chipset", required = true) Chipset chipset) {
-        return ResponseEntity.ok(this.service.upgradeChipset(chipset));
+            @RequestParam(value = "type", required = true) String type,
+            @RequestParam(value = "name", required = true) String name) {
+        Chipset chipset = new Chipset();
+        chipset.setType(ChipsetType.valueOf(type));
+        chipset.setName(name);
+        return ResponseEntity.ok(this.chipsetConverter.ConvertFromOwlIndividuals(this.service.upgradeChipset(chipset)));
     }
     @GetMapping("/gpu/upgrade")
     @ApiOperation(value = "Get upgrades for GPU.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesGPU(
-            @RequestParam(value = "gpu", required = true) GPU gpu) {
-        return ResponseEntity.ok(this.service.upgradeGPU(gpu));
+            @RequestParam(value = "manufacturer", required = true) String manufacturer,
+            @RequestParam(value = "boostClock", required = true) double boostClockSpeed,
+            @RequestParam(value = "VRAMSize", required = true) int VRAM){
+        GPU gpu = new GPU();
+        gpu.setManufacturer(manufacturer);
+        gpu.setBoostClockSpeed(boostClockSpeed);
+        gpu.setVRAMSize(VRAM);
+        return ResponseEntity.ok(this.gpuConverter.ConvertFromOwlIndividuals(this.service.upgradeGPU(gpu)));
     }
     @GetMapping("/motherboard/upgrade")
     @ApiOperation(value = "Get upgrades for Motherboard.", httpMethod = "GET")

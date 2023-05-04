@@ -60,33 +60,6 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         }
     }
 
-    /*@Override
-    public NodeSet<OWLNamedIndividual> getIndividuals(OWLOntology ontology, String className) {
-        OWLDataFactory df = this.manager.getOWLDataFactory();
-        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
-        OWLClass owlClass = df.getOWLClass("http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CPU");
-        for (OWLClassExpression a : EntitySearcher.getSubClasses(owlClass, ontology).toList()) {
-            OWLClass cls = a.asOWLClass();
-            if (cls.getIRI().getFragment().equalsIgnoreCase(className)) {
-                System.out.println("My class is : " + cls.getIRI().getShortForm());
-                System.out.println("The IRI of my class is : " + cls);
-                System.out.println("-----------------------");
-
-                NodeSet<OWLNamedIndividual> instances = reasoner.getInstances(cls, true);
-                System.out.println("The Individuals of my class : ");
-
-                for (OWLNamedIndividual i : instances.getFlattened()) {
-                    System.out.println(i.getIRI().getFragment());
-                }
-
-                return instances;
-            }
-        }
-
-        return null;
-    }*/
-
     @Override
     public List<OWLNamedIndividual> getCpuIndividuals() {
         OWLDataFactory df = this.manager.getOWLDataFactory();
@@ -121,13 +94,7 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }
 
     public List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri) {
-        var bla = EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
-        return bla;
-    }
-
-    @Override
-    public List<OWLNamedIndividual> getRecommendedCpus(CPU properties) {
-        return null;
+        return EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
     }
     @Override
     public List<OWLNamedIndividual>getChipsetIndividuals(){
@@ -137,8 +104,10 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         OWLClass chipsetClass = df.getOWLClass(ClassIris.chipsetIri);
         List<OWLNamedIndividual> chipsetIndividuals = new ArrayList<>();
         for (OWLClassExpression chipsetType : EntitySearcher.getSubClasses(chipsetClass, this.ontology).toList()) {
-            var instances = reasoner.getInstances(chipsetType.asOWLClass(), true);
-            chipsetIndividuals.addAll(instances.getFlattened());
+            for(OWLClassExpression chipsetSubClass : EntitySearcher.getSubClasses(chipsetType.asOWLClass(), this.ontology).toList()) {
+                var instances = reasoner.getInstances(chipsetSubClass.asOWLClass(), true);
+                chipsetIndividuals.addAll(instances.getFlattened());
+            }
         }
 
         return chipsetIndividuals;
@@ -167,8 +136,10 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         OWLClass gpuClass = df.getOWLClass(ClassIris.gpuIri);
         List<OWLNamedIndividual> gpuIndividuals = new ArrayList<>();
         for (OWLClassExpression gpuType : EntitySearcher.getSubClasses(gpuClass, this.ontology).toList()) {
-                var instances = reasoner.getInstances(gpuClass.asOWLClass(), true);
+
+                var instances = reasoner.getInstances(gpuType.asOWLClass(), true);
                 gpuIndividuals.addAll(instances.getFlattened());
+
         }
         return gpuIndividuals;
     }

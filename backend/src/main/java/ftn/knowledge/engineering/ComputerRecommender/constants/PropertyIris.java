@@ -17,4 +17,6 @@ public class PropertyIris {
     public final static String numberOfRAMSlotsIri = "http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-26#NumberOfRAMSlots";
     public final static String vRAMSizeIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#VRAMSize";
     public final static String boostClockSpeedIri = "http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29#BoostClockSpeed";
+    public final static String platformCompatibilityIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility";
+    public final static String gpuTypeIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#GPUType";
 }

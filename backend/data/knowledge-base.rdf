@@ -3174,13 +3174,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4080">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#NvidiaGpu"/>
+        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2205.0</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
         <untitled-ontology-2:HardwareManufacturer>Nvidia</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1199.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2205.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2505.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2505.0</untitled-ontology-29:BoostClockSpeed>
     </owl:NamedIndividual>
     
 
@@ -3280,12 +3280,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_580_8GB">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDGpu"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1257.0</untitled-ontology-2:ClockSpeed>
-        <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1340.0</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:GPUType>Dedicated</untitled-ontology-2:GPUType>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PlatformCompatibility>LAPTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">229.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:VRAMSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-2:VRAMSize>
+        <untitled-ontology-29:BoostClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1340.0</untitled-ontology-29:BoostClockSpeed>
     </owl:NamedIndividual>
     
 

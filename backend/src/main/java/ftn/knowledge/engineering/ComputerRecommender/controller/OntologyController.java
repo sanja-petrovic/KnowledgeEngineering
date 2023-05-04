@@ -55,6 +55,12 @@ public class OntologyController {
         return ResponseEntity.ok(this.service.recommendCpuUpgrades(model));
     }
 
+    @GetMapping("/ram/{model}/upgrade")
+    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "GET")
+    public ResponseEntity<?> upgradeRams(@PathVariable("model") String model) {
+        return ResponseEntity.ok(this.service.recommendRamUpgrades(model));
+    }
+
     @GetMapping("/chipset/upgrade")
     @ApiOperation(value = "Get upgrades for chipset.", httpMethod = "GET")
     public ResponseEntity<?> getUpgradesChipset(

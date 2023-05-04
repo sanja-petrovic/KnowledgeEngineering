@@ -46,7 +46,6 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
 
-
     @Override
     public List<String> recommendRams(String type, Integer size, Integer latency, Integer frequency, String manufacturer, Double minimumPrice, Double maximumPrice) {
         List<OWLNamedIndividual> ramIndividuals = repository.getRamIndividuals();
@@ -160,7 +159,7 @@ public class OntologyServiceImpl implements OntologyService {
         List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
         for (OWLNamedIndividual individual : chipsets) {
-            var ct =  this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri);
+            var ct = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri);
             String chipsetType = ct.get(0).getLiteral();
             if (chipset.getType().toString().equals(chipsetType)) {
                 if (!chipset.getName().equals(individual.getIRI().getShortForm())) {
@@ -170,7 +169,8 @@ public class OntologyServiceImpl implements OntologyService {
         }
         return upgrades;
     }
-    public List<OWLNamedIndividual> getMotherboardsByType(MotherboardType type){
+
+    public List<OWLNamedIndividual> getMotherboardsByType(MotherboardType type) {
         List<OWLNamedIndividual> motherboards = repository.getMotherboardIndividuals();
         List<OWLNamedIndividual> motherboardsByType = new ArrayList<>();
         for (OWLNamedIndividual individual : motherboards) {
@@ -185,31 +185,33 @@ public class OntologyServiceImpl implements OntologyService {
     public List<OWLNamedIndividual> upgradeMotherboard(Motherboard motherboard) {
         List<OWLNamedIndividual> upgradeCandidates = getMotherboardsByType(motherboard.getType());
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
-        for(OWLNamedIndividual individual : upgradeCandidates){
-            if(Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.numberOfRAMSlotsIri).get(0).getLiteral())> motherboard.getNumberOfRAMSlots()){
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.numberOfRAMSlotsIri).get(0).getLiteral()) > motherboard.getNumberOfRAMSlots()) {
                 upgrades.add(individual);
             }
         }
         return upgrades;
     }
-    public List<OWLNamedIndividual> getGPUByManufacturer(String manufacturer){
+
+    public List<OWLNamedIndividual> getGPUByManufacturer(String manufacturer) {
         List<OWLNamedIndividual> GPUs = repository.getGPUIndividuals();
         List<OWLNamedIndividual> GPUsByManufacturer = new ArrayList<>();
-        for(OWLNamedIndividual individual : GPUs){
-            if(manufacturer.equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.hardwareManufacturerIri).get(0).getLiteral())){
+        for (OWLNamedIndividual individual : GPUs) {
+            if (manufacturer.equals(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.hardwareManufacturerIri).get(0).getLiteral())) {
                 GPUsByManufacturer.add(individual);
             }
         }
         return GPUsByManufacturer;
-        }
+    }
+
     @Override
     public List<OWLNamedIndividual> upgradeGPU(GPU gpu) {
         List<OWLNamedIndividual> upgradeCandidates = getGPUByManufacturer(gpu.getManufacturer());
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
-        for(OWLNamedIndividual individual : upgradeCandidates){
-            if(Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral())> gpu.getVRAMSize()){
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral()) > gpu.getVRAMSize()) {
                 upgrades.add(individual);
-            } else if (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral())>gpu.getBoostClockSpeed()) {
+            } else if (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral()) > gpu.getBoostClockSpeed()) {
                 upgrades.add(individual);
             }
         }

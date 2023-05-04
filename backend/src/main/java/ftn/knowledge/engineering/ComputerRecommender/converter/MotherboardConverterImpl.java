@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.Converter;
+package ftn.knowledge.engineering.ComputerRecommender.converter;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import ftn.knowledge.engineering.ComputerRecommender.model.Motherboard;
@@ -14,12 +14,13 @@ import java.util.List;
 @Service
 public class MotherboardConverterImpl implements MotherboardConverter{
     private final OntologyRepository repository;
+
     @Autowired
     public MotherboardConverterImpl(OntologyRepository repository) {
         this.repository = repository;
     }
     @Override
-    public List<Motherboard> ConvertFromOwlIndividuals(List<OWLNamedIndividual> individuals) {
+    public List<Motherboard> convertFromOwlIndividuals(List<OWLNamedIndividual> individuals) {
         List<Motherboard> converted = new ArrayList<>();
         for(OWLNamedIndividual individual : individuals){
             Motherboard motherboard = new Motherboard(individual.getIRI().getShortForm(),

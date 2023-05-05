@@ -2,12 +2,13 @@ package ftn.knowledge.engineering.ComputerRecommender.controller;
 
 import ftn.knowledge.engineering.ComputerRecommender.converter.ChipsetConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
-import ftn.knowledge.engineering.ComputerRecommender.converter.MotherboardConverter;
+
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.service.OntologyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
+import ftn.knowledge.engineering.ComputerRecommender.converter.MotherboardConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -55,7 +56,36 @@ public class OntologyController {
             @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
         return ResponseEntity.ok(this.service.recommendRams(type != null ? type : "", size != null ? size : 0, latency != null ? latency : Integer.MAX_VALUE, frequency != null ? frequency : 0, manufacturer != null ? manufacturer : "", minimumPrice != null ? minimumPrice : 0, maximumPrice != null ? maximumPrice : Integer.MAX_VALUE));
     }
+    @GetMapping("/chipset/recommend")
+    @ApiOperation(value = "Get recommended Chipsets based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendChipsets(
+            @RequestParam(value = "type", required = true) String type) {
+        return ResponseEntity.ok(this.service.recommendChipsets(type));
+    }
+    @GetMapping("/motherboard/recommend")
+    @ApiOperation(value = "Get recommended motherboards based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendMotherboards(
+            @RequestParam(value = "type", required = false) String type,
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "minRAM", required = false) Integer minRAM,
+            @RequestParam(value = "maxRAM", required = false) Integer maxRAM,
+            @RequestParam(value = "priceMin", required = false) Double minimumPrice,
+            @RequestParam(value = "priceMax", required = false) Double maximumPrice) {
 
+        return ResponseEntity.ok(this.service.recommendMotherboards(type != null ? type: "any",  maximumPrice != null ? maximumPrice : Integer.MAX_VALUE, minimumPrice != null ? minimumPrice : 0, manufacturer != null ? manufacturer:"any", minRAM != null ? minRAM : 0, maxRAM != null ? maxRAM : Integer.MAX_VALUE));
+    }
+    @GetMapping("/gpu/recommend")
+    @ApiOperation(value = "Get recommended GPUs based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendGpus(
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "minVRAM", required = false) Integer minVRAM,
+            @RequestParam(value = "maxVRAM", required = false) Integer maxVRAM,
+            @RequestParam(value = "priceMin", required = false) Double minimumPrice,
+            @RequestParam(value = "priceMax", required = false) Double maximumPrice,
+            @RequestParam(value = "clockSpeedMin", required = false) Double clockMin,
+            @RequestParam(value = "clockSpeedMax", required = false) Double clockMax) {
+        return ResponseEntity.ok(this.service.recommendGPU( maximumPrice != null ? maximumPrice : Integer.MAX_VALUE, minimumPrice != null ? minimumPrice : 0, manufacturer != null ? manufacturer:"any", minVRAM != null ? minVRAM : 0, maxVRAM != null ? maxVRAM : Integer.MAX_VALUE, clockMin!=null?clockMin:0, clockMax!=null?clockMax:Integer.MAX_VALUE));
+    }
     @GetMapping("/cpu/{model}/upgrade")
     @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")
     public ResponseEntity<?> upgradeCpus(@PathVariable("model") String model) {

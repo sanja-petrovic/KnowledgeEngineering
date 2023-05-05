@@ -86,6 +86,20 @@ public class OntologyController {
             @RequestParam(value = "clockSpeedMax", required = false) Double clockMax) {
         return ResponseEntity.ok(this.service.recommendGPU( maximumPrice != null ? maximumPrice : Integer.MAX_VALUE, minimumPrice != null ? minimumPrice : 0, manufacturer != null ? manufacturer:"any", minVRAM != null ? minVRAM : 0, maxVRAM != null ? maxVRAM : Integer.MAX_VALUE, clockMin!=null?clockMin:0, clockMax!=null?clockMax:Integer.MAX_VALUE));
     }
+
+    @GetMapping("/storage/recommend")
+    @ApiOperation(value = "Get recommended storage based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendStorage(
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "type", required = false) String type,
+            @RequestParam(value = "memoryMin", required = false) Integer minMemoryCapacity,
+            @RequestParam(value = "memoryMax", required = false) Integer maxMemoryCapacity,
+            @RequestParam(value = "priceMin", required = false)  Double minPrice,
+            @RequestParam(value = "priceMax", required = false)  Double maxPrice)
+    {
+        return ResponseEntity.ok(this.service.recommendStorage(manufacturer != null ? manufacturer : "", type != null ? type : "", minMemoryCapacity != null ? minMemoryCapacity : 0, maxMemoryCapacity != null ? maxMemoryCapacity : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
+    }
+
     @GetMapping("/cpu/{model}/upgrade")
     @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")
     public ResponseEntity<?> upgradeCpus(@PathVariable("model") String model) {

@@ -145,4 +145,21 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         }
         return gpuIndividuals;
     }
+    @Override
+    public List<OWLNamedIndividual> getStorageIndividuals(){
+
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass storageClass = df.getOWLClass(ClassIris.storageIri);
+
+        List<OWLNamedIndividual> storageIndividuals = new ArrayList<>();
+        for (OWLClassExpression storageType : EntitySearcher.getSubClasses(storageClass, this.ontology).toList()) {
+            for (OWLClassExpression storageSubClass : EntitySearcher.getSubClasses(storageType.asOWLClass(), this.ontology).toList()) {
+                var instances = reasoner.getInstances(storageSubClass.asOWLClass(), true);
+                storageIndividuals.addAll(instances.getFlattened());
+            }
+        }
+        return storageIndividuals;
+    }
 }

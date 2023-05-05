@@ -24,5 +24,7 @@ public interface OntologyRepository {
 
     List<OWLNamedIndividual> getGPUIndividuals();
 
+    List<OWLNamedIndividual> getStorageIndividuals();
+
     List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri);
 }

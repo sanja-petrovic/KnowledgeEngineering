@@ -219,6 +219,30 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
+    public List<String> recommendStorage(String manufacturer, String type, Integer minMemoryCapacity, Integer maxMemoryCapacity, Double minPrice, Double maxPrice) {
+        List<OWLNamedIndividual> storageIndividuals = repository.getStorageIndividuals();
+        List<String> recommendations = new ArrayList<>();
+        for (OWLNamedIndividual individual : storageIndividuals) {
+            var m = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.hardwareManufacturerIri);
+            String individualManufacturer = m.size() > 0 ? m.get(0).getLiteral() : "";
+
+            var t = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.storageTypeIri);
+            String individualStorageType = t.size() > 0 ? t.get(0).getLiteral() : "";
+
+            var mc = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.memoryCapacityIri);
+            int individualMemoryCapacity = mc.size() > 0 ? Integer.parseInt(mc.get(0).getLiteral()) : 0;
+
+            var p = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.priceIri);
+            double individualPrice = p.size() > 0 ? Double.parseDouble(p.get(0).getLiteral()) : 0;
+
+            if(individualStorageType.contains(type) && individualManufacturer.contains(manufacturer) && individualPrice >= minPrice && individualPrice <= maxPrice && individualMemoryCapacity >= minMemoryCapacity && individualMemoryCapacity <= maxMemoryCapacity){
+                recommendations.add(individual.getIRI().getShortForm());
+            }
+        }
+        return recommendations;
+    }
+
+    @Override
     public List<OWLNamedIndividual> upgradeChipset(Chipset chipset) {
         List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
         List<OWLNamedIndividual> upgrades = new ArrayList<>();

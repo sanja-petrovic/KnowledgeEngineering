@@ -19,4 +19,7 @@ public class PropertyIris {
     public final static String boostClockSpeedIri = "http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-29#BoostClockSpeed";
     public final static String platformCompatibilityIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#PlatformCompatibility";
     public final static String gpuTypeIri = "http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#GPUType";
+    public static final String storageTypeIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#StorageType";
+    public static final String writeSpeedIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#WriteSpeed";
+    public static final String memoryCapacityIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#MemoryCapacity";
 }

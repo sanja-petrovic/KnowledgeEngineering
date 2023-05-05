@@ -16,6 +16,9 @@ public interface OntologyService {
     List<String> recommendCpuUpgrades(String cpuModel);
 
     List<String> recommendRamUpgrades(String ramModel);
+    List<String> recommendChipsets(String chipsetType);
+    List<String> recommendMotherboards(String type, double maxPrice, double minPrice, String manufacturer, int minRAMSlots, int maxRAMSlots);
+    List<String> recommendGPU(double maxPrice, double minPrice, String manufacturer, int minVRAM, int maxVRAM, double minClockSpeed, double maxClockSpeed);
 
     List<OWLNamedIndividual> upgradeChipset(Chipset chipset);
 

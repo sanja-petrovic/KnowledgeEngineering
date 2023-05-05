@@ -155,6 +155,70 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
+    public List<String> recommendChipsets(String chipsetType) {
+        List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
+        List<String> recommendations = new ArrayList<>();
+        for (OWLNamedIndividual individual : chipsets) {
+            String type = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri).get(0).getLiteral();
+            if (chipsetType.equals(type)) {
+                    recommendations.add(individual.getIRI().getShortForm());
+            }
+        }
+        return recommendations;
+    }
+
+
+    public List<OWLNamedIndividual> FilterByManufacturer(List<OWLNamedIndividual>individuals,String manufacturer){
+        List<OWLNamedIndividual> filtered = new ArrayList<>();
+        for(OWLNamedIndividual individual : individuals){
+            String individualManufacturer = this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.hardwareManufacturerIri).get(0).getLiteral();
+            if(individualManufacturer.equals(manufacturer))
+                filtered.add(individual);
+        }
+        return filtered;
+    }
+
+
+    @Override
+    public List<String> recommendMotherboards(String type, double maxPrice, double minPrice, String manufacturer, int minRAMSlots, int maxRAMSlots) {
+        List<OWLNamedIndividual> motherboards = new ArrayList<>();
+        if(!type.equals("any")){
+            motherboards = getMotherboardsByType(MotherboardType.valueOf(type));
+        } else motherboards = this.repository.getMotherboardIndividuals();
+        if(!manufacturer.equals("any"))
+            motherboards = FilterByManufacturer(motherboards,manufacturer);
+        List<String> recommendations = new ArrayList<>();
+        for(OWLNamedIndividual individual : motherboards){
+            Integer individualRAM = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.numberOfRAMSlotsIri).get(0).getLiteral());
+            Double individualPrice = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.priceIri).get(0).getLiteral());
+            if(individualPrice<=maxPrice && individualPrice >= minPrice && individualRAM<= maxRAMSlots && individualRAM>=minRAMSlots){
+                recommendations.add(individual.getIRI().getShortForm());
+            }
+        }
+        return recommendations;
+    }
+
+    @Override
+    public List<String> recommendGPU(double maxPrice, double minPrice, String manufacturer, int minVRAM, int maxVRAM, double minClockSpeed, double maxClockSpeed) {
+        List<OWLNamedIndividual> gpus = new ArrayList<>();
+        if(!manufacturer.equals("any")) {
+            gpus = getGPUByManufacturer(manufacturer);
+        }
+        else gpus = this.repository.getGPUIndividuals();
+        List<String> recommendations = new ArrayList<>();
+        for(OWLNamedIndividual individual : gpus){
+            int individualVRAM = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.vRAMSizeIri).get(0).getLiteral());
+            double individualPrice = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.priceIri).get(0).getLiteral());
+            double individualClockSpeed = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.clockSpeedIri).get(0).getLiteral());
+            double individualBoostClockSpeed = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual,PropertyIris.boostClockSpeedIri).get(0).getLiteral());
+            if(individualPrice<=maxPrice && individualPrice >= minPrice && individualVRAM<= maxVRAM && individualVRAM>=minVRAM && individualClockSpeed>=minClockSpeed && individualBoostClockSpeed<=maxClockSpeed){
+                recommendations.add(individual.getIRI().getShortForm());
+            }
+        }
+        return recommendations;
+    }
+
+    @Override
     public List<OWLNamedIndividual> upgradeChipset(Chipset chipset) {
         List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
@@ -209,9 +273,8 @@ public class OntologyServiceImpl implements OntologyService {
         List<OWLNamedIndividual> upgradeCandidates = getGPUByManufacturer(gpu.getManufacturer());
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
         for (OWLNamedIndividual individual : upgradeCandidates) {
-            if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral()) > gpu.getVRAMSize()) {
-                upgrades.add(individual);
-            } else if (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral()) > gpu.getBoostClockSpeed()) {
+            if ((Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral()) > gpu.getVRAMSize())&&
+            (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral()) > gpu.getBoostClockSpeed())) {
                 upgrades.add(individual);
             }
         }

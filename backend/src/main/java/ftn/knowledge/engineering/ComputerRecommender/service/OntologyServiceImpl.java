@@ -219,7 +219,7 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendStorage(String manufacturer, String type, Integer minMemoryCapacity, Integer maxMemoryCapacity, Double minPrice, Double maxPrice) {
+    public List<String> recommendStorage(String manufacturer, String type, Integer minMemoryCapacity, Integer maxMemoryCapacity, Double minPrice, Double maxPrice, Double writeSpeedMin) {
         List<OWLNamedIndividual> storageIndividuals = repository.getStorageIndividuals();
         List<String> recommendations = new ArrayList<>();
         for (OWLNamedIndividual individual : storageIndividuals) {
@@ -235,7 +235,10 @@ public class OntologyServiceImpl implements OntologyService {
             var p = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.priceIri);
             double individualPrice = p.size() > 0 ? Double.parseDouble(p.get(0).getLiteral()) : 0;
 
-            if(individualStorageType.contains(type) && individualManufacturer.contains(manufacturer) && individualPrice >= minPrice && individualPrice <= maxPrice && individualMemoryCapacity >= minMemoryCapacity && individualMemoryCapacity <= maxMemoryCapacity){
+            var ws = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.writeSpeedIri);
+            double individualWriteSpeed = ws.size() > 0 ? Double.parseDouble(ws.get(0).getLiteral()) : 0;
+
+            if(individualStorageType.contains(type) && individualManufacturer.contains(manufacturer) && individualPrice >= minPrice && individualPrice <= maxPrice && individualMemoryCapacity >= minMemoryCapacity && individualMemoryCapacity <= maxMemoryCapacity && individualWriteSpeed >= writeSpeedMin){
                 recommendations.add(individual.getIRI().getShortForm());
             }
         }

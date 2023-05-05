@@ -95,9 +95,10 @@ public class OntologyController {
             @RequestParam(value = "memoryMin", required = false) Integer minMemoryCapacity,
             @RequestParam(value = "memoryMax", required = false) Integer maxMemoryCapacity,
             @RequestParam(value = "priceMin", required = false)  Double minPrice,
-            @RequestParam(value = "priceMax", required = false)  Double maxPrice)
+            @RequestParam(value = "priceMax", required = false)  Double maxPrice,
+            @RequestParam(value = "writeSpeedMin", required = false)  Double writeSpeedMin)
     {
-        return ResponseEntity.ok(this.service.recommendStorage(manufacturer != null ? manufacturer : "", type != null ? type : "", minMemoryCapacity != null ? minMemoryCapacity : 0, maxMemoryCapacity != null ? maxMemoryCapacity : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
+        return ResponseEntity.ok(this.service.recommendStorage(manufacturer != null ? manufacturer : "", type != null ? type : "", minMemoryCapacity != null ? minMemoryCapacity : 0, maxMemoryCapacity != null ? maxMemoryCapacity : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE, writeSpeedMin != null ? writeSpeedMin : 0));
     }
     @GetMapping("/powersupply/recommend")
     @ApiOperation(value = "Get recommended powersupply based on properties.", httpMethod = "GET")

@@ -3892,6 +3892,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#AsusAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -3909,6 +3910,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#ADP-65DWA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#ADP-65DWA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#AsusAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -3926,6 +3928,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple140WUSB-CPA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple140WUSB-CPA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#MacAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>MAC</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:InputVoltageMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</untitled-ontology-42:InputVoltageMax>
@@ -3940,6 +3943,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple96WUSB-CPA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple96WUSB-CPA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#MacAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>MAC</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:InputVoltageMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</untitled-ontology-42:InputVoltageMax>
@@ -3965,6 +3969,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#DZ65195231 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#DZ65195231">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#HPAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>HP</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -3982,6 +3987,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-1000 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-1000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#SeasonicPsu"/>
         <untitled-ontology-2:HardwareManufacturer>SEASONIC</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -3993,6 +3999,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-750 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-750">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#SeasonicPsu"/>
         <untitled-ontology-2:HardwareManufacturer>SEASONIC</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4004,6 +4011,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSPX-850 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSPX-850">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#SeasonicPsu"/>
         <untitled-ontology-2:HardwareManufacturer>SEASONIC</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:InputVoltageMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240</untitled-ontology-42:InputVoltageMax>
@@ -4028,6 +4036,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HX1000I -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HX1000I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#CorsairPsu"/>
         <untitled-ontology-2:HardwareManufacturer>CORSAIR</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">235.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4039,6 +4048,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HX850 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HX850">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#CorsairPsu"/>
         <untitled-ontology-2:HardwareManufacturer>CORSAIR</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4060,6 +4070,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#RM1200XSHIFT -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#RM1200XSHIFT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#CorsairPsu"/>
         <untitled-ontology-2:HardwareManufacturer>CORSAIR</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">230.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4071,6 +4082,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90195333 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90195333">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#HPAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>HP</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -4088,6 +4100,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90A195231 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90A195231">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#HPAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>HP</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -4105,6 +4118,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA450GM -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA450GM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
         <untitled-ontology-2:HardwareManufacturer>EVGA</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4116,6 +4130,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
         <untitled-ontology-2:HardwareManufacturer>EVGA</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
@@ -4127,6 +4142,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#W16-045N3B -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#W16-045N3B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#AsusAcAdapter"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:FrequencyMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-42:FrequencyMax>
@@ -4144,6 +4160,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
         <untitled-ontology-2:HardwareManufacturer>EVGA</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>

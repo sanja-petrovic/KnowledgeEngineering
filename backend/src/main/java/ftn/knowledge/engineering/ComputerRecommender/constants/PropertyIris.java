@@ -22,4 +22,11 @@ public class PropertyIris {
     public static final String storageTypeIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#StorageType";
     public static final String writeSpeedIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#WriteSpeed";
     public static final String memoryCapacityIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#MemoryCapacity";
+    public static final String powerSupplyTypeIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#PowerSupplyType";
+    public static final String wattageIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#Watts";
+    public static final String inputVoltageMinIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#InputVoltageMin";
+    public static final String inputVoltageMaxIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#InputVoltageMax";
+    public static final String outputVoltageIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#OutputVoltage";
+    public static final String outputAmperageIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#OutputAmperage";
+    public static final String inputAmperageIri = "http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#InputAmperage";
 }

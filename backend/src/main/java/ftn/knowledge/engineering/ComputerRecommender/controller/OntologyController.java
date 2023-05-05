@@ -99,6 +99,22 @@ public class OntologyController {
     {
         return ResponseEntity.ok(this.service.recommendStorage(manufacturer != null ? manufacturer : "", type != null ? type : "", minMemoryCapacity != null ? minMemoryCapacity : 0, maxMemoryCapacity != null ? maxMemoryCapacity : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
     }
+    @GetMapping("/powersupply/recommend")
+    @ApiOperation(value = "Get recommended powersupply based on properties.", httpMethod = "GET")
+    public ResponseEntity<?> recommendPowerSupply(
+            @RequestParam(value = "manufacturer", required = false) String manufacturer,
+            @RequestParam(value = "type", required = false) String type,
+            @RequestParam(value = "wattage", required = false) Integer wattage,
+            @RequestParam(value = "inputVoltageMin", required = false) Integer inputVoltageMin,
+            @RequestParam(value = "inputVoltageMax", required = false) Integer inputVoltageMax,
+            @RequestParam(value = "outputVoltage", required = false) Integer outputVoltage,
+            @RequestParam(value = "inputAmperage", required = false)  Double inputAmperage,
+            @RequestParam(value = "outputAmperage", required = false)  Double outputAmperage,
+            @RequestParam(value = "priceMin", required = false)  Double minPrice,
+            @RequestParam(value = "priceMax", required = false)  Double maxPrice)
+    {
+        return ResponseEntity.ok(this.service.recommendSPowerSupply(manufacturer != null ? manufacturer : "", type != null ? type : "", wattage != null ? wattage : 0, inputVoltageMin != null ? inputVoltageMin : Integer.MAX_VALUE, inputVoltageMax != null ? inputVoltageMax : Integer.MAX_VALUE, outputVoltage != null ? outputVoltage : Integer.MAX_VALUE, inputAmperage != null ? inputAmperage : Integer.MAX_VALUE, outputAmperage != null ? outputAmperage : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
+    }
 
     @GetMapping("/cpu/{model}/upgrade")
     @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")

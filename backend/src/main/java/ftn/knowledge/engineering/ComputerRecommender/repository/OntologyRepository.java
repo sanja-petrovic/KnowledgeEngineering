@@ -26,5 +26,7 @@ public interface OntologyRepository {
 
     List<OWLNamedIndividual> getStorageIndividuals();
 
+    List<OWLNamedIndividual> getPowerSupplyIndividuals();
+
     List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri);
 }

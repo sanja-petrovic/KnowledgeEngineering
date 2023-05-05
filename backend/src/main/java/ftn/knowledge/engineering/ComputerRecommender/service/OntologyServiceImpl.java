@@ -243,6 +243,45 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
+    public List<String> recommendSPowerSupply(String manufacturer, String type, Integer wattage, Integer inputVoltageMin, Integer inputVoltageMax, Integer outputVoltage, Double inputAmperage, Double outputAmperage, Double minPrice, Double maxPrice) {
+        List<OWLNamedIndividual> powerSupplyIndividuals = repository.getPowerSupplyIndividuals();
+        List<String> recommendations = new ArrayList<>();
+        for (OWLNamedIndividual individual : powerSupplyIndividuals) {
+            var m = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.hardwareManufacturerIri);
+            String individualManufacturer = m.size() > 0 ? m.get(0).getLiteral() : "";
+
+            var t = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.powerSupplyTypeIri);
+            String individualPowerSupplyType = t.size() > 0 ? t.get(0).getLiteral() : "";
+
+            var p = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.priceIri);
+            double individualPrice = p.size() > 0 ? Double.parseDouble(p.get(0).getLiteral()) : 0;
+
+            var w = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.wattageIri);
+            int individualWattage = w.size() > 0 ? Integer.parseInt(w.get(0).getLiteral()) : 0;
+
+            var ivmin = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.inputVoltageMinIri);
+            int individualInputVoltageMin = ivmin.size() > 0 ? Integer.parseInt(ivmin.get(0).getLiteral()) : 0;
+
+            var ivmax = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.inputVoltageMaxIri);
+            int individualInputVoltageMax = ivmax.size() > 0 ? Integer.parseInt(ivmax.get(0).getLiteral()) : 0;
+
+            var ov = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.outputVoltageIri);
+            int individualOutputVoltage = ov.size() > 0 ? Integer.parseInt(ov.get(0).getLiteral()) : 0;
+
+            var ia = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.inputAmperageIri);
+            double individualInputAmperage = ia.size() > 0 ? Double.parseDouble(ia.get(0).getLiteral()) : 0;
+
+            var oa = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.outputAmperageIri);
+            double individualOutputAmperage = oa.size() > 0 ? Double.parseDouble(oa.get(0).getLiteral()) : 0;
+
+            if(individualPowerSupplyType.contains(type) && individualManufacturer.contains(manufacturer) && individualPrice >= minPrice && individualPrice <= maxPrice && individualWattage >= wattage && individualInputVoltageMin <= inputVoltageMin && individualInputVoltageMax <= inputVoltageMax && individualOutputVoltage <= outputVoltage && individualOutputAmperage <= outputAmperage && individualInputAmperage <= inputAmperage){
+                recommendations.add(individual.getIRI().getShortForm());
+            }
+        }
+        return recommendations;
+    }
+
+    @Override
     public List<OWLNamedIndividual> upgradeChipset(Chipset chipset) {
         List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
         List<OWLNamedIndividual> upgrades = new ArrayList<>();

@@ -162,4 +162,22 @@ public class OntologyRepositoryImpl implements OntologyRepository {
         }
         return storageIndividuals;
     }
+
+    @Override
+    public List<OWLNamedIndividual> getPowerSupplyIndividuals() {
+
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass powerSupplyClass = df.getOWLClass(ClassIris.powerSupplyIri);
+
+        List<OWLNamedIndividual> powerSupplyIndividuals = new ArrayList<>();
+        for (OWLClassExpression powerSupplyType : EntitySearcher.getSubClasses(powerSupplyClass, this.ontology).toList()) {
+            for (OWLClassExpression powerSupplySubClass : EntitySearcher.getSubClasses(powerSupplyType.asOWLClass(), this.ontology).toList()) {
+                var instances = reasoner.getInstances(powerSupplySubClass.asOWLClass(), true);
+                powerSupplyIndividuals.addAll(instances.getFlattened());
+            }
+        }
+        return powerSupplyIndividuals;
+    }
 }

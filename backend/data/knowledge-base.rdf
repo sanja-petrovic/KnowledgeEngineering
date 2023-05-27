@@ -4655,6 +4655,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4676,6 +4679,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.66</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4698,6 +4704,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.93</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4720,6 +4729,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2QuadQ9550">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.83</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4743,6 +4755,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.00</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4765,6 +4779,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.50</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4787,6 +4805,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.30</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4808,6 +4830,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.10</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4830,6 +4856,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei7-13700K">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4874,6 +4904,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4897,6 +4929,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.70</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4919,6 +4955,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelXeonGold5317">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.00</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>

@@ -133,10 +133,7 @@
 
     <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerMotherboard -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerMotherboard">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerMotherboard"/>
     
 
 
@@ -157,6 +154,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelMotherboard"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelChipset"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardCpu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardCpu"/>
     
 
 
@@ -4095,6 +4098,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#AsusLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#AsusLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Asus"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#ADP-65DWA"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#W16-045N3B"/>
@@ -4162,6 +4166,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HPLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HPLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#DZ65195231"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90195333"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90A195231"/>
@@ -4197,6 +4202,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#MacLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#MacLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Mac"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple140WUSB-CPA"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple96WUSB-CPA"/>
         <untitled-ontology-2:ComputerManufacturer>MAC</untitled-ontology-2:ComputerManufacturer>
@@ -6025,6 +6031,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#AdataXPGLancer"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6039,6 +6046,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR5"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6053,6 +6061,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Fatal1ty_X470">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDPhenomIIX2-550"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceLPX"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
@@ -6081,6 +6090,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_H670M_PRO_RS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeance"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6109,6 +6119,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-D">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#G.SkillTridentZRoyal"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -6123,6 +6134,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-L">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsV"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -6137,6 +6149,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillTridentZNeo"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6193,6 +6206,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-5800X3D"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
@@ -6221,6 +6235,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonIIX4-630"/>
         <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
@@ -6277,6 +6292,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyOWL"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6291,6 +6307,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_X470-Pro">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen3-3200G"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroDR412L-CL02-LR32"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
@@ -6305,6 +6322,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_X670-P">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDFX-8350"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GeIL-EVO-V"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
@@ -6333,6 +6351,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Pro_Q670M-C-CSM_LGA_1700">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillFlareX5"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6347,6 +6366,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Pro_WS_W480-ACE_LGA_1200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialBallistix"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -6375,6 +6395,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_ROG_STRIX_Z790-H_Gaming">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsS5"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6543,6 +6564,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-F2A55M-DS2_FM2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K"/>
         <MotherboardDDR2Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#VisiontekAdrenaline"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
@@ -6571,6 +6593,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDK6-2-500"/>
         <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
@@ -6585,6 +6608,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_W480_VISION_D">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR4"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -6599,6 +6623,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-3900X"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceVulcanZ"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
@@ -6845,6 +6870,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_FM2-A55M-E33_FM2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K"/>
         <MotherboardDDRRam rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCT12864Z40B"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
@@ -6873,6 +6899,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MAG_X670E_TOMAHAWK">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
         <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzenThreadripperPRO-5965WX"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceDelta"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
@@ -6887,6 +6914,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MAG_Z790_TOMAHAWK">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400"/>
         <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCL40"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
@@ -6929,6 +6957,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MPG_Z490_GAMING_EDGE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -6999,6 +7028,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_Z490GAPLUS_LGA_1200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
         <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500"/>
         <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixUnbufferedServerMemory"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
@@ -7027,7 +7057,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ASUS_ROG_Strix_G10">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6900_XT"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_PRO_B650M-A"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7038,7 +7068,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Acer_Aspire_TC-1760-EB13">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_R9_Fury_X"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Z690M-ITX"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7049,7 +7079,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#CLX_Set_Gaming_Desktop">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_PRO_B650M-A"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Fatal1ty_X470"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1169.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7060,7 +7090,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Comtrade_Desktop">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_970"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_Z490GAPLUS_LGA_1200"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">435</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7069,8 +7099,9 @@
     <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Dell_Gaming_OptiPlex_Desktop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Dell_Gaming_OptiPlex_Desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6500_XT"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">439.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7081,7 +7112,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_290_G4_MT_47M23EA">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_3050"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_TUF_GAMING_H570-PRO"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-L"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">780</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7092,7 +7123,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_All_in_one">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6950_XT"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_X470-Pro"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">956.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7103,7 +7134,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Lenovo_Legion_Gaming_PC_-_Raven_Black">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_7900_XT"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1699.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7114,7 +7145,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#VENOMUS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_1650"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MPG_Z390_GAMING_PRO_CARBON"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7125,7 +7156,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Zotac_Mini_PC_ZBOX-CI622NANO-BE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_980"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_W480_VISION_D"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7136,7 +7167,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP+Gaming_PC_-_Mica_Silver">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
-        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     

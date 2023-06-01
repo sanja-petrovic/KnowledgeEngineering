@@ -82,6 +82,146 @@
     
 
 
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDCpuChipsetCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDCpuChipsetCompatibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDCpu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AmdChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDMotherboardChipset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDMotherboardChipset">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#MotherboardChipset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDMotherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AmdChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleCpuChipsetCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleCpuChipsetCompatibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleCpu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleMotherboardChipset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleMotherboardChipset">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#MotherboardChipset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleLogicboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AppleChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerGpu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerGpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#GPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerMotherboard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerMotherboard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#CpuChipsetCompatibility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCpu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelMotherboardChipset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelMotherboardChipset">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#MotherboardChipset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelMotherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelChipset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardCpu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardCpu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR2Ram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR2Ram">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#DDR2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR3Ram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR3Ram">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#DDR3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR4Ram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR4Ram">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#DDR4"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR5Ram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR5Ram">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#DDR5"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDRRam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDRRam">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#DDR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#RAM"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -3958,6 +4098,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#AsusLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#AsusLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Asus"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#ADP-65DWA"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#W16-045N3B"/>
@@ -4025,6 +4166,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HPLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#HPLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Laptop"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#DZ65195231"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90195333"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SK90A195231"/>
@@ -4060,6 +4202,7 @@
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#MacLaptop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#MacLaptop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Mac"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple140WUSB-CPA"/>
         <untitled-ontology-42:LaptopAcAdapterCompatibility rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Apple96WUSB-CPA"/>
         <untitled-ontology-2:ComputerManufacturer>MAC</untitled-ontology-2:ComputerManufacturer>
@@ -4173,7 +4316,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDA10-9700">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesA"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4196,7 +4339,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlon3000G">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlon"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4219,7 +4362,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonIIX4-630">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonII"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4242,7 +4385,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDAthlonX4"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4265,7 +4408,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDFX-8350">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSeriesFX"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4289,7 +4432,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDK6-2-500">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDK6-2"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
@@ -4313,7 +4456,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDPhenomIIX2-550">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDPhenomII"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.1</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4336,7 +4479,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen3-3200G">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen3"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4359,7 +4502,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen5-5600G">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen5"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4382,7 +4525,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-5800X3D">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4405,7 +4548,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-7700">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen7"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4428,7 +4571,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-3900X">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4451,7 +4594,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-5950X">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDRyzen9"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4472,7 +4615,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzenThreadripperPRO-5965WX">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDThreadripper"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.50</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4495,7 +4638,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDSempron2650">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AMDSempron"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <AMDCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.45</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>AMD</untitled-ontology-2:HardwareManufacturer>
@@ -4518,6 +4661,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCeleron"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4539,6 +4685,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Duo"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.66</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4561,6 +4710,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Extreme"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.93</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4583,6 +4735,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2QuadQ9550">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCore2Quad"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.83</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4606,6 +4761,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCoreDuo"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.00</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4628,6 +4785,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei3"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.50</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4650,6 +4811,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.30</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4671,6 +4836,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei5"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.10</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4693,6 +4862,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei7-13700K">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei7"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4737,6 +4910,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelCorei9"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.40</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4760,6 +4935,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelPentium"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.70</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4782,6 +4961,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelXeonGold5317">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#IntelXeon"/>
+        <IntelCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.00</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Intel</untitled-ontology-2:HardwareManufacturer>
@@ -4844,7 +5024,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Cpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Chip"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1Chip"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -4866,7 +5046,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1MaxCpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipMax"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipMax"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -4888,7 +5068,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ProCpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipPro"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipPro"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -4910,7 +5090,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1UltraCpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M1ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipUltra"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M1ChipUltra"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -4962,7 +5142,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Cpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Chip"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2Chip"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -4984,7 +5164,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2MaxCpu"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -5006,7 +5186,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#M2ChipCpu"/>
-        <untitled-ontology-2:CpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu"/>
+        <AppleCpuChipsetCompatibility rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#M2ProCpu"/>
         <untitled-ontology-2:ClockSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.49</untitled-ontology-2:ClockSpeed>
         <untitled-ontology-2:CoreCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:CoreCount>
         <untitled-ontology-2:HardwareManufacturer>Apple</untitled-ontology-2:HardwareManufacturer>
@@ -5822,7 +6002,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASROCK_Pro_Series_A620M">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA620"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA620"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCL40"/>
         <untitled-ontology-2:HardwareManufacturer>ASROCK</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">124.99</untitled-ontology-2:PriceEur>
@@ -5835,7 +6016,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B450M">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB450"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB450"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR4"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.99</untitled-ontology-2:PriceEur>
@@ -5848,7 +6030,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei3-13100"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#AdataXPGLancer"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</untitled-ontology-2:PriceEur>
@@ -5861,7 +6045,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB760"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13400"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR5"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</untitled-ontology-2:PriceEur>
@@ -5874,7 +6060,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Fatal1ty_X470">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDPhenomIIX2-550"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceLPX"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109.99</untitled-ontology-2:PriceEur>
@@ -5887,7 +6075,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_H570_STEEL_LEGEND">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH570"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH570"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialBallistix"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.99</untitled-ontology-2:PriceEur>
@@ -5900,7 +6089,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_H670M_PRO_RS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeance"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139.99</untitled-ontology-2:PriceEur>
@@ -5913,7 +6104,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_IMB-1211-D_LGA_1151">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ370"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ370"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">254.99</untitled-ontology-2:PriceEur>
@@ -5926,7 +6118,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-D">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCeleronG6900"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#G.SkillTridentZRoyal"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370.0</untitled-ontology-2:PriceEur>
@@ -5939,7 +6133,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-L">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ470E"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsV"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410.0</untitled-ontology-2:PriceEur>
@@ -5952,7 +6148,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillTridentZNeo"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</untitled-ontology-2:PriceEur>
@@ -5965,7 +6163,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Z590_EXTREME_LGA">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ590"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ590"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonFuryBeastDDR4"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</untitled-ontology-2:PriceEur>
@@ -5978,7 +6177,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Z690M-ITX">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ690"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ690"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonKTD-PE432ES8_16G"/>
         <untitled-ontology-2:HardwareManufacturer>ASRock</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</untitled-ontology-2:PriceEur>
@@ -5991,7 +6191,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_A85XM-A_FM2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA85X"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA85X"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.0</untitled-ontology-2:PriceEur>
@@ -6004,7 +6205,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen7-5800X3D"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">209.99</untitled-ontology-2:PriceEur>
@@ -6017,7 +6220,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Intel_Q370M">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ370"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ370"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixUnbufferedServerMemory"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">138.99</untitled-ontology-2:PriceEur>
@@ -6030,7 +6234,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonIIX4-630"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0</untitled-ontology-2:PriceEur>
@@ -6043,7 +6249,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M5A99X_EVO">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD990X"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD990X"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">158.7</untitled-ontology-2:PriceEur>
@@ -6056,7 +6263,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_PRO_Q570M-C">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ570"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ570"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamXtreemC14"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">157.0</untitled-ontology-2:PriceEur>
@@ -6070,6 +6278,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_B450M-A">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
         <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB450"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixUnbufferedServerMemory"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79.99</untitled-ontology-2:PriceEur>
@@ -6082,7 +6291,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei5-13600K"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyOWL"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">138.99</untitled-ontology-2:PriceEur>
@@ -6095,7 +6306,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_X470-Pro">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX470"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen3-3200G"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroDR412L-CL02-LR32"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</untitled-ontology-2:PriceEur>
@@ -6108,7 +6321,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_X670-P">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDFX-8350"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GeIL-EVO-V"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">272.99</untitled-ontology-2:PriceEur>
@@ -6121,7 +6336,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_Z390-A_LGA_1151">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ390"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ390"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceVulcanZ"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">182.99</untitled-ontology-2:PriceEur>
@@ -6134,7 +6350,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Pro_Q670M-C-CSM_LGA_1700">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCorei9-9980XE_ExtremeEdition"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillFlareX5"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150.0</untitled-ontology-2:PriceEur>
@@ -6147,7 +6365,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Pro_WS_W480-ACE_LGA_1200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialBallistix"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">624.99</untitled-ontology-2:PriceEur>
@@ -6160,7 +6380,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_ROG_CROSSHAIR_VI_HERO">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX370"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX370"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#KingstonFuryBeastDDR4"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">292.5</untitled-ontology-2:PriceEur>
@@ -6173,7 +6394,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_ROG_STRIX_Z790-H_Gaming">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsS5"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">299.99</untitled-ontology-2:PriceEur>
@@ -6186,7 +6409,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_ROG_Strix_Z370-E_Gaming">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ370"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ370"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyOWL"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">242.8</untitled-ontology-2:PriceEur>
@@ -6199,7 +6423,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_ROG_Strix_Z690-E_Gaming">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ690"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ690"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamXtreemC14"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">349.99</untitled-ontology-2:PriceEur>
@@ -6212,7 +6437,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_TUF_GAMING_H570-PRO">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH570"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH570"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillTridentZNeo"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">179.0</untitled-ontology-2:PriceEur>
@@ -6225,7 +6451,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_TUF_GAMING_H670-PRO">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelQ670"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto"/>
         <untitled-ontology-2:HardwareManufacturer>ASUS</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">179.99</untitled-ontology-2:PriceEur>
@@ -6238,7 +6465,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#BIOSTAR_A780L3B_AM3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
         <untitled-ontology-2:HardwareManufacturer>BIOSTAR</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">264.99</untitled-ontology-2:PriceEur>
@@ -6251,7 +6478,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_AORUS_GA-AX370-Gaming">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX370"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX370"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsV"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">397.0</untitled-ontology-2:PriceEur>
@@ -6264,7 +6492,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_B650_AORUS_ELITE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB650"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB650"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#OLOyBlade"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">219.99</untitled-ontology-2:PriceEur>
@@ -6277,7 +6506,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-78LMT-S2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.8</untitled-ontology-2:PriceEur>
@@ -6290,7 +6520,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-970A-DS3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD970"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD970"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">156.5</untitled-ontology-2:PriceEur>
@@ -6303,7 +6534,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-990XA-UD3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD990X"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD990X"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139.99</untitled-ontology-2:PriceEur>
@@ -6316,7 +6548,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-B75M-D3H">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1155Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB75"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB75"/>
+        <MotherboardDDR2Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#Kingston-KVR667D2N5K2_4G"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1155</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">167.99</untitled-ontology-2:PriceEur>
@@ -6329,7 +6563,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-F2A55M-DS2_FM2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K"/>
+        <MotherboardDDR2Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#VisiontekAdrenaline"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.0</untitled-ontology-2:PriceEur>
@@ -6342,7 +6578,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-H77M-D3H_LGA_1155">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1155Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH77"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH77"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1155</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">157.0</untitled-ontology-2:PriceEur>
@@ -6355,7 +6592,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD770"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDK6-2-500"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.99</untitled-ontology-2:PriceEur>
@@ -6368,7 +6607,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_W480_VISION_D">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelW480"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2DuoE8200"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairDominatorPlatinumDDR4"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">378.0</untitled-ontology-2:PriceEur>
@@ -6381,7 +6622,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM4Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX570"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzen9-3900X"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceVulcanZ"/>
         <untitled-ontology-2:HardwareManufacturer>GIGABYTE</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM4</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">194.99</untitled-ontology-2:PriceEur>
@@ -6394,7 +6637,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#HUANANZHI_X79-ZD3_M-ATX">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA2011Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelX79"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelX79"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>HUANANZHI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA2011</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115.0</untitled-ontology-2:PriceEur>
@@ -6569,7 +6813,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_760GM-P21">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">119.0</untitled-ontology-2:PriceEur>
@@ -6582,7 +6827,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_760GM-P35_AM3">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD760G"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.99</untitled-ontology-2:PriceEur>
@@ -6595,7 +6841,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_970A-G43">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM3PlusMotherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD970"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMD970"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM3P</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">179.99</untitled-ontology-2:PriceEur>
@@ -6608,7 +6855,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_B75A-G43_LGA_1155">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1155Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB75"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelB75"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CorsairVengeanceProDDR3"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1155</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">168.0</untitled-ontology-2:PriceEur>
@@ -6621,7 +6869,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_FM2-A55M-E33_FM2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA55"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDAthlonX4-860K"/>
+        <MotherboardDDRRam rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCT12864Z40B"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.0</untitled-ontology-2:PriceEur>
@@ -6634,7 +6884,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_FM2-A85XA-G43">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#FM2Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA85X"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA85X"/>
+        <MotherboardDDR2Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#VisiontekAdrenaline"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>FM2</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</untitled-ontology-2:PriceEur>
@@ -6647,7 +6898,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MAG_X670E_TOMAHAWK">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDX670"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#AMDRyzenThreadripperPRO-5965WX"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#TeamgroupTForceDelta"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">309.99</untitled-ontology-2:PriceEur>
@@ -6660,7 +6913,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MAG_Z790_TOMAHAWK">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1700Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ790"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelPentiumGoldG7400"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#CrucialCL40"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1700</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">259.99</untitled-ontology-2:PriceEur>
@@ -6673,7 +6928,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MEG_Z590_UNIFY_LGA_1200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ590"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ590"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#G.SkillTridentZRoyal"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</untitled-ontology-2:PriceEur>
@@ -6686,7 +6942,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MPG_Z390_GAMING_PRO_CARBON">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ390"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ390"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillAres"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">194.5</untitled-ontology-2:PriceEur>
@@ -6699,7 +6956,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_MPG_Z490_GAMING_EDGE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCore2ExtremeQX6800"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#MushkinEnhancedRedlineStiletto"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.99</untitled-ontology-2:PriceEur>
@@ -6712,7 +6971,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_PRO_B650M-A">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB650"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDB650"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroMEM-DR564L-HL01-ER48"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">179.99</untitled-ontology-2:PriceEur>
@@ -6725,7 +6985,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_PRO_PRO_A620M-E">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#AM5Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA620"/>
+        <AMDMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#AMDA620"/>
+        <MotherboardDDR5Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillFlareX5"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>AM5</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84.99</untitled-ontology-2:PriceEur>
@@ -6738,7 +6999,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_X79A-GD45_Plus">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA2011Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelX79"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelX79"/>
+        <MotherboardDDR3Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillSniper"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA2011</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">389.99</untitled-ontology-2:PriceEur>
@@ -6751,7 +7013,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_Z370-A_PRO_LGA_1151">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1151Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ370"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ370"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#GSkillRipjawsV"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1151</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110.5</untitled-ontology-2:PriceEur>
@@ -6764,7 +7027,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_Z490GAPLUS_LGA_1200">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1200Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelZ490"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-10#IntelCoreDuoT2500"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#NemixUnbufferedServerMemory"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1200</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">154.99</untitled-ontology-2:PriceEur>
@@ -6777,11 +7042,133 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#MSI_ZH77A-G43_LGA_1155">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#LGA1155Motherboard"/>
-        <untitled-ontology-2:MotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH77"/>
+        <IntelMotherboardChipset rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#IntelH77"/>
+        <MotherboardDDR4Ram rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-21#SuperMicroDR412L-CL02-LR32"/>
         <untitled-ontology-2:HardwareManufacturer>MSI</untitled-ontology-2:HardwareManufacturer>
         <untitled-ontology-2:MotherboardType>LGA1155</untitled-ontology-2:MotherboardType>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">198.0</untitled-ontology-2:PriceEur>
         <untitled-ontology-26:NumberOfRAMSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-26:NumberOfRAMSlots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ASUS_ROG_Strix_G10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ASUS_ROG_Strix_G10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6900_XT"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Acer_Aspire_TC-1760-EB13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Acer_Aspire_TC-1760-EB13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_R9_Fury_X"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#CLX_Set_Gaming_Desktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#CLX_Set_Gaming_Desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Fatal1ty_X470"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1169.99</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Comtrade_Desktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Comtrade_Desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_970"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">435</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Dell_Gaming_OptiPlex_Desktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Dell_Gaming_OptiPlex_Desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6500_XT"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">439.99</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_290_G4_MT_47M23EA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_290_G4_MT_47M23EA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_3050"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-L"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">780</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_All_in_one -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP_All_in_one">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6950_XT"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">956.99</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Lenovo_Legion_Gaming_PC_-_Raven_Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Lenovo_Legion_Gaming_PC_-_Raven_Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_7900_XT"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1699.99</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#VENOMUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#VENOMUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_1650"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Zotac_Mini_PC_ZBOX-CI622NANO-BE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Zotac_Mini_PC_ZBOX-CI622NANO-BE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_980"/>
+        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465</untitled-ontology-2:PriceEur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP+Gaming_PC_-_Mica_Silver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#HP+Gaming_PC_-_Mica_Silver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3"/>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
 
@@ -6876,6 +7263,32 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#CorsairPsu"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#SeasonicPsu"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDCpuChipsetCompatibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleCpuChipsetCompatibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDMotherboardChipset"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleMotherboardChipset"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelMotherboardChipset"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR2Ram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR3Ram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR4Ram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDR5Ram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#MotherboardDDRRam"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

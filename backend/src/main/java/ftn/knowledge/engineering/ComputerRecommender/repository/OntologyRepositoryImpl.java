@@ -2,6 +2,7 @@ package ftn.knowledge.engineering.ComputerRecommender.repository;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.ClassIris;
 import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;
+import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.*;
@@ -78,6 +79,24 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     }
 
     @Override
+    public List<OWLNamedIndividual> getDesktopIndividuals() {
+        OWLDataFactory df = this.manager.getOWLDataFactory();
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(this.ontology);
+        OWLClass computerClass = df.getOWLClass(ClassIris.computerIri);
+        OWLClass desktopClass = df.getOWLClass(ClassIris.desktopIri);
+        List<OWLNamedIndividual> desktopIndividuals = new ArrayList<>();
+        for (OWLClassExpression computerType : EntitySearcher.getSubClasses(computerClass, this.ontology).toList()) {
+            if(reasoner.getEquivalentClasses(computerType).contains(desktopClass)) {
+                var instances = reasoner.getInstances(computerType.asOWLClass(), true);
+                desktopIndividuals.addAll(instances.getFlattened());
+            }
+        }
+
+        return desktopIndividuals;
+    }
+
+    @Override
     public List<OWLNamedIndividual> getRamIndividuals() {
         OWLDataFactory df = this.manager.getOWLDataFactory();
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
@@ -95,6 +114,97 @@ public class OntologyRepositoryImpl implements OntologyRepository {
     public List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri) {
         return EntitySearcher.getDataPropertyValues(individual, this.manager.getOWLDataFactory().getOWLDataProperty(dataPropertyIri), this.ontology).toList();
     }
+    public List<OWLNamedIndividual> getObjectPropertyValueOfIndividual(OWLNamedIndividual individual, String objectPropertyIri){
+        OWLObjectProperty objectProperty = this.manager.getOWLDataFactory().getOWLObjectProperty(objectPropertyIri);
+        List<OWLNamedIndividual> namedIndividuals = new ArrayList<>();
+
+        EntitySearcher.getObjectPropertyValues(individual, objectProperty, this.ontology)
+                .forEach(property -> {
+                            OWLNamedIndividual namedIndividual = property.asOWLNamedIndividual();
+                            namedIndividuals.add(namedIndividual);
+
+                });
+
+        return namedIndividuals;
+    }
+    public List<IRI> getObjectPropertyIRIsOfIndividual(OWLNamedIndividual individual) {
+        List<IRI> objectPropertyIRIs = new ArrayList<>();
+
+        for (OWLObjectPropertyAssertionAxiom axiom : ontology.getObjectPropertyAssertionAxioms(individual)) {
+            OWLObjectPropertyExpression propertyExpression = axiom.getProperty();
+            if (propertyExpression instanceof OWLObjectProperty) {
+                OWLObjectProperty objectProperty = (OWLObjectProperty) propertyExpression;
+                IRI propertyIRI = objectProperty.getIRI();
+                objectPropertyIRIs.add(propertyIRI);
+            }
+        }
+
+        return objectPropertyIRIs;
+    }
+
+    public List<OWLNamedIndividual> getObjectPropertyValueOfChipsetFromSuperclass(OWLNamedIndividual individual){
+        List<IRI> objectPropertyIris = this.getObjectPropertyIRIsOfIndividual(individual);
+        String myPropertyIri = null;
+        for(IRI objectPropertyIri : objectPropertyIris){
+            switch (objectPropertyIri.toString()){
+                case PropertyIris.amdMotherboardChipsetIri ->
+                    myPropertyIri = PropertyIris.amdMotherboardChipsetIri;
+                case PropertyIris.intelMotherboardChipsetIri ->
+                    myPropertyIri = PropertyIris.intelMotherboardChipsetIri;
+                case PropertyIris.appleMotherboardChipserIri ->
+                    myPropertyIri = PropertyIris.appleMotherboardChipserIri;
+            }
+        }
+        if(myPropertyIri!=null) {
+            return getObjectPropertyValueOfIndividual(individual, myPropertyIri);
+        }
+        return null;
+    }
+
+    @Override
+    public List<OWLNamedIndividual> getObjectPropertyValueOfRAMFromSuperclass(OWLNamedIndividual individual) {
+        List<IRI> objectPropertyIris = this.getObjectPropertyIRIsOfIndividual(individual);
+        String myPropertyIri = null;
+        for(IRI objectPropertyIri : objectPropertyIris){
+            switch (objectPropertyIri.toString()){
+                case PropertyIris.motherboardDdrIri ->
+                        myPropertyIri = PropertyIris.motherboardDdrIri;
+                case PropertyIris.motherboardDdr2Iri ->
+                        myPropertyIri = PropertyIris.motherboardDdr2Iri;
+                case PropertyIris.motherboardDdr3Iri ->
+                        myPropertyIri = PropertyIris.motherboardDdr3Iri;
+                case PropertyIris.motherboardDdr4Iri ->
+                    myPropertyIri = PropertyIris.motherboardDdr4Iri;
+                case PropertyIris.motherboardDdr5Iri ->
+                    myPropertyIri = PropertyIris.motherboardDdr5Iri;
+            }
+        }
+        if(myPropertyIri!=null) {
+            return getObjectPropertyValueOfIndividual(individual, myPropertyIri);
+        }
+        return null;
+    }
+
+    @Override
+    public List<OWLNamedIndividual> getObjectPropertyValueOfChipsetsForCpusFromSuperclass(OWLNamedIndividual individual) {
+        List<IRI> objectPropertyIris = this.getObjectPropertyIRIsOfIndividual(individual);
+        String myPropertyIri = null;
+        for(IRI objectPropertyIri : objectPropertyIris){
+            switch (objectPropertyIri.toString()){
+                case PropertyIris.amdCpuChipsetIri ->
+                        myPropertyIri = PropertyIris.amdCpuChipsetIri;
+                case PropertyIris.intelCpuChipsetIri ->
+                        myPropertyIri = PropertyIris.intelCpuChipsetIri;
+                case PropertyIris.appleCpuChipsetIri ->
+                        myPropertyIri = PropertyIris.appleCpuChipsetIri;
+            }
+        }
+        if(myPropertyIri!=null) {
+            return getObjectPropertyValueOfIndividual(individual, myPropertyIri);
+        }
+        return null;
+    }
+
 
     @Override
     public List<OWLNamedIndividual> getChipsetIndividuals() {

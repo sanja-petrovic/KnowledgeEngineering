@@ -1,6 +1,7 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
 import ftn.knowledge.engineering.ComputerRecommender.converter.ChipsetConverter;
+import ftn.knowledge.engineering.ComputerRecommender.converter.DesktopConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
 
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
@@ -23,14 +24,15 @@ public class OntologyController {
     private final MotherboardConverter motherboardConverter;
     private final GPUConverter gpuConverter;
     private final ChipsetConverter chipsetConverter;
-
+    private final DesktopConverter desktopConverter;
     @Autowired
     public OntologyController(OntologyService service, MotherboardConverter motherboardConverter, GPUConverter gpuConverter,
-                              ChipsetConverter chipsetConverter) {
+                              ChipsetConverter chipsetConverter, DesktopConverter desktopConverter) {
         this.service = service;
         this.motherboardConverter = motherboardConverter;
         this.gpuConverter = gpuConverter;
         this.chipsetConverter = chipsetConverter;
+        this.desktopConverter = desktopConverter;
     }
 
     @GetMapping("/cpu/recommend")
@@ -164,6 +166,11 @@ public class OntologyController {
         List<OWLNamedIndividual> mbs = this.service.upgradeMotherboard(motherboard);
         List<Motherboard> mb = this.motherboardConverter.convertFromOwlIndividuals(mbs);
         return ResponseEntity.ok(mb);
+    }
+    @GetMapping("/desktop")
+    @ApiOperation(value = "Get desktops ", httpMethod = "GET")
+    public ResponseEntity<?> GetDesktops(){
+        return ResponseEntity.ok(this.desktopConverter.convertFromOwlIndividuals(this.service.getDesktops()));
     }
 
 }

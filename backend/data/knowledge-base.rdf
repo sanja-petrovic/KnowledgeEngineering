@@ -4675,6 +4675,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-20:CpuGeneration>Celeron</untitled-ontology-20:CpuGeneration>
         <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
     </owl:NamedIndividual>
@@ -4699,6 +4700,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Core2Duo</untitled-ontology-20:CpuGeneration>
         <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
@@ -4749,6 +4751,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">323</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</untitled-ontology-2:TDP>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Core2Quad</untitled-ontology-20:CpuGeneration>
@@ -4774,6 +4777,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>CoreDuo</untitled-ontology-20:CpuGeneration>
         <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
@@ -4800,6 +4804,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei3</untitled-ontology-20:CpuGeneration>
         <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
@@ -4824,7 +4829,9 @@
         <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-2:L3CacheSize>
         <untitled-ontology-2:Name>Intel® Core™ i5-13400</untitled-ontology-2:Name>
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">243</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei5</untitled-ontology-20:CpuGeneration>
         <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
@@ -4848,12 +4855,13 @@
         <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:L2CacheSize>
         <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:L3CacheSize>
         <untitled-ontology-2:Name>Intel Core i5-13600K</untitled-ontology-2:Name>
-        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:OverclockingSupport>
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei5</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-20:OverclockingSupport>
     </owl:NamedIndividual>
     
 
@@ -4877,6 +4885,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">477</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei7</untitled-ontology-20:CpuGeneration>
     </owl:NamedIndividual>
@@ -4898,6 +4907,7 @@
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">550</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</untitled-ontology-2:TDP>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei9</untitled-ontology-20:CpuGeneration>
@@ -4920,13 +4930,14 @@
         <untitled-ontology-2:L2CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</untitled-ontology-2:L2CacheSize>
         <untitled-ontology-2:L3CacheSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</untitled-ontology-2:L3CacheSize>
         <untitled-ontology-2:Name>Intel® Core™ i9-9980XE Extreme Edition</untitled-ontology-2:Name>
-        <untitled-ontology-2:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-2:OverclockingSupport>
         <untitled-ontology-2:PlatformCompatibility>DESKTOP</untitled-ontology-2:PlatformCompatibility>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2135</untitled-ontology-2:PriceEur>
         <untitled-ontology-2:SupportsHyperthreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsHyperthreading>
+        <untitled-ontology-2:SupportsSimultaneousMultithreading rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-2:SupportsSimultaneousMultithreading>
         <untitled-ontology-2:TDP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">165</untitled-ontology-2:TDP>
         <untitled-ontology-2:ThreadCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</untitled-ontology-2:ThreadCount>
         <untitled-ontology-20:CpuGeneration>Corei9</untitled-ontology-20:CpuGeneration>
+        <untitled-ontology-20:OverclockingSupport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-20:OverclockingSupport>
     </owl:NamedIndividual>
     
 
@@ -7156,7 +7167,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#Zotac_Mini_PC_ZBOX-CI622NANO-BE">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_980"/>
-        <MotherboardCpu rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
+        <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     

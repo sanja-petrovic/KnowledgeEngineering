@@ -22,8 +22,8 @@ public class CPU extends Base {
     private boolean supportsMultithreading;
     private boolean supportsOverclocking;
     private boolean hasIntegratedGraphics;
-
-    public CPU(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility, String generation, double clockSpeed, int coreCount, int threadCount, int tdp, List<Double> cacheSizes, boolean supportsMultithreading, boolean supportsOverclocking, boolean hasIntegratedGraphics) {
+    private List<Chipset> compatibleChipsets;
+    public CPU(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility, String generation, double clockSpeed, int coreCount, int threadCount, int tdp, List<Double> cacheSizes, boolean supportsMultithreading, boolean supportsOverclocking, boolean hasIntegratedGraphics, List<Chipset>compatibleChipsets) {
         super(name, manufacturer, priceEur, platformCompatibility);
         this.generation = generation;
         this.clockSpeed = clockSpeed;
@@ -34,5 +34,6 @@ public class CPU extends Base {
         this.supportsMultithreading = supportsMultithreading;
         this.supportsOverclocking = supportsOverclocking;
         this.hasIntegratedGraphics = hasIntegratedGraphics;
+        this.compatibleChipsets = compatibleChipsets;
     }
 }

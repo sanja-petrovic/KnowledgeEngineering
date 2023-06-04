@@ -1,4 +1,4 @@
-import "../styles/globals.scss"
+//import  "../styles/globals.scss";
 import { ConfigProvider } from "antd";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";

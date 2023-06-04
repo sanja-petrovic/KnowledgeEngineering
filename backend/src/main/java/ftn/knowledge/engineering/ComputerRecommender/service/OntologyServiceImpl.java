@@ -312,6 +312,32 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
+    public OWLNamedIndividual getCPUByName(String name) {
+        return this.getByName(name, repository.getCpuIndividuals());
+
+    }
+
+    @Override
+    public OWLNamedIndividual getMotherboardByName(String name) {
+        return this.getByName(name, repository.getMotherboardIndividuals());
+    }
+
+    @Override
+    public OWLNamedIndividual getGPUByName(String name)
+    {
+        return this.getByName(name, repository.getGPUIndividuals());
+    }
+
+    public OWLNamedIndividual getByName(String name, List<OWLNamedIndividual> individuals){
+        for(OWLNamedIndividual individual : individuals){
+            if(individual.getIRI().getShortForm().equals(name)){
+                return individual;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public List<OWLNamedIndividual> upgradeMotherboard(Motherboard motherboard) {
         List<OWLNamedIndividual> upgradeCandidates = getMotherboardsByType(motherboard.getType());
         List<OWLNamedIndividual> upgrades = new ArrayList<>();
@@ -345,6 +371,11 @@ public class OntologyServiceImpl implements OntologyService {
             }
         }
         return upgrades;
+    }
+
+    @Override
+    public List<OWLNamedIndividual> getDesktops() {
+        return this.repository.getDesktopIndividuals();
     }
 
 }

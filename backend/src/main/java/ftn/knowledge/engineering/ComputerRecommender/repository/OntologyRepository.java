@@ -15,7 +15,7 @@ public interface OntologyRepository {
     void saveToFile(File file);
 
     List<OWLNamedIndividual> getCpuIndividuals();
-
+    List<OWLNamedIndividual> getDesktopIndividuals();
     List<OWLNamedIndividual> getRamIndividuals();
 
     List<OWLNamedIndividual> getChipsetIndividuals();
@@ -29,4 +29,9 @@ public interface OntologyRepository {
     List<OWLNamedIndividual> getPowerSupplyIndividuals();
 
     List<OWLLiteral> getDataPropertyValueOfIndividual(OWLNamedIndividual individual, String dataPropertyIri);
+     List<OWLNamedIndividual> getObjectPropertyValueOfIndividual(OWLNamedIndividual individual, String objectPropertyIri);
+
+     List<OWLNamedIndividual> getObjectPropertyValueOfChipsetFromSuperclass(OWLNamedIndividual individual);
+    List<OWLNamedIndividual> getObjectPropertyValueOfRAMFromSuperclass(OWLNamedIndividual individual);
+    List<OWLNamedIndividual> getObjectPropertyValueOfChipsetsForCpusFromSuperclass(OWLNamedIndividual individual);
 }

@@ -1,9 +1,6 @@
 package ftn.knowledge.engineering.ComputerRecommender.service;
 
-import ftn.knowledge.engineering.ComputerRecommender.model.Chipset;
-import ftn.knowledge.engineering.ComputerRecommender.model.GPU;
-import ftn.knowledge.engineering.ComputerRecommender.model.Motherboard;
-import ftn.knowledge.engineering.ComputerRecommender.model.MotherboardType;
+import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 
 import java.util.List;
@@ -23,6 +20,10 @@ public interface OntologyService {
     List<OWLNamedIndividual> upgradeMotherboard(Motherboard motherboard);
 
     List<OWLNamedIndividual> upgradeGPU(GPU gpu);
-
+    List<OWLNamedIndividual> getDesktops();
     List<OWLNamedIndividual> getMotherboardsByType(MotherboardType type);
+    OWLNamedIndividual getCPUByName(String name);
+    OWLNamedIndividual getMotherboardByName(String name);
+    OWLNamedIndividual getGPUByName(String name);
+
 }

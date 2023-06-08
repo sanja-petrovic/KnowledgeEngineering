@@ -211,7 +211,7 @@ RULEBLOCK development_rules
      RULE 18 : IF gpu_clock_speed_mhz IS excellent
                THEN development IS good;
 
-     RULE 19 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average OR power_supply_watts IS good;
+     RULE 19 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average OR power_supply_watts IS good
                THEN development IS average;
 
      RULE 20 : IF power_supply_watts IS excellent;
@@ -263,6 +263,97 @@ RULEBLOCK development_rules
      RULE 35: IF (cpu_core_count IS awful OR cpu_core_count IS bad OR cpu_clock_speed_ghz IS awful OR cpu_clock_speed_ghz IS bad)
               AND ram_size_gb IS good
               THEN development IS bad;
+END_RULEBLOCK
+
+RULEBLOCK crypto_rules
+    AND : MIN;
+    ACT : MIN;
+    ACCU : MAX;
+
+     RULE 1 : IF cpu_clock_speed_ghz IS awful OR cpu_clock_speed_ghz IS good OR cpu_clock_speed_ghz IS excellent
+              THEN crypto IS bad;
+
+     RULE 2 : IF cpu_clock_speed_ghz IS bad OR cpu_clock_speed_ghz IS average
+              THEN crypto IS good;
+
+     RULE 3 : IF cpu_core_count IS bad OR cpu_core_count IS average OR cpu_core_count IS good
+              THEN crypto IS good;
+
+     RULE 4 : IF cpu_core_count IS excellent
+              THEN crypto IS bad;
+
+     RULE 5 : IF cpu_thread_count IS bad OR cpu_thread_count IS average OR cpu_thread_count IS good
+              THEN crypto IS good;
+
+     RULE 6 : IF cpu_thread_count IS excellent
+              THEN crypto IS bad;
+
+     RULE 7 : IF gpu_vram_size_gb IS awful OR gpu_vram_size_gb IS bad
+               THEN crypto IS awful;
+
+     RULE 8 : IF gpu_vram_size_gb IS average
+               THEN crypto IS bad;
+
+     RULE 9 : IF gpu_vram_size_gb IS good
+              THEN crypto IS good;
+
+     RULE 10 : IF gpu_vram_size_gb IS excellent
+               THEN crypto IS excellent;
+
+     RULE 11 : IF gpu_clock_speed_mhz IS awful OR gpu_clock_speed_mhz IS bad
+               THEN crypto IS awful;
+
+     RULE 12 : IF gpu_clock_speed_mhz IS average
+               THEN crypto IS bad;
+
+     RULE 13 : IF gpu_clock_speed_mhz IS good
+               THEN crypto IS good;
+
+     RULE 14 : IF gpu_clock_speed_mhz IS excellent
+               THEN crypto IS excellent;
+
+     RULE 15 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average
+               THEN crypto IS awful;
+
+     RULE 16 : IF power_supply_watts IS good
+               THEN crypto IS good;
+
+     RULE 17 : IF power_supply_watts IS excellent
+               THEN crypto IS excellent;
+
+     RULE 18 : IF ram_size_gb IS awful OR ram_size_gb IS bad
+               THEN crypto IS excellent;
+
+     RULE 19 : IF ram_size_gb IS average
+               THEN crypto IS good;
+
+     RULE 20 : IF ram_size_gb IS good OR ram_size_gb IS excellent
+               THEN crypto IS bad;
+
+     RULE 21 : IF ram_speed_mhz IS awful OR ram_speed_mhz IS bad
+               THEN crypto IS excellent;
+
+     RULE 22 : IF ram_speed_mhz IS average
+               THEN crypto IS good;
+
+     RULE 23 : IF ram_speed_mhz IS good OR ram_speed_mhz IS excellent
+               THEN crypto IS bad;
+
+     RULE 24: IF storage_capacity_gb IS awful
+              THEN crypto IS bad;
+
+     RULE 25: IF storage_capacity_gb IS bad OR storage_capacity_gb IS average OR storage_capacity_gb IS good
+              THEN crypto IS average;
+
+     RULE 26: IF storage_capacity_gb IS excellent
+              THEN crypto IS good;
+
+     RULE 27: IF (gpu_vram_size_gb IS awful OR gpu_vram_size_gb IS bad OR gpu_vram_size_gb IS average) AND (power_supply_watts IS good OR power_supply_watts IS excellent)
+              THEN crypto IS bad;
+
+     RULE 28: IF (power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average) AND (gpu_vram_size_gb IS good OR gpu_vram_size_gb IS excellent)
+                   THEN crypto IS bad;
+
 END_RULEBLOCK
 
 END_FUNCTION_BLOCK

@@ -65,6 +65,13 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/jFuzzyLogic.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.unbbayes</groupId>
+			<artifactId>unbbayes</artifactId>
+			<version>4.22.18</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/unbbayes-4.22.18.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>

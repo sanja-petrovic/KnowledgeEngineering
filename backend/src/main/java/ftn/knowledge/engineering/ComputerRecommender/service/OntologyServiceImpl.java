@@ -89,11 +89,11 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendCpuUpgrades(String cpuModel) {
+    public List<String> recommendCpuUpgrades(Desktop desktop) {
         List<OWLNamedIndividual> cpuIndividuals = this.repository.getCpuIndividuals();
         List<String> possibleUpgrades = new ArrayList<>();
 
-        OWLNamedIndividual enteredCpu = this.getIndividual(cpuIndividuals, cpuModel);
+        OWLNamedIndividual enteredCpu = this.getIndividual(cpuIndividuals, desktop.getMotherboard().getCpu().getName());
         String enteredCpuManufacturer = this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.hardwareManufacturerIri).get(0).getLiteral();
         double enteredCpuClockSpeed = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.clockSpeedIri).get(0).getLiteral());
         int enteredCoreCount = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(enteredCpu, PropertyIris.coreCountIri).get(0).getLiteral());
@@ -112,8 +112,15 @@ public class OntologyServiceImpl implements OntologyService {
             boolean isSameManufacturer = enteredCpuManufacturer.equals(individualManufacturer);
             boolean isBetterClockSpeed = individualClockSpeed > enteredCpuClockSpeed;
             boolean isBetterCoreCount = individualCoreCount > enteredCoreCount;
-
-            if (isSameManufacturer && (isBetterClockSpeed || isBetterCoreCount)) {
+            boolean isCompatibleWithChipset = false;
+            for(OWLNamedIndividual chipset : this.repository.getObjectPropertyValueOfChipsetsForCpusFromSuperclass(cpu))
+            {
+                if(chipset.getIRI().getShortForm().equals(desktop.getMotherboard().getChipset().getName()))
+                {
+                    isCompatibleWithChipset = true;
+                }
+            }
+            if (isSameManufacturer && (isBetterClockSpeed || isBetterCoreCount)&& isCompatibleWithChipset) {
                 possibleUpgrades.add(cpu.getIRI().getShortForm());
             }
         }
@@ -122,11 +129,11 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendRamUpgrades(String ramModel) {
+    public List<String> recommendRamUpgrades(Desktop desktop) {
         List<OWLNamedIndividual> ramIndividuals = this.repository.getRamIndividuals();
         List<String> possibleUpgrades = new ArrayList<>();
 
-        OWLNamedIndividual enteredRam = this.getIndividual(ramIndividuals, ramModel);
+        OWLNamedIndividual enteredRam = this.getIndividual(ramIndividuals, desktop.getMotherboard().getRam());
         int enteredRamSize = Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.ramSizeIri).get(0).getLiteral());
         double enteredFrequency = Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.frequencyIri).get(0).getLiteral());
         String enteredRamType = this.repository.getDataPropertyValueOfIndividual(enteredRam, PropertyIris.ramTypeIri).get(0).getLiteral();
@@ -142,11 +149,11 @@ public class OntologyServiceImpl implements OntologyService {
             var rt = this.repository.getDataPropertyValueOfIndividual(ram, PropertyIris.ramTypeIri);
             String individualRamType = rt.size() > 0 ? rt.get(0).getLiteral() : "";
 
-            boolean isSameOrBetterType = RAMType.valueOf(individualRamType).ordinal() >= RAMType.valueOf(enteredRamType).ordinal();
+            boolean isSameType = RAMType.valueOf(individualRamType).ordinal() == RAMType.valueOf(enteredRamType).ordinal();
             boolean isBiggerSize = individualRamSize > enteredRamSize;
             boolean isBetterFrequency = individualFrequency > enteredFrequency;
 
-            if (isSameOrBetterType && (isBiggerSize || isBetterFrequency)) {
+            if (isSameType && (isBiggerSize || isBetterFrequency)) {
                 possibleUpgrades.add(ram.getIRI().getShortForm());
             }
         }

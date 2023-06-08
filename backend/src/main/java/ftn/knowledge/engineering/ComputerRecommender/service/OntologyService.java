@@ -8,8 +8,8 @@ import java.util.List;
 public interface OntologyService {
     List<String> recommendCpus(Double clockSpeed, Integer coreCount, String manufacturer, Double minimumPrice, Double maximumPrice);
     List<String> recommendRams(String type, Integer size, Integer latency, Integer frequency, String manufacturer, Double minimumPrice, Double maximumPrice);
-    List<String> recommendCpuUpgrades(String cpuModel);
-    List<String> recommendRamUpgrades(String ramModel);
+    List<String> recommendCpuUpgrades(Desktop desktop);
+    List<String> recommendRamUpgrades(Desktop desktop);
     List<String> recommendChipsets(String chipsetType);
     List<String> recommendMotherboards(String type, double maxPrice, double minPrice, String manufacturer, int minRAMSlots, int maxRAMSlots);
     List<String> recommendGPU(double maxPrice, double minPrice, String manufacturer, int minVRAM, int maxVRAM, double minClockSpeed, double maxClockSpeed);

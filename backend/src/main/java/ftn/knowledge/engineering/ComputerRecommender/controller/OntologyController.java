@@ -119,16 +119,16 @@ public class OntologyController {
         return ResponseEntity.ok(this.service.recommendSPowerSupply(manufacturer != null ? manufacturer : "", type != null ? type : "", wattage != null ? wattage : 0, inputVoltageMin != null ? inputVoltageMin : Integer.MAX_VALUE, inputVoltageMax != null ? inputVoltageMax : Integer.MAX_VALUE, outputVoltage != null ? outputVoltage : Integer.MAX_VALUE, inputAmperage != null ? inputAmperage : Integer.MAX_VALUE, outputAmperage != null ? outputAmperage : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
     }
 
-    @GetMapping("/cpu/{model}/upgrade")
-    @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "GET")
-    public ResponseEntity<?> upgradeCpus(@PathVariable("model") String model) {
-        return ResponseEntity.ok(this.service.recommendCpuUpgrades(model));
+    @PutMapping("/cpu/upgrade")
+    @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "PUT")
+    public ResponseEntity<?> upgradeCpus(@RequestBody Desktop desktop) {
+        return ResponseEntity.ok(this.service.recommendCpuUpgrades(desktop));
     }
 
-    @GetMapping("/ram/{model}/upgrade")
-    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "GET")
-    public ResponseEntity<?> upgradeRams(@PathVariable("model") String model) {
-        return ResponseEntity.ok(this.service.recommendRamUpgrades(model));
+    @PutMapping("/ram/upgrade")
+    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "PUT")
+    public ResponseEntity<?> upgradeRams(@RequestBody Desktop desktop) {
+        return ResponseEntity.ok(this.service.recommendRamUpgrades(desktop));
     }
 
     @GetMapping("/chipset/upgrade")

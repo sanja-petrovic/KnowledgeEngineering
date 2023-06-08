@@ -137,6 +137,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerPowerSupply -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerPowerSupply">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#PowerSupply"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerStorage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Computer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#Storage"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility">
@@ -7071,6 +7091,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6900_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7082,6 +7104,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_R9_Fury_X"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7093,6 +7117,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Fatal1ty_X470"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-750"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Ultra3D"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1169.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7104,6 +7130,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_970"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">435</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7115,6 +7143,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6500_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA450GM"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">439.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7126,6 +7156,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_3050"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-1220-L"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#ExtremePro"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">780</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7137,6 +7169,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6950_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-750"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">956.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7148,6 +7182,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_7900_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1699.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7157,8 +7193,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#VENOMUS">
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
-        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_1650"/>
+        <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4090"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#RM1200XSHIFT"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7170,6 +7208,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_980"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7181,6 +7221,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     

@@ -78,9 +78,9 @@ END_FUZZIFY
 FUZZIFY ram_speed_mhz
     TERM awful := (0, 1) (400, 1) (600, 0);
     TERM bad := (600, 0) (800, 1) (1500, 0);
-    TERM average := (1400, 0) (2200, 1) (3100, 0);
-    TERM good := (3000, 0) (3200, 1) (3500, 0);
-    TERM excellent := (3400, 0) (5000, 1);
+    TERM average := (1400, 0) (2200, 1) (2800, 0);
+    TERM good := (2700, 0) (3000, 1) (3300, 0);
+    TERM excellent := (3200, 0) (5000, 1);
 END_FUZZIFY
 
 FUZZIFY storage_capacity_gb
@@ -196,22 +196,22 @@ RULEBLOCK development_rules
      RULE 13 : IF gpu_vram_size_gb IS awful
                THEN development IS bad;
 
-     RULE 14 : IF gpu_vram_size_gb IS bad OR gpu_vram_size_gb IS average OR gpu_vram_size_gb IS good
+     RULE 14 : IF gpu_vram_size_gb IS bad OR gpu_vram_size_gb IS excellent OR gpu_vram_size_gb IS good
                THEN development IS average;
 
-     RULE 15 : IF gpu_vram_size_gb IS excellent
+     RULE 15 : IF gpu_vram_size_gb IS average
                THEN development IS good;
 
      RULE 16 : IF gpu_clock_speed_mhz IS awful
                THEN development IS bad;
 
-     RULE 17 : IF gpu_clock_speed_mhz IS bad OR gpu_clock_speed_mhz IS average OR gpu_clock_speed_mhz IS good OR gpu_clock_speed_mhz IS excellent
+     RULE 17 : IF gpu_clock_speed_mhz IS bad OR gpu_clock_speed_mhz IS good OR gpu_clock_speed_mhz IS excellent
                THEN development IS average;
 
-     RULE 18 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average OR power_supply_watts IS good
+     RULE 18 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average
                THEN development IS average;
 
-     RULE 19 : IF power_supply_watts IS excellent
+     RULE 19 : IF power_supply_watts IS excellent OR power_supply_watts IS good
                THEN development IS good;
 
      RULE 20 : IF ram_size_gb IS awful
@@ -247,19 +247,28 @@ RULEBLOCK development_rules
      RULE 30: IF storage_capacity_gb IS awful
               THEN development IS bad;
 
-     RULE 31: IF storage_capacity_gb IS bad OR storage_capacity_gb IS average OR storage_capacity_gb IS good
+     RULE 31: IF storage_capacity_gb IS bad OR storage_capacity_gb IS average
               THEN development IS average;
 
-     RULE 32: IF storage_capacity_gb IS excellent
+     RULE 32: IF storage_capacity_gb IS excellent OR storage_capacity_gb IS good
               THEN development IS good;
 
-     RULE 33: IF ram_size_gb IS awful AND
+     RULE 33: IF (ram_size_gb IS awful OR ram_size_gb IS bad) AND
                  (cpu_core_count IS good OR cpu_clock_speed_ghz IS good)
               THEN development IS bad;
 
      RULE 34: IF (cpu_core_count IS bad OR cpu_clock_speed_ghz IS awful OR cpu_clock_speed_ghz IS bad)
-              AND ram_size_gb IS good
+              AND (ram_size_gb IS good OR ram_size_gb IS excellent)
               THEN development IS bad;
+
+     RULE 35: IF gpu_clock_speed_mhz IS average
+              THEN development is good;
+
+     RULE 36: IF (ram_size_gb IS awful OR ram_size_gb IS bad) AND
+                 (cpu_core_count IS excellent OR cpu_clock_speed_ghz IS excellent)
+              THEN development IS average;
+
+
 END_RULEBLOCK
 
 RULEBLOCK crypto_rules

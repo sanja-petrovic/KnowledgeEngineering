@@ -335,6 +335,11 @@ public class OntologyServiceImpl implements OntologyService {
         return this.getByName(name, repository.getGPUIndividuals());
     }
 
+    @Override
+    public OWLNamedIndividual getDesktopByName(String name) {
+        return this.getByName(name, this.getDesktops());
+    }
+
     public OWLNamedIndividual getByName(String name, List<OWLNamedIndividual> individuals){
         for(OWLNamedIndividual individual : individuals){
             if(individual.getIRI().getShortForm().equals(name)){

@@ -25,5 +25,6 @@ public interface OntologyService {
     OWLNamedIndividual getCPUByName(String name);
     OWLNamedIndividual getMotherboardByName(String name);
     OWLNamedIndividual getGPUByName(String name);
+    OWLNamedIndividual getDesktopByName(String name);
 
 }

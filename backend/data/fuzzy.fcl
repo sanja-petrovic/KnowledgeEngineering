@@ -52,7 +52,7 @@ FUZZIFY gpu_vram_size_gb
 END_FUZZIFY
 
 FUZZIFY gpu_clock_speed_mhz
-    TERM awful := (0, 300) (300, 1) (600, 0) ;
+    TERM awful := (0, 1) (300, 1) (600, 0) ;
     TERM bad := (600, 0) (800, 1) (1000, 0);
     TERM average := (1000, 0) (1200, 1) (1600, 0);
     TERM good := (1600, 0) (1800, 1) (2000, 0);
@@ -214,7 +214,7 @@ RULEBLOCK development_rules
      RULE 19 : IF power_supply_watts IS awful OR power_supply_watts IS bad OR power_supply_watts IS average OR power_supply_watts IS good
                THEN development IS average;
 
-     RULE 20 : IF power_supply_watts IS excellent;
+     RULE 20 : IF power_supply_watts IS excellent
                THEN development IS good;
 
      RULE 21 : IF ram_size_gb IS awful

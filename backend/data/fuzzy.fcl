@@ -247,10 +247,10 @@ RULEBLOCK development_rules
      RULE 30: IF storage_capacity_gb IS awful
               THEN development IS bad;
 
-     RULE 31: IF storage_capacity_gb IS bad OR storage_capacity_gb IS average
+     RULE 31: IF storage_capacity_gb IS bad
               THEN development IS average;
 
-     RULE 32: IF storage_capacity_gb IS excellent OR storage_capacity_gb IS good
+     RULE 32: IF storage_capacity_gb IS average OR storage_capacity_gb IS excellent OR storage_capacity_gb IS good
               THEN development IS good;
 
      RULE 33: IF (ram_size_gb IS awful OR ram_size_gb IS bad) AND

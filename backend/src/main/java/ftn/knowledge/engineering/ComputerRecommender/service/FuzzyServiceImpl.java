@@ -3,6 +3,7 @@ package ftn.knowledge.engineering.ComputerRecommender.service;
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyInput;
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyOutput;
 import net.sourceforge.jFuzzyLogic.FIS;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.springframework.stereotype.Service;
 import static ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths.fuzzySystems;
 
@@ -10,8 +11,10 @@ import static ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths.
 public class FuzzyServiceImpl implements FuzzyService {
 
     private FIS fis;
+    private final OntologyService ontologyService;
 
-    public FuzzyServiceImpl() {
+    public FuzzyServiceImpl(OntologyService ontologyService) {
+        this.ontologyService = ontologyService;
         this.fis = FIS.load(fuzzySystems, true);
     }
 

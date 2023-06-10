@@ -72,6 +72,20 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/unbbayes-4.22.18.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging-1.0.4</artifactId>
+			<scope>system</scope>
+			<version>1.0.4</version>
+			<systemPath>${basedir}/lib/commons-logging-1.0.4.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>jpf</groupId>
+			<artifactId>jpf-1.5</artifactId>
+			<scope>system</scope>
+			<version>1.5</version>
+			<systemPath>${basedir}/lib/jpf-1.5.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>

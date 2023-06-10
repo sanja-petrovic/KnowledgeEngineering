@@ -2,11 +2,14 @@ package ftn.knowledge.engineering.ComputerRecommender.controller;
 
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyInput;
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyOutput;
-import ftn.knowledge.engineering.ComputerRecommender.service.FuzzyService;
+import ftn.knowledge.engineering.ComputerRecommender.service.fuzzy.FuzzyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Api(value = "/fuzzy", tags = "Fuzzy systems")

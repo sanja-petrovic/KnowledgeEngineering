@@ -196,10 +196,10 @@ node Unexpected_Restarts
      states = ("YES" "NO");
 }
 
-node FaultyPowerButton
+node Faulty_Power_Button
 {
      label = "C1";
-     position = (375 725);
+     position = (306 725);
      states = ("YES" "NO");
 }
 
@@ -1725,7 +1725,7 @@ potential (Numerous_Background_Processes)
 
 potential (Faulty_RAM)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Faulty_CPU)
@@ -1815,7 +1815,7 @@ potential (Malvertising)
  data = ( 0.2 0.8 );
 }
 
-potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_RAM Hardware_Overclocking Driver_Issue Software_Incompatibility FaultyPowerButton Overheating)
+potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_RAM Hardware_Overclocking Driver_Issue Software_Incompatibility Faulty_Power_Button Overheating)
 {
  data = (((((((((( 0.5 0.5 )
 ( 0.5 0.5 ))
@@ -2331,7 +2331,7 @@ potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_
 ( 0.5 0.5 ))))))))));
 }
 
-potential (FaultyPowerButton)
+potential (Faulty_Power_Button)
 {
  data = ( 0.1 0.9 );
 }
@@ -2387,7 +2387,7 @@ potential (Visual_Distortions | Faulty_GPU)
 
 potential (Faulty_Hard_Drive)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Grinding_Or_Clicking_Sound | Faulty_Hard_Drive)
@@ -2424,22 +2424,22 @@ potential (Frozen_Cursor | Numerous_Background_Processes Insufficient_CPU)
 
 potential (Out_Of_Memory_Error | Virtual_Memory_Limitations Memory_Leaks Memory_Fragmentation Insufficient_RAM)
 {
- data = ((((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))));
+ data = ((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.85 0.15 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.6 0.4 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.75 0.25 )))
+((( 0.75 0.25 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.0 1.0 )))));
 }
 
 potential (Memory_Leaks)

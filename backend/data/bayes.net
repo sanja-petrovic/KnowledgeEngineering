@@ -430,7 +430,7 @@ node Boot_Loop
 node Failed_Firmware_Update
 {
      label = "C7";
-     position = (61 183);
+     position = (26 183);
      states = ("YES" "NO");
 }
 
@@ -2509,85 +2509,85 @@ potential (BSOD | Faulty_RAM Faulty_PSU Faulty_GPU Faulty_CPU Incompatible_Hardw
 
 potential (Driver_Issue)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.9 0.1 );
 }
 
 potential (Overheating | Faulty_CPU Numerous_Background_Processes Faulty_PSU Faulty_Thermal_Paste Insufficient_Cooling_System Dust_And_Debris_Buildup)
 {
- data = ((((((( 0.5 0.5 )
-( 0.5 0.5 ))
+ data = ((((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 0.95 0.05 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.75 0.25 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
 (( 0.5 0.5 )
+( 0.4 0.6 )))))
+((((( 0.8 0.2 )
+( 0.65 0.35 ))
+(( 0.6 0.4 )
 ( 0.5 0.5 )))
-((( 0.5 0.5 )
+((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.3 0.7 )
+( 0.2 0.8 ))))
+(((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.4 0.6 )
+( 0.6 0.4 )))
+((( 0.7 0.3 )
+( 0.3 0.7 ))
+(( 0.3 0.7 )
+( 0.1 0.9 ))))))
+(((((( 1.0 0.0 )
+( 0.85 0.15 ))
+(( 0.7 0.3 )
+( 0.4 0.6 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.5 0.5 )
+( 0.3 0.7 ))))
+(((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.5 0.5 )
+( 0.3 0.7 )))
+((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )))))
+((((( 1.0 0.0 )
+( 0.85 0.15 ))
+(( 0.7 0.3 )
+( 0.3 0.7 )))
+((( 0.9 0.1 )
+( 0.6 0.4 ))
+(( 0.3 0.7 )
+( 0.1 0.9 ))))
+(((( 1.0 0.0 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.4 0.6 )))
+((( 1.0 0.0 )
 ( 0.5 0.5 ))
 (( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))))
-((((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))))
-(((((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))))
-((((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))))));
+( 0.0 1.0 )))))));
 }
 
 potential (Malware)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.8 0.2 );
 }
 
 potential (Hardware_Overclocking)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.6 0.4 );
 }
 
 potential (Slow_Performance | Driver_Issue Insufficient_RAM Insufficient_CPU Insufficient_Disk_Space Numerous_Background_Processes Fragmented_Hard_Drive Malware Overheating)
@@ -2882,62 +2882,62 @@ potential (Faulty_RAM)
 
 potential (Faulty_CPU)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.1 0.9 );
 }
 
 potential (Faulty_GPU)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Faulty_PSU)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Faulty_Motherboard)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Incompatible_Hardware)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.3 0.7 );
 }
 
 potential (Frozen_Screen | OS_Error Overheating)
 {
- data = ((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )));
+ data = ((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 0.3 0.7 )
+( 0.0 1.0 )));
 }
 
 potential (OS_Error)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Disabled_Or_Maltifunctioning_Antivirus | Malware Conflicting_System_Settings Incomplete_Installation_Or_Update)
 {
- data = (((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))));
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.7 0.3 )
+( 0.3 0.7 )))
+((( 0.95 0.05 )
+( 0.3 0.7 ))
+(( 0.4 0.6 )
+( 0.0 1.0 ))));
 }
 
 potential (Software_Incompatibility)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Incomplete_Installation_Or_Update)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.6 0.4 );
 }
 
 potential (Conflicting_System_Settings)
@@ -2947,24 +2947,24 @@ potential (Conflicting_System_Settings)
 
 potential (Ad_Popups | Malware Malvertising Adware)
 {
- data = (((( 0.5 0.5 )
+ data = (((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 1.0 0.0 )
+( 0.3 0.7 )))
+((( 1.0 0.0 )
 ( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))));
+(( 1.0 0.0 )
+( 0.0 1.0 ))));
 }
 
 potential (Adware)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.4 0.6 );
 }
 
 potential (Malvertising)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_RAM Hardware_Overclocking Driver_Issue Software_Incompatibility FaultyPowerButton Overheating)
@@ -3485,56 +3485,56 @@ potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_
 
 potential (FaultyPowerButton)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.1 0.9 );
 }
 
 potential (USB_Recognition_Failure | Driver_Issue Unsupported_USB_Device Faulty_USB_Cable Faulty_USB_Port)
 {
- data = ((((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 ))))
-(((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))
-((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )))));
+ data = ((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.2 0.8 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))));
 }
 
 potential (Faulty_USB_Port)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.1 0.9 );
 }
 
 potential (Faulty_USB_Cable)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.8 0.2 );
 }
 
 potential (Unsupported_USB_Device)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.1 0.9 );
 }
 
 potential (Black_Screen | Faulty_Motherboard Faulty_GPU)
 {
- data = ((( 0.5 0.5 )
-( 0.5 0.5 ))
-(( 0.5 0.5 )
-( 0.5 0.5 )));
+ data = ((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.0 1.0 )));
 }
 
 potential (Visual_Distortions | Faulty_GPU)
 {
- data = (( 0.5 0.5 )
-( 0.5 0.5 ));
+ data = (( 0.95 0.05 )
+( 0.05 0.95 ));
 }
 
 potential (Faulty_Hard_Drive)
@@ -3611,20 +3611,20 @@ potential (Virtual_Memory_Limitations)
 
 potential (No_POST_Beep_Code | Faulty_Motherboard)
 {
- data = (( 0.5 0.5 )
-( 0.5 0.5 ));
+ data = (( 1.0 0.0 )
+( 0.0 1.0 ));
 }
 
 potential (Burning_Smell | Faulty_Motherboard)
 {
- data = (( 0.5 0.5 )
+ data = (( 0.9 0.1 )
 ( 0.5 0.5 ));
 }
 
 potential (Abnormal_POST_Codes | Faulty_Motherboard)
 {
- data = (( 0.5 0.5 )
-( 0.5 0.5 ));
+ data = (( 1.0 0.0 )
+( 0.2 0.8 ));
 }
 
 potential (No_Internet | WiFi_Signal_Interference Firewall_Settings DNS_Issue Network_Congestion Faulty_Or_Disconnected_Cable Network_Misconfiguration Faulty_Router Driver_Issue)
@@ -3889,57 +3889,57 @@ potential (No_Internet | WiFi_Signal_Interference Firewall_Settings DNS_Issue Ne
 
 potential (Network_Misconfiguration)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.6 0.4 );
 }
 
 potential (Faulty_Or_Disconnected_Cable)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.9 0.1 );
 }
 
 potential (WiFi_Signal_Interference)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.1 0.9 );
 }
 
 potential (Network_Congestion)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.7 0.3 );
 }
 
 potential (Firewall_Settings)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.7 0.3 );
 }
 
 potential (Faulty_Router)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.3 0.7 );
 }
 
 potential (DNS_Issue)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Insufficient_Cooling_System)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.7 0.3 );
 }
 
 potential (Faulty_Thermal_Paste)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.3 0.7 );
 }
 
 potential (Dust_And_Debris_Buildup)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.85 0.15 );
 }
 
 potential (Faulty_BIOS)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Cannot_Detect_Component_Error | Driver_Issue Incompatible_Hardware Wrong_BIOS_Settings Faulty_Ports Faulty_BIOS)
@@ -4240,22 +4240,22 @@ potential (Boot_Loop | Faulty_Hard_Drive Faulty_Motherboard Failed_System_Update
 
 potential (Failed_Firmware_Update | Faulty_BIOS)
 {
- data = (( 0.5 0.5 )
-( 0.5 0.5 ));
+ data = (( 1.0 0.0 )
+( 0.0 1.0 ));
 }
 
 potential (Faulty_Ports)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.2 0.8 );
 }
 
 potential (Wrong_BIOS_Settings)
 {
- data = ( 0.5 0.5 );
+ data = ( 0.3 0.7 );
 }
 
 potential (Failed_System_Update)
 {
- data = ( 1.0 0.0 );
+ data = ( 0.4 0.6 );
 }
 

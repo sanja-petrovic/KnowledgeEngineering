@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.service;
+package ftn.knowledge.engineering.ComputerRecommender.service.fuzzy;
 
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyInput;
 import ftn.knowledge.engineering.ComputerRecommender.dto.FuzzyOutput;

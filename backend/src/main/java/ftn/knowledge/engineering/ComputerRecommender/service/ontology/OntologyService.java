@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.service;
+package ftn.knowledge.engineering.ComputerRecommender.service.ontology;
 
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;

@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.service;
+package ftn.knowledge.engineering.ComputerRecommender.service.ontology;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;

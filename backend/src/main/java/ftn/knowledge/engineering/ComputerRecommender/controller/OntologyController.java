@@ -5,7 +5,7 @@ import ftn.knowledge.engineering.ComputerRecommender.converter.DesktopConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
 
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
-import ftn.knowledge.engineering.ComputerRecommender.service.OntologyService;
+import ftn.knowledge.engineering.ComputerRecommender.service.ontology.OntologyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;

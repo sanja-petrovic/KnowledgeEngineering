@@ -17,7 +17,7 @@ node BSOD
 node Driver_Issue
 {
      label = "C3";
-     position = (487 22);
+     position = (283 527);
      states = ("YES" "NO");
 }
 
@@ -409,7 +409,7 @@ node Dust_And_Debris_Buildup
 node Faulty_BIOS
 {
      label = "C4";
-     position = (197 352);
+     position = (41 818);
      states = ("YES" "NO");
 }
 
@@ -515,6 +515,76 @@ node Inability_To_Adjust_Sound_Settings
 {
      label = "C9";
      position = (1050 996);
+     states = ("YES" "NO");
+}
+
+node System_Clock_Errors
+{
+     label = "C10";
+     position = (440 930);
+     states = ("YES" "NO");
+}
+
+node Incorrect_Settings
+{
+     label = "C11";
+     position = (520 983);
+     states = ("YES" "NO");
+}
+
+node Dead_Or_Weak_CMOS_Battery
+{
+     label = "C12";
+     position = (532 918);
+     states = ("YES" "NO");
+}
+
+node Peripheral_Device_Not_Working
+{
+     label = "C13";
+     position = (114 973);
+     states = ("YES" "NO");
+}
+
+node Device_Issue
+{
+     label = "C14";
+     position = (87 911);
+     states = ("YES" "NO");
+}
+
+node Unable_To_Access_BIOS_Settings
+{
+     label = "C15";
+     position = (273 983);
+     states = ("YES" "NO");
+}
+
+node Fast_Startup_Enabled
+{
+     label = "C16";
+     position = (348 990);
+     states = ("YES" "NO");
+}
+
+node Keyboard_Issues
+{
+     label = "C17";
+     position = (281 1056);
+     states = ("YES" "NO");
+}
+
+node Wrong_Key_Or_Timing
+{
+     label = "C18";
+     position = (177 1065);
+     states = ("YES" "NO");
+}
+
+node Restricted_System_Settings
+{
+     label = "C19";
+     position = (186 1009);
      states = ("YES" "NO");
 }
 
@@ -1681,5 +1751,100 @@ potential (Inability_To_Adjust_Sound_Settings | Sound_Card_Issues)
 {
  data = (( 0.9 0.1 )
 ( 0.2 0.8 ));
+}
+
+potential (System_Clock_Errors | Faulty_Motherboard Incorrect_Settings Dead_Or_Weak_CMOS_Battery)
+{
+ data = (((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.8 0.2 )
+( 0.6 0.4 )))
+((( 0.9 0.1 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.0 1.0 ))));
+}
+
+potential (Incorrect_Settings)
+{
+ data = ( 0.6 0.4 );
+}
+
+potential (Dead_Or_Weak_CMOS_Battery)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Peripheral_Device_Not_Working | Driver_Issue Device_Issue Faulty_USB_Port)
+{
+ data = (((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.6 0.4 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.6 0.4 )
+( 0.0 1.0 ))));
+}
+
+potential (Device_Issue)
+{
+ data = ( 0.7 0.3 );
+}
+
+potential (Unable_To_Access_BIOS_Settings | Faulty_BIOS Fast_Startup_Enabled Keyboard_Issues Wrong_Key_Or_Timing Restricted_System_Settings)
+{
+ data = (((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.8 0.2 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.6 0.4 )))))
+((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.3 0.7 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.0 1.0 ))))));
+}
+
+potential (Fast_Startup_Enabled)
+{
+ data = ( 0.9 0.1 );
+}
+
+potential (Keyboard_Issues)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Wrong_Key_Or_Timing)
+{
+ data = ( 0.75 0.25 );
+}
+
+potential (Restricted_System_Settings)
+{
+ data = ( 0.7 0.3 );
 }
 

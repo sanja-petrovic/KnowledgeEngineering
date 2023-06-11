@@ -588,6 +588,55 @@ node Restricted_System_Settings
      states = ("YES" "NO");
 }
 
+node Unexpected_Shutdowns
+{
+     label = "C20";
+     position = (726 60);
+     states = ("YES" "NO");
+}
+
+node Firewall_Blocking_Connection
+{
+     label = "C21";
+     position = (1305 918);
+     states = ("YES" "NO");
+}
+
+node Wrong_Firewall_Settings
+{
+     label = "C22";
+     position = (1337 860);
+     states = ("YES" "NO");
+}
+
+node Application_Not_Whitelisted
+{
+     label = "C23";
+     position = (1398 914);
+     states = ("YES" "NO");
+}
+
+node IDS_IPS
+{
+     label = "C25";
+     position = (1337 1021);
+     states = ("YES" "NO");
+}
+
+node Conflicting_Firewalls
+{
+     label = "C26";
+     position = (1217 964);
+     states = ("YES" "NO");
+}
+
+node NAT_Issues
+{
+     label = "C27";
+     position = (1230 862);
+     states = ("YES" "NO");
+}
+
 potential (BSOD | Faulty_RAM Faulty_PSU Faulty_GPU Faulty_CPU Software_Incompatibility Hardware_Overclocking Malware)
 {
  data = (((((((( 1.0 0.0 )
@@ -1844,6 +1893,87 @@ potential (Wrong_Key_Or_Timing)
 }
 
 potential (Restricted_System_Settings)
+{
+ data = ( 0.7 0.3 );
+}
+
+potential (Unexpected_Shutdowns | Insufficient_RAM Faulty_CPU Faulty_GPU Faulty_RAM)
+{
+ data = ((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.95 0.05 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.0 1.0 )))));
+}
+
+potential (Firewall_Blocking_Connection | NAT_Issues Wrong_Firewall_Settings Application_Not_Whitelisted IDS_IPS Conflicting_Firewalls)
+{
+ data = (((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.8 0.2 )
+( 0.7 0.3 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.0 1.0 ))))));
+}
+
+potential (Wrong_Firewall_Settings)
+{
+ data = ( 0.8 0.2 );
+}
+
+potential (Application_Not_Whitelisted)
+{
+ data = ( 0.6 0.4 );
+}
+
+potential (IDS_IPS)
+{
+ data = ( 0.9 0.1 );
+}
+
+potential (Conflicting_Firewalls)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (NAT_Issues)
 {
  data = ( 0.7 0.3 );
 }

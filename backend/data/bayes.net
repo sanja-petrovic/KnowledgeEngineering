@@ -199,7 +199,7 @@ node Unexpected_Restarts
 node Faulty_Power_Button
 {
      label = "C1";
-     position = (306 725);
+     position = (281 694);
      states = ("YES" "NO");
 }
 
@@ -388,7 +388,7 @@ node DNS_Issue
 node Insufficient_Cooling_System
 {
      label = "C1";
-     position = (44 0);
+     position = (44 60);
      states = ("YES" "NO");
 }
 
@@ -452,6 +452,13 @@ node Failed_System_Update
 {
      label = "C10";
      position = (4 439);
+     states = ("YES" "NO");
+}
+
+node Not_Starting
+{
+     label = "C1";
+     position = (250 880);
      states = ("YES" "NO");
 }
 
@@ -1535,5 +1542,41 @@ potential (Wrong_BIOS_Settings)
 potential (Failed_System_Update)
 {
  data = ( 0.4 0.6 );
+}
+
+potential (Not_Starting | Faulty_BIOS Faulty_RAM Faulty_GPU Faulty_Motherboard Faulty_Power_Button)
+{
+ data = (((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.9 0.1 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))))
+((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.8 0.2 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.5 0.5 )
+( 0.0 1.0 ))))));
 }
 

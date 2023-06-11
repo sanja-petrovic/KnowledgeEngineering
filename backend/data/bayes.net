@@ -1,7 +1,7 @@
 net
 {
      node_size = (0 0);
-     name = "New BN";
+     name = "Team 1 Bayes Network";
      tree = "(C1,C3,C5,C6,C7,C9,C10,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C2,C4,C8,C11,C23)";
      UnBBayes_Color_Probabilistic_Description = "-256";
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";

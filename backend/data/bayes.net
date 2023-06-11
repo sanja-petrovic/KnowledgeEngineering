@@ -38,7 +38,7 @@ node Malware
 node Hardware_Overclocking
 {
      label = "C9";
-     position = (569 0);
+     position = (569 60);
      states = ("YES" "NO");
 }
 
@@ -1366,7 +1366,7 @@ potential (Cannot_Detect_Component_Error | Driver_Issue Incompatible_Hardware Wr
 ( 0.85 0.15 ))
 (( 0.8 0.2 )
 ( 0.6 0.4 )))))
-((((( 0.95 0.95 )
+((((( 0.95 0.05 )
 ( 0.9 0.1 ))
 (( 0.9 0.1 )
 ( 0.85 0.15 )))

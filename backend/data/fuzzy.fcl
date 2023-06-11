@@ -361,5 +361,212 @@ RULEBLOCK crypto_rules
                    THEN crypto IS bad;
 
 END_RULEBLOCK
+RULEBLOCK video_games_rules
+    AND : MIN;
+    ACT : MIN;
+    ACCU : MAX;
 
+     RULE 1 : IF cpu_core_count IS bad
+              THEN video_games IS awful;
+
+     RULE 2 : IF cpu_core_count IS average
+              THEN video_games IS average;
+
+     RULE 3 : IF cpu_core_count IS good
+              THEN video_games IS good;
+
+     RULE 4 : IF cpu_core_count IS excellent
+              THEN video_games IS excellent;
+
+     RULE 5 : IF cpu_thread_count IS bad
+              THEN video_games IS awful;
+
+     RULE 6 : IF cpu_thread_count IS average
+              THEN video_games IS average;
+
+     RULE 7 : IF cpu_thread_count IS good
+              THEN video_games IS good;
+
+     RULE 8 : IF cpu_thread_count IS excellent
+              THEN video_games IS excellent;
+
+     RULE 9 : IF cpu_clock_speed_ghz IS bad
+              THEN video_games IS bad;
+
+     RULE 10 : IF cpu_clock_speed_ghz IS average
+              THEN video_games IS average;
+
+     RULE 11 : IF cpu_clock_speed_ghz IS good or cpu_clock_speed_ghz IS excellent
+              THEN video_games IS good;
+
+     RULE 12 : IF gpu_vram_size_gb IS awful
+               THEN video_games IS awful;
+
+     RULE 13 : IF gpu_vram_size_gb IS bad
+               THEN video_games IS bad;
+
+     RULE 14 : IF gpu_vram_size_gb IS average
+               THEN video_games IS average;
+
+     RULE 15 : IF gpu_vram_size_gb IS good
+               THEN video_games IS good;
+
+     RULE 16 : IF gpu_vram_size_gb IS excellent
+               THEN video_games IS excellent;
+
+     RULE 17 : IF ram_size_gb IS awful OR ram_size_gb IS bad
+               THEN video_games IS awful;
+
+     RULE 18 : IF ram_size_gb IS average
+               THEN video_games IS average;
+
+     RULE 19 : IF ram_size_gb IS good OR ram_size_gb IS excellent
+               THEN video_games IS good;
+
+     RULE 20 : IF ram_speed_mhz IS awful OR ram_speed_mhz IS bad
+               THEN video_games IS bad;
+
+     RULE 21 : IF ram_speed_mhz IS average OR IF ram_speed_mhz IS good OR IF ram_speed_mhz IS excellent
+               THEN video_games IS good;
+
+     RULE 22 : IF storage_capacity_gb IS awful OR storage_capacity_gb IS bad
+               THEN video_games IS bad;
+
+     RULE 23 : IF storage_capacity_gb IS average
+               THEN video_games IS average;
+
+     RULE 24 : IF storage_capacity_gb IS good OR storage_capacity_gb IS excellent
+              THEN video_games IS good;
+
+     RULE 25 : IF power_supply_watts IS awful
+               THEN video_games IS bad;
+
+     RULE 26 : IF power_supply_watts IS bad
+                    THEN video_games IS average;
+
+     RULE 27 : IF power_supply_watts IS good OR power_supply_watts IS excellent
+               THEN video_games IS good;
+
+     RULE 28: IF (gpu_vram_size_gb IS awful OR gpu_vram_size_gb IS bad) AND
+                 (cpu_core_count IS good OR cpu_clock_speed_ghz IS good)
+              THEN video_games IS bad;
+
+     RULE 29: IF (gpu_clock_speed_mhz IS awful OR gpu_clock_speed_mhz IS bad)
+              AND (gpu_vram_size_gb IS good OR gpu_vram_size_gb IS excellent)
+              THEN video_games IS bad;
+
+     RULE 30: IF (ram_size_gb IS awful OR ram_size_gb IS bad) AND
+                 (cpu_core_count IS excellent OR cpu_clock_speed_ghz IS excellent)
+              THEN video_games IS average;
+
+
+END_RULEBLOCK
+
+RULEBLOCK home_rules
+    AND : MIN;
+    ACT : MIN;
+    ACCU : MAX;
+
+     RULE 1 : IF cpu_clock_speed_ghz IS awful OR cpu_clock_speed_ghz IS bad OR cpu_clock_speed_ghz IS excellent
+              THEN home IS bad;
+
+     RULE 2 : IF cpu_clock_speed_ghz IS good OR cpu_clock_speed_ghz IS average
+              THEN home IS good;
+
+     RULE 3 : IF cpu_core_count IS bad
+           THEN home IS average;
+
+     RULE 4 : IF cpu_core_count IS excellent or cpu_core_count IS awful
+              THEN home IS bad;
+
+     RULE 5 : IF cpu_core_count IS average
+               THEN home IS good;
+
+     RULE 6 : IF cpu_core_count IS good
+                    THEN home IS excellent;
+
+     RULE 7 : IF cpu_thread_count IS bad OR cpu_thread_count IS average OR cpu_thread_count IS good
+              THEN home IS good;
+
+     RULE 8 : IF cpu_thread_count IS excellent
+              THEN home IS bad;
+
+     RULE 7 : IF gpu_vram_size_gb IS awful OR gpu_vram_size_gb IS good
+               THEN home IS average;
+
+     RULE 8 : IF gpu_vram_size_gb IS average OR gpu_vram_size_gb IS bad
+               THEN home IS good;
+
+     RULE 9: IF gpu_vram_size_gb IS excellent
+               THEN home IS awful;
+
+     RULE 10 : IF gpu_clock_speed_mhz IS good OR gpu_clock_speed_mhz IS bad
+               THEN home IS good;
+
+     RULE 12 : IF gpu_clock_speed_mhz IS average
+               THEN home IS excellent;
+
+     RULE 13 : IF gpu_clock_speed_mhz IS awful
+               THEN home IS average;
+
+     RULE 14 : IF gpu_clock_speed_mhz IS excellent
+                    THEN home IS awful;
+
+     RULE 16 : IF power_supply_watts IS bad OR power_supply_watts IS good
+               THEN home IS good;
+
+     RULE 16 : IF power_supply_watts IS average
+               THEN home IS excellent;
+
+     RULE 17 : IF power_supply_watts IS excellent
+               THEN home IS bad;
+
+     RULE 18 : IF ram_size_gb IS awful OR ram_size_gb IS excellent
+               THEN home IS bad;
+
+     RULE 19 : IF ram_size_gb IS average
+               THEN home IS good;
+
+     RULE 20 : IF ram_size_gb IS bad
+               THEN home IS average;
+
+     RULE 21 : IF ram_size_gb IS good
+               THEN home IS excellent;
+
+     RULE 22 : IF ram_speed_mhz IS awful OR ram_speed_mhz IS bad
+               THEN home IS average;
+
+     RULE 23 : IF ram_speed_mhz IS average OR ram_speed_mhz IS good
+               THEN home IS good;
+
+     RULE 24 : IF ram_speed_mhz IS excellent
+               THEN home IS bad;
+
+     RULE 25: IF storage_capacity_gb IS awful
+              THEN home IS bad;
+
+     RULE 26: IF storage_capacity_gb IS bad
+              THEN home IS average;
+
+     RULE 26: IF storage_capacity_gb IS average OR storage_capacity_gb IS good
+              THEN home IS good;
+
+     RULE 27: IF gpu_clock_speed_ghz IS excellent AND gpu_vram_size_gb IS excellent
+              THEN home IS awful;
+
+     RULE 28: IF cpu_clock_speed_ghz IS average
+              AND (gpu_clock_speed_mhz IS good OR gpu_clock_speed_mhz IS excellent)
+              THEN home IS average;
+
+     RULE 29: IF cpu_core_count IS average
+              AND (gpu_vram_size_gb IS average OR gpu_vram_size_gb IS good)
+              AND (power_supply_watts IS bad OR power_supply_watts IS average)
+              THEN home IS good;
+
+     RULE 30: IF cpu_core_count IS bad
+                AND (gpu_clock_speed_mhz IS average OR gpu_clock_speed_mhz IS bad)
+                home IS good;
+
+
+END_RULEBLOCK
 END_FUNCTION_BLOCK

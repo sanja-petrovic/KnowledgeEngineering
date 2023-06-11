@@ -462,6 +462,62 @@ node Not_Starting
      states = ("YES" "NO");
 }
 
+node No_Sound
+{
+     label = "C2";
+     position = (834 888);
+     states = ("YES" "NO");
+}
+
+node Distorted_Sound
+{
+     label = "C3";
+     position = (1089 926);
+     states = ("YES" "NO");
+}
+
+node Sound_Card_Issues
+{
+     label = "C4";
+     position = (952 918);
+     states = ("YES" "NO");
+}
+
+node Low_Or_Weak_Sound
+{
+     label = "C5";
+     position = (1031 868);
+     states = ("YES" "NO");
+}
+
+node No_Microphone_Playback
+{
+     label = "C6";
+     position = (849 962);
+     states = ("YES" "NO");
+}
+
+node Lagging_Audio
+{
+     label = "C7";
+     position = (922 853);
+     states = ("YES" "NO");
+}
+
+node Audio_Cutting_In_And_Out
+{
+     label = "C8";
+     position = (957 1004);
+     states = ("YES" "NO");
+}
+
+node Inability_To_Adjust_Sound_Settings
+{
+     label = "C9";
+     position = (1050 996);
+     states = ("YES" "NO");
+}
+
 potential (BSOD | Faulty_RAM Faulty_PSU Faulty_GPU Faulty_CPU Software_Incompatibility Hardware_Overclocking Malware)
 {
  data = (((((((( 1.0 0.0 )
@@ -1578,5 +1634,52 @@ potential (Not_Starting | Faulty_BIOS Faulty_RAM Faulty_GPU Faulty_Motherboard F
 ( 1.0 0.0 ))
 (( 0.5 0.5 )
 ( 0.0 1.0 ))))));
+}
+
+potential (No_Sound | Sound_Card_Issues)
+{
+ data = (( 0.9 0.1 )
+( 0.4 0.6 ));
+}
+
+potential (Distorted_Sound | Sound_Card_Issues)
+{
+ data = (( 0.8 0.2 )
+( 0.4 0.6 ));
+}
+
+potential (Sound_Card_Issues)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Low_Or_Weak_Sound | Sound_Card_Issues)
+{
+ data = (( 0.8 0.2 )
+( 0.5 0.5 ));
+}
+
+potential (No_Microphone_Playback | Sound_Card_Issues)
+{
+ data = (( 0.9 0.1 )
+( 0.4 0.6 ));
+}
+
+potential (Lagging_Audio | Sound_Card_Issues)
+{
+ data = (( 0.8 0.2 )
+( 0.5 0.5 ));
+}
+
+potential (Audio_Cutting_In_And_Out | Sound_Card_Issues)
+{
+ data = (( 0.9 0.1 )
+( 0.3 0.7 ));
+}
+
+potential (Inability_To_Adjust_Sound_Settings | Sound_Card_Issues)
+{
+ data = (( 0.9 0.1 )
+( 0.2 0.8 ));
 }
 

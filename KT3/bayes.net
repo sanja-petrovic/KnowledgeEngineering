@@ -1,0 +1,1539 @@
+net
+{
+     node_size = (0 0);
+     name = "Team 1 Bayes Network";
+     tree = "(C1,C3,C5,C6,C7,C9,C10,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C2,C4,C8,C11,C23)";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node BSOD
+{
+     label = "C1";
+     position = (354 33);
+     states = ("YES" "NO");
+}
+
+node Driver_Issue
+{
+     label = "C3";
+     position = (554 66);
+     states = ("YES" "NO");
+}
+
+node Overheating
+{
+     label = "C6";
+     position = (180 212);
+     states = ("YES" "NO");
+}
+
+node Malware
+{
+     label = "C7";
+     position = (430 426);
+     states = ("YES" "NO");
+}
+
+node Hardware_Overclocking
+{
+     label = "C9";
+     position = (569 60);
+     states = ("YES" "NO");
+}
+
+node Slow_Performance
+{
+     label = "C12";
+     position = (911 24);
+     states = ("YES" "NO");
+}
+
+node Insufficient_RAM
+{
+     label = "C13";
+     position = (1228 155);
+     states = ("YES" "NO");
+}
+
+node Insufficient_CPU
+{
+     label = "C14";
+     position = (1122 69);
+     states = ("YES" "NO");
+}
+
+node Insufficient_Disk_Space
+{
+     label = "C15";
+     position = (1211 39);
+     states = ("YES" "NO");
+}
+
+node Fragmented_Hard_Drive
+{
+     label = "C16";
+     position = (853 137);
+     states = ("YES" "NO");
+}
+
+node Numerous_Background_Processes
+{
+     label = "C17";
+     position = (933 279);
+     states = ("YES" "NO");
+}
+
+node Faulty_RAM
+{
+     label = "C18";
+     position = (779 342);
+     states = ("YES" "NO");
+}
+
+node Faulty_CPU
+{
+     label = "C19";
+     position = (609 162);
+     states = ("YES" "NO");
+}
+
+node Faulty_GPU
+{
+     label = "C20";
+     position = (643 373);
+     states = ("YES" "NO");
+}
+
+node Faulty_PSU
+{
+     label = "C21";
+     position = (187 60);
+     states = ("YES" "NO");
+}
+
+node Faulty_Motherboard
+{
+     label = "C22";
+     position = (1025 408);
+     states = ("YES" "NO");
+}
+
+node Incompatible_Hardware
+{
+     label = "C24";
+     position = (237 287);
+     states = ("YES" "NO");
+}
+
+node Frozen_Screen
+{
+     label = "C25";
+     position = (42 370);
+     states = ("YES" "NO");
+}
+
+node OS_Error
+{
+     label = "C27";
+     position = (288 457);
+     states = ("YES" "NO");
+}
+
+node Disabled_Or_Maltifunctioning_Antivirus
+{
+     label = "C28";
+     position = (1014 740);
+     states = ("YES" "NO");
+}
+
+node Software_Incompatibility
+{
+     label = "C29";
+     position = (321 309);
+     states = ("YES" "NO");
+}
+
+node Incomplete_Installation_Or_Update
+{
+     label = "C31";
+     position = (1029 664);
+     states = ("YES" "NO");
+}
+
+node Conflicting_System_Settings
+{
+     label = "C32";
+     position = (1047 810);
+     states = ("YES" "NO");
+}
+
+node Ad_Popups
+{
+     label = "C33";
+     position = (258 640);
+     states = ("YES" "NO");
+}
+
+node Adware
+{
+     label = "C34";
+     position = (149 689);
+     states = ("YES" "NO");
+}
+
+node Malvertising
+{
+     label = "C35";
+     position = (221 729);
+     states = ("YES" "NO");
+}
+
+node Unexpected_Restarts
+{
+     label = "C36";
+     position = (436 648);
+     states = ("YES" "NO");
+}
+
+node Faulty_Power_Button
+{
+     label = "C1";
+     position = (306 725);
+     states = ("YES" "NO");
+}
+
+node USB_Recognition_Failure
+{
+     label = "C2";
+     position = (693 692);
+     states = ("YES" "NO");
+}
+
+node Faulty_USB_Port
+{
+     label = "C3";
+     position = (537 717);
+     states = ("YES" "NO");
+}
+
+node Faulty_USB_Cable
+{
+     label = "C4";
+     position = (596 778);
+     states = ("YES" "NO");
+}
+
+node Unsupported_USB_Device
+{
+     label = "C5";
+     position = (738 786);
+     states = ("YES" "NO");
+}
+
+node Black_Screen
+{
+     label = "C6";
+     position = (1052 512);
+     states = ("YES" "NO");
+}
+
+node Visual_Distortions
+{
+     label = "C8";
+     position = (892 548);
+     states = ("YES" "NO");
+}
+
+node Faulty_Hard_Drive
+{
+     label = "C9";
+     position = (917 342);
+     states = ("YES" "NO");
+}
+
+node Grinding_Or_Clicking_Sound
+{
+     label = "C10";
+     position = (1178 291);
+     states = ("YES" "NO");
+}
+
+node File_System_Errors
+{
+     label = "C11";
+     position = (1142 223);
+     states = ("YES" "NO");
+}
+
+node Data_Corruption
+{
+     label = "C12";
+     position = (1219 351);
+     states = ("YES" "NO");
+}
+
+node Frozen_Cursor
+{
+     label = "C13";
+     position = (1073 156);
+     states = ("YES" "NO");
+}
+
+node Out_Of_Memory_Error
+{
+     label = "C14";
+     position = (1415 362);
+     states = ("YES" "NO");
+}
+
+node Memory_Leaks
+{
+     label = "C15";
+     position = (1479 171);
+     states = ("YES" "NO");
+}
+
+node Memory_Fragmentation
+{
+     label = "C16";
+     position = (1382 94);
+     states = ("YES" "NO");
+}
+
+node Virtual_Memory_Limitations
+{
+     label = "C17";
+     position = (1480 259);
+     states = ("YES" "NO");
+}
+
+node No_POST_Beep_Code
+{
+     label = "C18";
+     position = (1130 565);
+     states = ("YES" "NO");
+}
+
+node Burning_Smell
+{
+     label = "C19";
+     position = (1241 457);
+     states = ("YES" "NO");
+}
+
+node Abnormal_POST_Codes
+{
+     label = "C20";
+     position = (1185 507);
+     states = ("YES" "NO");
+}
+
+node No_Internet
+{
+     label = "C21";
+     position = (1516 593);
+     states = ("YES" "NO");
+}
+
+node Network_Misconfiguration
+{
+     label = "C22";
+     position = (1634 592);
+     states = ("YES" "NO");
+}
+
+node Faulty_Or_Disconnected_Cable
+{
+     label = "C23";
+     position = (1556 659);
+     states = ("YES" "NO");
+}
+
+node WiFi_Signal_Interference
+{
+     label = "C24";
+     position = (1309 685);
+     states = ("YES" "NO");
+}
+
+node Network_Congestion
+{
+     label = "C25";
+     position = (1469 713);
+     states = ("YES" "NO");
+}
+
+node Firewall_Settings
+{
+     label = "C26";
+     position = (1338 622);
+     states = ("YES" "NO");
+}
+
+node Faulty_Router
+{
+     label = "C27";
+     position = (1636 525);
+     states = ("YES" "NO");
+}
+
+node DNS_Issue
+{
+     label = "C28";
+     position = (1370 565);
+     states = ("YES" "NO");
+}
+
+node Insufficient_Cooling_System
+{
+     label = "C1";
+     position = (113 59);
+     states = ("YES" "NO");
+}
+
+node Faulty_Thermal_Paste
+{
+     label = "C2";
+     position = (68 114);
+     states = ("YES" "NO");
+}
+
+node Dust_And_Debris_Buildup
+{
+     label = "C3";
+     position = (230 86);
+     states = ("YES" "NO");
+}
+
+node Faulty_BIOS
+{
+     label = "C4";
+     position = (197 352);
+     states = ("YES" "NO");
+}
+
+node Cannot_Detect_Component_Error
+{
+     label = "C5";
+     position = (177 622);
+     states = ("YES" "NO");
+}
+
+node Boot_Loop
+{
+     label = "C6";
+     position = (16 576);
+     states = ("YES" "NO");
+}
+
+node Failed_Firmware_Update
+{
+     label = "C7";
+     position = (26 183);
+     states = ("YES" "NO");
+}
+
+node Faulty_Ports
+{
+     label = "C8";
+     position = (36 631);
+     states = ("YES" "NO");
+}
+
+node Wrong_BIOS_Settings
+{
+     label = "C9";
+     position = (139 481);
+     states = ("YES" "NO");
+}
+
+node Failed_System_Update
+{
+     label = "C10";
+     position = (4 439);
+     states = ("YES" "NO");
+}
+
+potential (BSOD | Faulty_RAM Faulty_PSU Faulty_GPU Faulty_CPU Software_Incompatibility Hardware_Overclocking Malware)
+{
+ data = (((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))))
+((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))));
+}
+
+potential (Driver_Issue)
+{
+ data = ( 0.9 0.1 );
+}
+
+potential (Overheating | Faulty_CPU Numerous_Background_Processes Faulty_PSU Faulty_Thermal_Paste Insufficient_Cooling_System Dust_And_Debris_Buildup)
+{
+ data = ((((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 0.95 0.05 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.75 0.25 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.5 0.5 )
+( 0.4 0.6 )))))
+((((( 0.8 0.2 )
+( 0.65 0.35 ))
+(( 0.6 0.4 )
+( 0.5 0.5 )))
+((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.3 0.7 )
+( 0.2 0.8 ))))
+(((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.4 0.6 )
+( 0.6 0.4 )))
+((( 0.7 0.3 )
+( 0.3 0.7 ))
+(( 0.3 0.7 )
+( 0.1 0.9 ))))))
+(((((( 1.0 0.0 )
+( 0.85 0.15 ))
+(( 0.7 0.3 )
+( 0.4 0.6 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.5 0.5 )
+( 0.3 0.7 ))))
+(((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.5 0.5 )
+( 0.3 0.7 )))
+((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )))))
+((((( 1.0 0.0 )
+( 0.85 0.15 ))
+(( 0.7 0.3 )
+( 0.3 0.7 )))
+((( 0.9 0.1 )
+( 0.6 0.4 ))
+(( 0.3 0.7 )
+( 0.1 0.9 ))))
+(((( 1.0 0.0 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.4 0.6 )))
+((( 1.0 0.0 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.0 1.0 )))))));
+}
+
+potential (Malware)
+{
+ data = ( 0.8 0.2 );
+}
+
+potential (Hardware_Overclocking)
+{
+ data = ( 0.6 0.4 );
+}
+
+potential (Slow_Performance | Insufficient_RAM Insufficient_CPU Insufficient_Disk_Space Numerous_Background_Processes Fragmented_Hard_Drive)
+{
+ data = (((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.75 0.25 ))
+(( 0.7 0.3 )
+( 0.6 0.4 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.5 0.5 ))))
+(((( 0.8 0.2 )
+( 0.7 0.3 ))
+(( 0.5 0.5 )
+( 0.3 0.7 )))
+((( 0.4 0.6 )
+( 0.3 0.7 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))));
+}
+
+potential (Insufficient_RAM)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Insufficient_CPU)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (Insufficient_Disk_Space)
+{
+ data = ( 0.9 0.1 );
+}
+
+potential (Fragmented_Hard_Drive)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Numerous_Background_Processes)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Faulty_RAM)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Faulty_CPU)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (Faulty_GPU)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Faulty_PSU)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Faulty_Motherboard)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Incompatible_Hardware)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (Frozen_Screen | OS_Error)
+{
+ data = (( 0.9 0.1 )
+( 0.15 0.85 ));
+}
+
+potential (OS_Error)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Disabled_Or_Maltifunctioning_Antivirus | Malware Conflicting_System_Settings Incomplete_Installation_Or_Update)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.7 0.3 )
+( 0.3 0.7 )))
+((( 0.95 0.05 )
+( 0.3 0.7 ))
+(( 0.4 0.6 )
+( 0.0 1.0 ))));
+}
+
+potential (Software_Incompatibility)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Incomplete_Installation_Or_Update)
+{
+ data = ( 0.6 0.4 );
+}
+
+potential (Conflicting_System_Settings)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Ad_Popups | Malware Malvertising Adware)
+{
+ data = (((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 1.0 0.0 )
+( 0.3 0.7 )))
+((( 1.0 0.0 )
+( 0.5 0.5 ))
+(( 1.0 0.0 )
+( 0.0 1.0 ))));
+}
+
+potential (Adware)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Malvertising)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Unexpected_Restarts | Faulty_CPU Faulty_Hard_Drive Faulty_GPU Faulty_RAM Driver_Issue Faulty_Power_Button)
+{
+ data = ((((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.95 0.05 )))
+((( 0.9 0.1 )
+( 0.85 0.15 ))
+(( 0.85 0.15 )
+( 0.8 0.2 ))))
+(((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.75 0.25 )))
+((( 0.75 0.25 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.65 0.35 )))))
+((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.9 0.1 )
+( 0.85 0.15 ))
+(( 0.9 0.1 )
+( 0.85 0.15 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.85 0.15 )))
+((( 0.7 0.3 )
+( 0.65 0.35 ))
+(( 0.7 0.3 )
+( 0.65 0.35 ))))))
+(((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.8 0.2 )
+( 0.75 0.25 ))
+(( 0.8 0.2 )
+( 0.75 0.25 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.7 0.3 )
+( 0.6 0.4 )))))
+((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.7 0.3 )
+( 0.3 0.7 ))
+(( 0.6 0.4 )
+( 0.0 1.0 )))))));
+}
+
+potential (Faulty_Power_Button)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (USB_Recognition_Failure | Driver_Issue Unsupported_USB_Device Faulty_USB_Cable Faulty_USB_Port)
+{
+ data = ((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.2 0.8 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))));
+}
+
+potential (Faulty_USB_Port)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (Faulty_USB_Cable)
+{
+ data = ( 0.8 0.2 );
+}
+
+potential (Unsupported_USB_Device)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (Black_Screen | Faulty_Motherboard Faulty_GPU)
+{
+ data = ((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.0 1.0 )));
+}
+
+potential (Visual_Distortions | Faulty_GPU)
+{
+ data = (( 0.95 0.05 )
+( 0.05 0.95 ));
+}
+
+potential (Faulty_Hard_Drive)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (Grinding_Or_Clicking_Sound | Faulty_Hard_Drive)
+{
+ data = (( 1.0 0.0 )
+( 0.0 1.0 ));
+}
+
+potential (File_System_Errors | Faulty_Hard_Drive)
+{
+ data = (( 0.95 0.05 )
+( 0.05 0.95 ));
+}
+
+potential (Data_Corruption | Hardware_Overclocking Malware Faulty_Hard_Drive)
+{
+ data = (((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.5 0.5 )))
+((( 0.95 0.05 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))));
+}
+
+potential (Frozen_Cursor | Numerous_Background_Processes Insufficient_CPU)
+{
+ data = ((( 0.9 0.1 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (Out_Of_Memory_Error | Virtual_Memory_Limitations Memory_Leaks Memory_Fragmentation Insufficient_RAM)
+{
+ data = ((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.85 0.15 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.6 0.4 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.75 0.25 )))
+((( 0.75 0.25 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.0 1.0 )))));
+}
+
+potential (Memory_Leaks)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Memory_Fragmentation)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (Virtual_Memory_Limitations)
+{
+ data = ( 0.4 0.6 );
+}
+
+potential (No_POST_Beep_Code | Faulty_Motherboard)
+{
+ data = (( 1.0 0.0 )
+( 0.0 1.0 ));
+}
+
+potential (Burning_Smell | Faulty_Motherboard)
+{
+ data = (( 0.9 0.1 )
+( 0.5 0.5 ));
+}
+
+potential (Abnormal_POST_Codes | Faulty_Motherboard)
+{
+ data = (( 1.0 0.0 )
+( 0.2 0.8 ));
+}
+
+potential (No_Internet | WiFi_Signal_Interference Firewall_Settings DNS_Issue Network_Congestion Faulty_Or_Disconnected_Cable Network_Misconfiguration Faulty_Router Driver_Issue)
+{
+ data = ((((((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 0.95 0.05 )
+( 0.95 0.05 )))
+((( 0.7 0.3 )
+( 0.65 0.35 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.85 0.15 )
+( 0.8 0.2 )))
+((( 0.7 0.3 )
+( 0.65 0.35 ))
+(( 0.6 0.4 )
+( 0.5 0.5 ))))))
+(((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))
+((( 0.7 0.3 )
+( 0.5 0.5 ))
+(( 0.6 0.4 )
+( 0.4 0.6 )))))
+((((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )))
+((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 ))))
+(((( 0.95 0.05 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))))
+((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))))
+(((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))))
+((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.0 1.0 )))))))));
+}
+
+potential (Network_Misconfiguration)
+{
+ data = ( 0.6 0.4 );
+}
+
+potential (Faulty_Or_Disconnected_Cable)
+{
+ data = ( 0.9 0.1 );
+}
+
+potential (WiFi_Signal_Interference)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (Network_Congestion)
+{
+ data = ( 0.7 0.3 );
+}
+
+potential (Firewall_Settings)
+{
+ data = ( 0.7 0.3 );
+}
+
+potential (Faulty_Router)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (DNS_Issue)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Insufficient_Cooling_System)
+{
+ data = ( 0.7 0.3 );
+}
+
+potential (Faulty_Thermal_Paste)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (Dust_And_Debris_Buildup)
+{
+ data = ( 0.85 0.15 );
+}
+
+potential (Faulty_BIOS)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Cannot_Detect_Component_Error | Driver_Issue Incompatible_Hardware Wrong_BIOS_Settings Faulty_Ports Faulty_BIOS)
+{
+ data = (((((( 1.0 0.0 )
+( 0.95 0.05 ))
+(( 0.95 0.05 )
+( 0.9 0.1 )))
+((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.95 0.05 )
+( 0.9 0.1 ))))
+(((( 0.95 0.05 )
+( 0.95 0.05 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.85 0.15 ))
+(( 0.8 0.2 )
+( 0.6 0.4 )))))
+((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.85 0.15 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.85 0.15 ))
+(( 0.6 0.4 )
+( 0.4 0.6 )))
+((( 0.7 0.3 )
+( 0.5 0.5 ))
+(( 0.3 0.7 )
+( 0.0 1.0 ))))));
+}
+
+potential (Boot_Loop | Faulty_Hard_Drive Faulty_Motherboard Failed_System_Update Faulty_PSU Malware OS_Error Faulty_BIOS)
+{
+ data = (((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))))
+((((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))
+(((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )))
+((( 0.5 0.5 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.5 0.5 ))))))));
+}
+
+potential (Failed_Firmware_Update | Faulty_BIOS)
+{
+ data = (( 1.0 0.0 )
+( 0.0 1.0 ));
+}
+
+potential (Faulty_Ports)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (Wrong_BIOS_Settings)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (Failed_System_Update)
+{
+ data = ( 0.4 0.6 );
+}
+

@@ -2,7 +2,7 @@ package ftn.knowledge.engineering.ComputerRecommender.service.ontology;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
-import ftn.knowledge.engineering.ComputerRecommender.repository.OntologyRepository;
+import ftn.knowledge.engineering.ComputerRecommender.repository.ontology.OntologyRepository;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

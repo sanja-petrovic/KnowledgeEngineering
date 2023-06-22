@@ -1,4 +1,4 @@
-package ftn.knowledge.engineering.ComputerRecommender.repository;
+package ftn.knowledge.engineering.ComputerRecommender.repository.ontology;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.ClassIris;
 import ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths;

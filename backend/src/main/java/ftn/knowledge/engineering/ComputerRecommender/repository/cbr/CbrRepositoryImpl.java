@@ -63,7 +63,9 @@ public class CbrRepositoryImpl implements CbrRepository {
                 CBRCase cbrCase = new CBRCase();
 
                 ComputerDescription description = new ComputerDescription(values);
-                this.descriptions.add(description);
+                if (!descriptions.contains(description)) {
+                    this.descriptions.add(description);
+                }
                 cbrCase.setDescription(description);
                 cases.add(cbrCase);
             }

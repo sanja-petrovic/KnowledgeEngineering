@@ -65,7 +65,6 @@ public class CbrServiceImpl implements CbrService {
         } catch (ExecutionException e) {
             throw new RuntimeException(e);
         }
-
         return similar;
     }
 

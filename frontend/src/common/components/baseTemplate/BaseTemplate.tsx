@@ -1,43 +1,66 @@
-import classNames from 'classnames';
-import { ReactNode, useEffect, useState } from 'react';
-import NavigationBar from '../navigationBar/NavigationBar';
-import styles from './BaseTemplate.module.scss';
+import {
+  DeploymentUnitOutlined,
+  DesktopOutlined,
+  FileOutlined,
+  PieChartOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
+import type { MenuProps } from "antd";
+import { Layout, Menu, Typography } from "antd";
+import { useRouter } from "next/router";
+import { ReactNode } from "react";
 
+const { Text, Link } = Typography;
+
+const { Header, Footer, Sider, Content } = Layout;
+type MenuItem = Required<MenuProps>["items"][number];
+
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[]
+): MenuItem {
+  return {
+    key,
+    icon,
+    children,
+    label,
+  } as MenuItem;
+}
 interface BaseTemplateProps {
   children?: ReactNode;
 }
 
+import styles from "./BaseTemplate.module.scss";
+
 const BaseTemplate = ({ children }: BaseTemplateProps) => {
-  const [navbar, setNavbar] = useState(false);
+  const router = useRouter();
+  const items: MenuItem[] = [
+    getItem("Ontology", "ontology", <PieChartOutlined />),
+    getItem("Fuzzy systems", "fuzzy-systems", <DesktopOutlined />),
+    getItem("Bayesian network", "bayesian-network", <UserOutlined />),
+    getItem("Case-based reasoning", "case-based-reasoning", <FileOutlined />),
+  ];
 
-  useEffect(() => {
-    const changeBackground = () => {
-      console.log(window.scrollY);
-      if (window.scrollY >= 15) {
-        setNavbar(true);
-      } else {
-        setNavbar(false);
-      }
-    };
-    window.addEventListener('scroll', changeBackground);
-    return () => {
-      window.removeEventListener('scroll', changeBackground);
-    };
-  }, []);
-
+  const onClick: MenuProps["onClick"] = (e) => {
+    router.push(e.key);
+  };
   return (
-    <div className={classNames(styles.layout)}>
-      <div className={styles.contentLayout}>
-        <div
-          className={classNames(styles.header, {
-            [styles.activeHeader]: navbar,
-          })}
-        >
-          <NavigationBar />
+    <Layout style={{ minHeight: "100vh" }}>
+      <Sider theme="light" width="300px">
+        <div className={styles.siderHeader}>
+          <DeploymentUnitOutlined style={{ color: "white" }} />
+          <h1>Knowledge Engineering</h1>
         </div>
-        <>{children}</>
-      </div>
-    </div>
+        <Menu
+          onClick={onClick}
+          items={items}
+          defaultSelectedKeys={[router.pathname.substring(1)]}
+        ></Menu>
+      </Sider>
+      <Content style={{ backgroundColor: "#fafaff" }}>{children}</Content>
+    </Layout>
   );
 };
 

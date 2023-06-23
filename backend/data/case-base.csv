@@ -1,1 +1,8 @@
-#release-year;cpu-speed-ghz;cpu-cores;cpu-threads;gpu-vram-gb;gpu-speed-mhz;power-supply-watts;ram-size-gb;ram-speed-mhz;storage-gb;
+#name;manufacturer;releaseYear;cpuSpeedGhz;cpuCores;gpuSpeedMhz;ramType;ramSizeGb;ramSpeedMhz;storageGb;
+macbook-pro-m2;apple;2023;3.5;8;1400;ddr5;16;3500;512;
+macbook-air-m2;apple;2022;3.49;8;1300;ddr5;16;3400;256;
+macbook-pro-m1;apple;2020;3.2;8;1250;ddr5;16;3300;512;
+macbook-pro-m1-max;apple;2021;3.3;10;1350;ddr5;32;3300;2048;
+macbook-air-m1;apple;2020;3.2;8;1200;ddr4;8;3000;256;
+thinkpad-l14;lenovo;2022;2.4;4;1000;ddr4;8;3200;512;
+legion-5-pro;lenovo;2021;3.2;8;1500;ddr5;16;4800;512

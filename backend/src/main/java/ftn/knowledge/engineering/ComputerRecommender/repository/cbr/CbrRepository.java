@@ -1,4 +1,6 @@
 package ftn.knowledge.engineering.ComputerRecommender.repository.cbr;
 
-public interface CbrRepository {
+import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
+
+public interface CbrRepository extends Connector {
 }

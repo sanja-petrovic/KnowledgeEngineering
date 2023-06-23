@@ -1,4 +1,6 @@
 package ftn.knowledge.engineering.ComputerRecommender.service.cbr;
 
-public interface CbrService {
+import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
+
+public interface CbrService extends StandardCBRApplication {
 }

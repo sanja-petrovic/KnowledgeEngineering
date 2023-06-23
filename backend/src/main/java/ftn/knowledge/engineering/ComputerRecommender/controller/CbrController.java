@@ -1,13 +1,15 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
+import ftn.knowledge.engineering.ComputerRecommender.dto.CbrInput;
 import ftn.knowledge.engineering.ComputerRecommender.dto.CbrOutput;
+import ftn.knowledge.engineering.ComputerRecommender.model.ComputerDescription;
 import ftn.knowledge.engineering.ComputerRecommender.service.cbr.CbrService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @Api(value = "/cbr", tags = "Case-based Reasoning")
@@ -21,7 +23,13 @@ public class CbrController {
 
     @GetMapping
     @ApiOperation(value = "Get all computers in case base.")
-    public ResponseEntity<CbrOutput> getDescriptions() {
-        return ResponseEntity.ok(new CbrOutput(this.service.getDescriptions()));
+    public ResponseEntity<List<ComputerDescription>> getDescriptions() {
+        return ResponseEntity.ok(service.getDescriptions());
+    }
+
+    @GetMapping("/similar")
+    @ApiOperation(value = "Get top 5 most similar computers.")
+    public ResponseEntity<CbrOutput> getSimilar(@RequestParam String name) {
+        return ResponseEntity.ok(new CbrOutput(this.service.getSimilar(name)));
     }
 }

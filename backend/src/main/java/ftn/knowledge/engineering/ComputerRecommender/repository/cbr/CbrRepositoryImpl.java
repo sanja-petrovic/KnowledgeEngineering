@@ -6,8 +6,10 @@ import es.ucm.fdi.gaia.jcolibri.exception.InitializingException;
 import es.ucm.fdi.gaia.jcolibri.util.FileIO;
 import ftn.knowledge.engineering.ComputerRecommender.model.ComputerDescription;
 import org.apache.commons.lang.NotImplementedException;
+import org.hibernate.ObjectNotFoundException;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -35,6 +37,15 @@ public class CbrRepositoryImpl implements CbrRepository {
 
     public List<ComputerDescription> getDescriptions() {
         return this.descriptions;
+    }
+    public ComputerDescription getDescription(String name) {
+        for(ComputerDescription computerDescription : this.descriptions) {
+            if (name.equalsIgnoreCase(computerDescription.getName())) {
+                return computerDescription;
+            }
+        }
+
+        throw new EntityNotFoundException();
     }
 
     @Override

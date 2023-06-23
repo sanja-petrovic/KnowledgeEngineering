@@ -2,15 +2,13 @@ package ftn.knowledge.engineering.ComputerRecommender.model;
 
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class ComputerDescription implements CaseComponent {
     private String name;
     private String manufacturer;
@@ -25,7 +23,7 @@ public class ComputerDescription implements CaseComponent {
 
     @Override
     public Attribute getIdAttribute() {
-        return null;
+        return new Attribute("name", ComputerDescription.class);
     }
 
     public ComputerDescription(String[] values) {

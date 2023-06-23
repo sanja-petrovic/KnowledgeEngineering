@@ -10,4 +10,5 @@ import java.util.List;
 public interface CbrRepository extends Connector {
     Collection<CBRCase> getCases();
     List<ComputerDescription> getDescriptions();
+    ComputerDescription getDescription(String name);
 }

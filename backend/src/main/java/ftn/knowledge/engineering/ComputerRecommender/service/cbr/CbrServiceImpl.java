@@ -15,12 +15,15 @@ import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Int
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
+import ftn.knowledge.engineering.ComputerRecommender.dto.CbrOutput;
+import ftn.knowledge.engineering.ComputerRecommender.dto.CbrResult;
 import ftn.knowledge.engineering.ComputerRecommender.model.ComputerDescription;
 import ftn.knowledge.engineering.ComputerRecommender.repository.cbr.CbrRepository;
 import ftn.knowledge.engineering.ComputerRecommender.similarity.Similarity;
 import org.apache.commons.lang.NotImplementedException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -38,6 +41,32 @@ public class CbrServiceImpl implements CbrService {
 
     public List<ComputerDescription> getDescriptions() {
         return this.repository.getDescriptions();
+    }
+    public ComputerDescription getDescription(String name) {
+        return this.repository.getDescription(name);
+    }
+
+    public List<CbrResult> getSimilar(String name) {
+        ComputerDescription input = this.getDescription(name);
+        List<CbrResult> similar = new ArrayList<>();
+        CBRQuery query = new CBRQuery();
+        query.setDescription(input);
+        try {
+            this.configure();
+            this.preCycle();
+            Collection<RetrievalResult> evaluated = NNScoringMethod.evaluateSimilarity(cbrCaseBase.getCases(), query, simConfig);
+            Collection<RetrievalResult> selected = SelectCases.selectTopKRR(evaluated, 6);
+            for (RetrievalResult selection : selected) {
+                ComputerDescription description = (ComputerDescription) selection.get_case().getDescription();
+                if (!description.getName().equalsIgnoreCase(input.getName())) {
+                    similar.add(new CbrResult(description, selection.getEval()));
+                }
+            }
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        }
+
+        return similar;
     }
 
     @Override
@@ -69,16 +98,10 @@ public class CbrServiceImpl implements CbrService {
 
     @Override
     public void cycle(CBRQuery cbrQuery) {
-        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(cbrCaseBase.getCases(), cbrQuery, simConfig);
-        eval = SelectCases.selectTopKRR(eval, 5);
-        System.out.println("Retrieved cases:");
-        for (RetrievalResult nse : eval)
-            System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
-
     }
 
     @Override
-    public void postCycle() throws ExecutionException {
+    public void postCycle() {
         throw new NotImplementedException();
     }
 }

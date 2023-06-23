@@ -22,6 +22,7 @@ import org.apache.commons.lang.NotImplementedException;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.List;
 
 @Service
 public class CbrServiceImpl implements CbrService {
@@ -33,6 +34,10 @@ public class CbrServiceImpl implements CbrService {
         this.repository = repository;
         this.cbrCaseBase = new LinealCaseBase();
         this.simConfig = new NNConfig();
+    }
+
+    public List<ComputerDescription> getDescriptions() {
+        return this.repository.getDescriptions();
     }
 
     @Override

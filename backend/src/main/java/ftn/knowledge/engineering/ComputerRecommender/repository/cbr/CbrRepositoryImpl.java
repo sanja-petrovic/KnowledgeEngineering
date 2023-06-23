@@ -11,13 +11,32 @@ import org.springframework.stereotype.Repository;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 import static ftn.knowledge.engineering.ComputerRecommender.constants.FilePaths.caseBase;
 
 @Repository
 public class CbrRepositoryImpl implements CbrRepository {
+
+    private List<ComputerDescription> descriptions;
+    private final Collection<CBRCase> cases;
+
+    public CbrRepositoryImpl() {
+        this.descriptions = new ArrayList<>();
+        this.cases = retrieveAllCases();
+    }
+
+    public Collection<CBRCase> getCases() {
+        return this.cases;
+    }
+
+    public List<ComputerDescription> getDescriptions() {
+        return this.descriptions;
+    }
+
     @Override
     public Collection<CBRCase> retrieveAllCases() {
         LinkedList<CBRCase> cases = new LinkedList<>();
@@ -33,7 +52,7 @@ public class CbrRepositoryImpl implements CbrRepository {
                 CBRCase cbrCase = new CBRCase();
 
                 ComputerDescription description = new ComputerDescription(values);
-
+                this.descriptions.add(description);
                 cbrCase.setDescription(description);
                 cases.add(cbrCase);
             }

@@ -35,7 +35,7 @@ public class ComputerDescription implements CaseComponent {
         this.cpuSpeedGhz = (Double.parseDouble(values[3]));
         this.cpuCores = Integer.parseInt(values[4]);
         this.gpuSpeedMhz = Integer.parseInt(values[5]);
-        this.ramType = RAMType.valueOf(values[6]);
+        this.ramType = RAMType.valueOf(values[6].toUpperCase());
         this.ramSizeGb = Integer.parseInt(values[7]);
         this.ramSpeedMhz = Integer.parseInt(values[8]);
         this.storageGb = Integer.parseInt(values[9]);

@@ -105,7 +105,7 @@ const CaseBasedReasoning = () => {
                 key={result.description.name}
                 label={formatName(result.description.name)}
               >
-                {result.evaluation}
+                {(result.evaluation * 100).toFixed(4)}%
               </Descriptions.Item>
             ))}
           </Descriptions>

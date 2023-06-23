@@ -1,7 +1,7 @@
 import Button from "@/common/components/button/Button";
 import { CbrResult } from "@/features/types/CbrResult";
 import { ComputerDescription } from "@/features/types/ComputerDescription";
-import { Descriptions, Divider, Form, Select } from "antd";
+import { Descriptions, Divider, Drawer, Form, Select } from "antd";
 import { useForm } from "antd/lib/form/Form";
 import { useEffect, useState } from "react";
 import { getAllDescriptions, getSimilar } from "../services/cbr.service";
@@ -11,6 +11,18 @@ const CaseBasedReasoning = () => {
   const [computers, setComputers] = useState<ComputerDescription[]>([]);
   const [similar, setSimilar] = useState<CbrResult[]>([]);
   const [form] = useForm();
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState<CbrResult | null>(null);
+
+  const showDrawer = (result: CbrResult) => {
+    setOpen(true);
+    setSelected(result);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+    setSelected(null);
+  };
 
   useEffect(() => {
     getAllDescriptions()
@@ -103,12 +115,71 @@ const CaseBasedReasoning = () => {
               <Descriptions.Item
                 span={3}
                 key={result.description.name}
-                label={formatName(result.description.name)}
+                label={
+                  <div
+                    style={{ cursor: "pointer" }}
+                    onClick={() => showDrawer(result)}
+                  >
+                    {formatName(result.description.name)}
+                  </div>
+                }
               >
                 {(result.evaluation * 100).toFixed(4)}%
               </Descriptions.Item>
             ))}
           </Descriptions>
+          <Drawer
+            width={480}
+            placement="right"
+            closable={false}
+            onClose={onClose}
+            style={{ padding: "1rem" }}
+            open={open}
+          >
+            {!!selected && (
+              <>
+                <Descriptions
+                  title={
+                    <h2 style={{ margin: 0 }}>
+                      {formatName(selected?.description.name)}
+                    </h2>
+                  }
+                >
+                  <Descriptions.Item
+                    span={3}
+                    style={{ textTransform: "capitalize" }}
+                    label="Manufacturer"
+                  >
+                    {selected.description.manufacturer}
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="Release year">
+                    {selected.description.releaseYear}
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="CPU speed">
+                    {selected.description.cpuSpeedGhz} GHz
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="CPU cores">
+                    {selected.description.cpuCores}
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="GPU speed">
+                    {selected.description.gpuSpeedMhz} MHz
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="RAM type">
+                    {selected.description.ramType.toUpperCase()}
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="RAM size">
+                    {selected.description.ramSizeGb} GB
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="RAM speed">
+                    {selected.description.ramSpeedMhz} MHz
+                  </Descriptions.Item>
+                  <Descriptions.Item span={3} label="Storage capacity">
+                    {selected.description.storageGb} GB
+                  </Descriptions.Item>
+                </Descriptions>
+              </>
+            )}
+          </Drawer>
         </>
       )}
     </div>

@@ -1,5 +1,5 @@
-import BaseTemplate from "@/common/components/baseTemplate/BaseTemplate";
+import Intro from "@/features/intro/components/Intro";
 
 export default function Home() {
-  return <BaseTemplate></BaseTemplate>;
+  return <Intro />;
 }

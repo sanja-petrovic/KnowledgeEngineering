@@ -1,9 +1,10 @@
 import {
+  ApartmentOutlined,
+  BarChartOutlined,
+  BlockOutlined,
   DeploymentUnitOutlined,
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  UserOutlined,
+  ReadOutlined,
+  ShareAltOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Layout, Menu, Typography } from "antd";
@@ -37,10 +38,12 @@ import styles from "./BaseTemplate.module.scss";
 const BaseTemplate = ({ children }: BaseTemplateProps) => {
   const router = useRouter();
   const items: MenuItem[] = [
-    getItem("Ontology", "ontology", <PieChartOutlined />),
-    getItem("Fuzzy systems", "fuzzy-systems", <DesktopOutlined />),
-    getItem("Bayesian network", "bayesian-network", <UserOutlined />),
-    getItem("Case-based reasoning", "case-based-reasoning", <FileOutlined />),
+    getItem("Introduction", "/", <ReadOutlined />),
+    { type: "divider" },
+    getItem("Ontology", "ontology", <ApartmentOutlined />),
+    getItem("Fuzzy systems", "fuzzy-systems", <BarChartOutlined />),
+    getItem("Bayesian network", "bayesian-network", <DeploymentUnitOutlined />),
+    getItem("Case-based reasoning", "case-based-reasoning", <BlockOutlined />),
   ];
 
   const onClick: MenuProps["onClick"] = (e) => {
@@ -50,7 +53,7 @@ const BaseTemplate = ({ children }: BaseTemplateProps) => {
     <Layout style={{ minHeight: "100vh" }}>
       <Sider theme="light" width="300px">
         <div className={styles.siderHeader}>
-          <DeploymentUnitOutlined style={{ color: "white" }} />
+          <ShareAltOutlined style={{ color: "white" }} />
           <h1>Knowledge Engineering</h1>
         </div>
         <Menu

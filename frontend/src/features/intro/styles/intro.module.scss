@@ -4,6 +4,9 @@
   padding: 3rem;
   gap: 2rem;
   line-height: 1.5rem;
+  ul {
+    margin: -1.5rem;
+  }
   h1,
   h2,
   p {
@@ -16,18 +19,4 @@
   h2 {
     font-weight: 400;
   }
-}
-
-.form {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.5rem;
-  input {
-    width: 300px;
-  }
-}
-
-.button {
-  background-color: #90b3ff;
-  color: white;
 }

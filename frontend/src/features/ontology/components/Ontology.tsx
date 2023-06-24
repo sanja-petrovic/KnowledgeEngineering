@@ -1,13 +1,18 @@
 import Button from "@/common/components/button/Button";
-import { Collapse, Divider, Form, Input, InputNumber, Select } from "antd";
+import { Collapse, Divider, Form, Input, InputNumber, Select, Tag } from "antd";
 import { useForm } from "antd/lib/form/Form";
 import { useState } from "react";
+import { getComponentRecommendation } from "../services/ontology.service";
 import styles from "../styles/ontology.module.scss";
+import { Parameters } from "../types/ComponentParameters";
 const Ontology = () => {
   const [componentForm] = useForm();
   const [recommendationForm] = useForm();
   const [selectedComponent, setSelectedComponent] = useState();
-  const ramTypes = ["ddr", "ddr2", "ddr3", "ddr4", "ddr5"];
+  const ramTypes = ["DDR", "DDR2", "DDR3", "DDR4", "DDR5"];
+  const [componentRecomendations, setComponentRecommendations] = useState<
+    string[]
+  >([]);
 
   const getComponentOptions = () => [
     {
@@ -101,7 +106,7 @@ const Ontology = () => {
             style={{ width: "500px" }}
             placeholder="Type"
             options={ramTypes.map((ramType) => ({
-              label: ramType.toUpperCase(),
+              label: ramType,
               value: ramType,
             }))}
           ></Select>
@@ -296,8 +301,13 @@ const Ontology = () => {
     );
   };
 
-  const handleComponentFinish = () => {
-    console.log(componentForm.getFieldsValue());
+  const handleComponentFinish = async () => {
+    await getComponentRecommendation(
+      selectedComponent ?? "",
+      componentForm.getFieldsValue() as Parameters
+    )
+      .then((response) => setComponentRecommendations(response.data))
+      .catch((error) => console.log(error));
   };
   return (
     <div className={styles.wrapper}>
@@ -363,6 +373,16 @@ const Ontology = () => {
               style={{ width: "500px" }}
             ></Button>
           </Form>
+          {componentRecomendations.length > 0 && (
+            <>
+              <Divider orientation="left" orientationMargin={0}>
+                Results
+              </Divider>
+              {componentRecomendations.map((result) => (
+                <Tag key={result}>{result}</Tag>
+              ))}
+            </>
+          )}
         </Collapse.Panel>
         <Collapse.Panel
           header={<h2>Upgrade recommendation</h2>}

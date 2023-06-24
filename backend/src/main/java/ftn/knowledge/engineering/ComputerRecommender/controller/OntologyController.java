@@ -37,7 +37,7 @@ public class OntologyController {
 
     @GetMapping("/cpu/recommend")
     @ApiOperation(value = "Get recommended CPUs based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendCpus(
+    public ResponseEntity<List<String>> recommendCpus(
             @RequestParam(value = "clockSpeed", required = false) Double clockSpeed,
             @RequestParam(value = "coreCount", required = false) Integer coreCount,
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
@@ -48,7 +48,7 @@ public class OntologyController {
 
     @GetMapping("/ram/recommend")
     @ApiOperation(value = "Get recommended RAMs based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendRams(
+    public ResponseEntity<List<String>> recommendRams(
             @RequestParam(value = "type", required = false) String type,
             @RequestParam(value = "size", required = false) Integer size,
             @RequestParam(value = "latency", required = false) Integer latency,
@@ -60,13 +60,13 @@ public class OntologyController {
     }
     @GetMapping("/chipset/recommend")
     @ApiOperation(value = "Get recommended Chipsets based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendChipsets(
+    public ResponseEntity<List<String>> recommendChipsets(
             @RequestParam(value = "type", required = true) String type) {
         return ResponseEntity.ok(this.service.recommendChipsets(type));
     }
     @GetMapping("/motherboard/recommend")
     @ApiOperation(value = "Get recommended motherboards based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendMotherboards(
+    public ResponseEntity<List<String>> recommendMotherboards(
             @RequestParam(value = "type", required = false) String type,
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "minRAM", required = false) Integer minRAM,
@@ -78,7 +78,7 @@ public class OntologyController {
     }
     @GetMapping("/gpu/recommend")
     @ApiOperation(value = "Get recommended GPUs based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendGpus(
+    public ResponseEntity<List<String>> recommendGpus(
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "minVRAM", required = false) Integer minVRAM,
             @RequestParam(value = "maxVRAM", required = false) Integer maxVRAM,
@@ -91,7 +91,7 @@ public class OntologyController {
 
     @GetMapping("/storage/recommend")
     @ApiOperation(value = "Get recommended storage based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendStorage(
+    public ResponseEntity<List<String>> recommendStorage(
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "type", required = false) String type,
             @RequestParam(value = "memoryMin", required = false) Integer minMemoryCapacity,
@@ -104,7 +104,7 @@ public class OntologyController {
     }
     @GetMapping("/powersupply/recommend")
     @ApiOperation(value = "Get recommended powersupply based on properties.", httpMethod = "GET")
-    public ResponseEntity<?> recommendPowerSupply(
+    public ResponseEntity<List<String>> recommendPowerSupply(
             @RequestParam(value = "manufacturer", required = false) String manufacturer,
             @RequestParam(value = "type", required = false) String type,
             @RequestParam(value = "wattage", required = false) Integer wattage,

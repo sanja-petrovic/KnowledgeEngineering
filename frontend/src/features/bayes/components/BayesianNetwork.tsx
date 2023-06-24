@@ -1,13 +1,16 @@
 import Button from "@/common/components/button/Button";
-import { Divider, Form, Select } from "antd";
+import { Descriptions, Divider, Form, Select } from "antd";
 import { useForm } from "antd/lib/form/Form";
 import { useEffect, useState } from "react";
-import { getSymptoms } from "../services/bayes.service";
+import { evaluateCause, getSymptoms } from "../services/bayes.service";
 import styles from "../styles/bayes.module.scss";
+import { BayesInput } from "../types/BayesInput";
+import { BayesOutput } from "../types/BayesOutput";
 
 const BayesianNetwork = () => {
   const [form] = useForm();
-  const [symptoms, setSymptoms] = useState<string[]>();
+  const [symptoms, setSymptoms] = useState<string[]>([]);
+  const [causes, setCauses] = useState<BayesOutput[]>([]);
 
   useEffect(() => {
     getSymptoms()
@@ -17,6 +20,15 @@ const BayesianNetwork = () => {
 
   const formatSymptom = (symptom: string) => {
     return symptom.replaceAll("_", " ");
+  };
+
+  const handleEvaluate = () => {
+    const input: BayesInput = {
+      symptoms: form.getFieldValue("symptoms"),
+    };
+    evaluateCause(input)
+      .then((response) => setCauses(response.data))
+      .catch((error) => console.log(error));
   };
 
   return (
@@ -35,7 +47,7 @@ const BayesianNetwork = () => {
       <div style={{ marginTop: "-1rem" }}>
         Select symptoms from the list below to get the most likely causes behind
         them.
-        <Form form={form} className={styles.form}>
+        <Form form={form} className={styles.form} onFinish={handleEvaluate}>
           <Form.Item
             rules={[
               {
@@ -58,6 +70,24 @@ const BayesianNetwork = () => {
           </Form.Item>
           <Button type="primary" text="Evaluate" />
         </Form>
+        {causes.length > 0 && (
+          <>
+            <Divider orientation="left" orientationMargin={0}>
+              Results
+            </Divider>
+            <Descriptions title="Possible causes">
+              {causes.map((result) => (
+                <Descriptions.Item
+                  span={3}
+                  key={result.cause}
+                  label={formatSymptom(result.cause)}
+                >
+                  {result.probability.toFixed(4)}%
+                </Descriptions.Item>
+              ))}
+            </Descriptions>
+          </>
+        )}
       </div>
     </div>
   );

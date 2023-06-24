@@ -76,15 +76,17 @@ const BayesianNetwork = () => {
               Results
             </Divider>
             <Descriptions title="Possible causes">
-              {causes.map((result) => (
-                <Descriptions.Item
-                  span={3}
-                  key={result.cause}
-                  label={formatSymptom(result.cause)}
-                >
-                  {result.probability.toFixed(4)}%
-                </Descriptions.Item>
-              ))}
+              {causes
+                .sort((a, b) => b.probability - a.probability)
+                .map((result) => (
+                  <Descriptions.Item
+                    span={3}
+                    key={result.cause}
+                    label={formatSymptom(result.cause)}
+                  >
+                    {result.probability.toFixed(4)}%
+                  </Descriptions.Item>
+                ))}
             </Descriptions>
           </>
         )}

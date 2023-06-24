@@ -66,4 +66,15 @@ public class BayesServiceImpl implements BayesService {
 
         return output;
     }
+
+    @Override
+    public List<String> getSymptoms() {
+        List<String> symptoms = new ArrayList<>();
+        for (Node node : this.network.getNodes()) {
+            if (node.getChildren().size() == 0) {
+                symptoms.add(node.getName());
+            }
+        }
+        return symptoms;
+    }
 }

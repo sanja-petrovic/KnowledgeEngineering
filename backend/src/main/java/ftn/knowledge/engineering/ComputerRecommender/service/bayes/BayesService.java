@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface BayesService {
     List<BayesOutput> evaluateCause(BayesInput input);
+    List<String> getSymptoms();
 }

@@ -1,10 +1,24 @@
 import Button from "@/common/components/button/Button";
 import { Divider, Form, Select } from "antd";
 import { useForm } from "antd/lib/form/Form";
+import { useEffect, useState } from "react";
+import { getSymptoms } from "../services/bayes.service";
 import styles from "../styles/bayes.module.scss";
 
 const BayesianNetwork = () => {
   const [form] = useForm();
+  const [symptoms, setSymptoms] = useState<string[]>();
+
+  useEffect(() => {
+    getSymptoms()
+      .then((response) => setSymptoms(response.data))
+      .catch((error) => console.log(error));
+  }, []);
+
+  const formatSymptom = (symptom: string) => {
+    return symptom.replaceAll("_", " ");
+  };
+
   return (
     <div className={styles.wrapper}>
       <h1>Bayesian network</h1>
@@ -36,6 +50,10 @@ const BayesianNetwork = () => {
               mode="multiple"
               allowClear
               placeholder="Select symptoms"
+              options={symptoms?.map((symptom) => ({
+                label: formatSymptom(symptom),
+                value: symptom,
+              }))}
             />
           </Form.Item>
           <Button type="primary" text="Evaluate" />

@@ -50,8 +50,19 @@ const BaseTemplate = ({ children }: BaseTemplateProps) => {
     router.push(e.key);
   };
   return (
-    <Layout style={{ minHeight: "100vh" }}>
-      <Sider theme="light" width="300px">
+    <Layout hasSider style={{ minHeight: "100vh" }}>
+      <Sider
+        theme="light"
+        width="300px"
+        style={{
+          overflow: "auto",
+          height: "100vh",
+          position: "fixed",
+          left: 0,
+          top: 0,
+          bottom: 0,
+        }}
+      >
         <div className={styles.siderHeader}>
           <ShareAltOutlined style={{ color: "white" }} />
           <h1>Knowledge Engineering</h1>
@@ -62,7 +73,15 @@ const BaseTemplate = ({ children }: BaseTemplateProps) => {
           defaultSelectedKeys={[router.pathname.substring(1)]}
         ></Menu>
       </Sider>
-      <Content style={{ backgroundColor: "#fafaff" }}>{children}</Content>
+      <Layout style={{ marginLeft: 300 }}>
+        <Content
+          style={{
+            backgroundColor: "#fafaff",
+          }}
+        >
+          {children}
+        </Content>
+      </Layout>
     </Layout>
   );
 };

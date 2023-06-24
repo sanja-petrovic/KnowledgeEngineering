@@ -1,7 +1,7 @@
 import { Divider } from "antd";
-import styles from "../styles/intro.module.scss";
+import styles from "../styles/introduction.module.scss";
 
-const Intro = () => {
+const Introduction = () => {
   return (
     <div className={styles.wrapper}>
       <h1>Knowledge Engineering</h1>
@@ -39,4 +39,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Introduction;

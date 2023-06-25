@@ -41,4 +41,19 @@ public class DesktopConverterImpl implements  DesktopConverter{
         }
         return converted;
     }
+
+    @Override
+    public Desktop convertFromOwlIndivudal(OWLNamedIndividual individual) {
+        List<OWLNamedIndividual> motherboard = new ArrayList<>();
+        motherboard.add(this.service.getMotherboardByName(this.repository.getObjectPropertyValueOfIndividual(individual, PropertyIris.computerMotherboardIri).get(0).getIRI().getShortForm()));
+        List<OWLNamedIndividual> gpu = new ArrayList<>();
+        gpu.add(this.service.getGPUByName(this.repository.getObjectPropertyValueOfIndividual(individual, PropertyIris.computerGpuIri).get(0).getIRI().getShortForm()));
+        return new Desktop(individual.getIRI().getShortForm(),
+                individual.getIRI().getShortForm(),
+                Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.priceIri).get(0).getLiteral()),
+                PlatformCompatibility.DESKTOP,
+                motherboardConverter.convertFromOwlIndividuals(motherboard).get(0),
+                gpuConverter.convertFromOwlIndividuals(gpu).get(0)
+        );
+    }
 }

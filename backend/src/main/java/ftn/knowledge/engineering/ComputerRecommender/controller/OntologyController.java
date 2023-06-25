@@ -4,11 +4,9 @@ import ftn.knowledge.engineering.ComputerRecommender.converter.ChipsetConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.DesktopConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
 
-import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.service.ontology.OntologyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import ftn.knowledge.engineering.ComputerRecommender.converter.MotherboardConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,17 +19,10 @@ import java.util.List;
 @RequestMapping(value = "/ontology")
 public class OntologyController {
     private final OntologyService service;
-    private final MotherboardConverter motherboardConverter;
-    private final GPUConverter gpuConverter;
-    private final ChipsetConverter chipsetConverter;
     private final DesktopConverter desktopConverter;
     @Autowired
-    public OntologyController(OntologyService service, MotherboardConverter motherboardConverter, GPUConverter gpuConverter,
-                              ChipsetConverter chipsetConverter, DesktopConverter desktopConverter) {
+    public OntologyController(OntologyService service, DesktopConverter desktopConverter) {
         this.service = service;
-        this.motherboardConverter = motherboardConverter;
-        this.gpuConverter = gpuConverter;
-        this.chipsetConverter = chipsetConverter;
         this.desktopConverter = desktopConverter;
     }
 
@@ -119,57 +110,19 @@ public class OntologyController {
         return ResponseEntity.ok(this.service.recommendSPowerSupply(manufacturer != null ? manufacturer : "", type != null ? type : "", wattage != null ? wattage : 0, inputVoltageMin != null ? inputVoltageMin : Integer.MAX_VALUE, inputVoltageMax != null ? inputVoltageMax : Integer.MAX_VALUE, outputVoltage != null ? outputVoltage : Integer.MAX_VALUE, inputAmperage != null ? inputAmperage : Integer.MAX_VALUE, outputAmperage != null ? outputAmperage : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
     }
 
-    @PutMapping("/cpu/upgrade")
-    @ApiOperation(value = "Get suggested CPU upgrades.", httpMethod = "PUT")
-    public ResponseEntity<?> upgradeCpus(@RequestBody Desktop desktop) {
-        return ResponseEntity.ok(this.service.recommendCpuUpgrades(desktop));
+
+    @GetMapping("/upgrade")
+    @ApiOperation(value = "Get suggested upgrade for a component based on a desktop.", httpMethod = "GET")
+    public ResponseEntity<List<String>> getUpgrades(
+            @RequestParam(required = false) String desktop,
+            @RequestParam String componentType) {
+
+        return ResponseEntity.ok(this.service.recommendUpgradesDesktop(this.desktopConverter.convertFromOwlIndivudal(this.service.getDesktopByName(desktop)), componentType));
     }
 
-    @PutMapping("/ram/upgrade")
-    @ApiOperation(value = "Get suggested RAM upgrades.", httpMethod = "PUT")
-    public ResponseEntity<?> upgradeRams(@RequestBody Desktop desktop) {
-        return ResponseEntity.ok(this.service.recommendRamUpgrades(desktop));
-    }
-
-    @GetMapping("/chipset/upgrade")
-    @ApiOperation(value = "Get upgrades for chipset.", httpMethod = "GET")
-    public ResponseEntity<?> getUpgradesChipset(
-            @RequestParam(value = "type", required = true) String type,
-            @RequestParam(value = "name", required = true) String name) {
-        Chipset chipset = new Chipset();
-        chipset.setType(ChipsetType.valueOf(type));
-        chipset.setName(name);
-        return ResponseEntity.ok(this.chipsetConverter.convertFromOwlIndividuals(this.service.upgradeChipset(chipset)));
-    }
-
-    @GetMapping("/gpu/upgrade")
-    @ApiOperation(value = "Get upgrades for GPU.", httpMethod = "GET")
-    public ResponseEntity<?> getUpgradesGPU(
-            @RequestParam(value = "manufacturer", required = true) String manufacturer,
-            @RequestParam(value = "boostClock", required = true) double boostClockSpeed,
-            @RequestParam(value = "VRAMSize", required = true) int VRAM) {
-        GPU gpu = new GPU();
-        gpu.setManufacturer(manufacturer);
-        gpu.setBoostClockSpeed(boostClockSpeed);
-        gpu.setVRAMSize(VRAM);
-        return ResponseEntity.ok(this.gpuConverter.convertFromOwlIndividuals(this.service.upgradeGPU(gpu)));
-    }
-
-    @GetMapping("/motherboard/upgrade")
-    @ApiOperation(value = "Get upgrades for Motherboard.", httpMethod = "GET")
-    public ResponseEntity<?> getUpgradesMotherboard(
-            @RequestParam(value = "type", required = true) String motherboardType,
-            @RequestParam(value = "numberOfRAMSlots", required = true) int numberOfRAMSlots) {
-        Motherboard motherboard = new Motherboard();
-        motherboard.setType(MotherboardType.valueOf(motherboardType));
-        motherboard.setNumberOfRAMSlots(numberOfRAMSlots);
-        List<OWLNamedIndividual> mbs = this.service.upgradeMotherboard(motherboard);
-        List<Motherboard> mb = this.motherboardConverter.convertFromOwlIndividuals(mbs);
-        return ResponseEntity.ok(mb);
-    }
     @GetMapping("/desktop")
     @ApiOperation(value = "Get desktops ", httpMethod = "GET")
-    public ResponseEntity<?> GetDesktops(){
+    public ResponseEntity<?> getDesktops(){
         return ResponseEntity.ok(this.desktopConverter.convertFromOwlIndividuals(this.service.getDesktops()));
     }
 

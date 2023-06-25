@@ -11,7 +11,12 @@ export const getComponentRecommendation = async (
   const params = new URLSearchParams(parameters);
   const filteredParams = {};
   params.forEach((value, key) => {
-    if (value !== "undefined" && value !== "null" && key !== "component") {
+    if (
+      value !== "undefined" &&
+      value !== "null" &&
+      value !== "" &&
+      key !== "component"
+    ) {
       //@ts-ignore
       filteredParams[key] = value;
     }

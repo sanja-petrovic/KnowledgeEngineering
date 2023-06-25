@@ -13,6 +13,8 @@ const Ontology = () => {
   const [componentRecomendations, setComponentRecommendations] = useState<
     string[]
   >([]);
+  const [selectedComponentForUpgrade, setSelectedComponentForUpgrade] =
+    useState();
 
   const getComponentOptions = () => [
     {
@@ -306,7 +308,9 @@ const Ontology = () => {
       selectedComponent ?? "",
       componentForm.getFieldsValue() as Parameters
     )
-      .then((response) => setComponentRecommendations(response.data))
+      .then((response) => {
+        setComponentRecommendations(response.data);
+      })
       .catch((error) => console.log(error));
   };
   return (
@@ -344,7 +348,6 @@ const Ontology = () => {
                 options={getComponentOptions()}
                 onChange={(e) => {
                   setSelectedComponent(e);
-                  console.log(e);
                 }}
                 placeholder="Select component type"
               ></Select>
@@ -378,16 +381,35 @@ const Ontology = () => {
               <Divider orientation="left" orientationMargin={0}>
                 Results
               </Divider>
-              {componentRecomendations.map((result) => (
-                <Tag key={result}>{result}</Tag>
-              ))}
+              {componentRecomendations
+                .filter((item) => item != "Evo" && item != "p")
+                .map((result) => (
+                  <Tag color="#90b3ff" key={result}>
+                    {result}
+                  </Tag>
+                ))}
             </>
           )}
         </Collapse.Panel>
-        <Collapse.Panel
-          header={<h2>Upgrade recommendation</h2>}
-          key="2"
-        ></Collapse.Panel>
+        <Collapse.Panel header={<h2>Upgrade recommendation</h2>} key="2">
+          <Form form={recommendationForm}>
+            <Form.Item name="componentType">
+              <Select
+                allowClear
+                style={{ width: "500px" }}
+                options={getComponentOptions()}
+                placeholder="Select component type"
+                onChange={(e) => setSelectedComponentForUpgrade(e)}
+              ></Select>
+            </Form.Item>
+            <Form.Item name="componentName"></Form.Item>
+            <Button
+              type="primary"
+              text="Submit"
+              style={{ width: "500px" }}
+            ></Button>
+          </Form>
+        </Collapse.Panel>
       </Collapse>
     </div>
   );

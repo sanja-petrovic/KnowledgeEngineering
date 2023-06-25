@@ -120,7 +120,7 @@ public class OntologyController {
     @GetMapping("/desktop")
     @ApiOperation(value = "Get desktops ", httpMethod = "GET")
     public ResponseEntity<?> getDesktops(){
-        return ResponseEntity.ok((this.service.getDesktops()));
+        return ResponseEntity.ok(this.desktopConverter.convertFromOwlIndividuals(this.service.getDesktops()));
     }
 
 }

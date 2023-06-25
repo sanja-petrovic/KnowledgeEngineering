@@ -1,13 +1,10 @@
 package ftn.knowledge.engineering.ComputerRecommender.controller;
 
-import ftn.knowledge.engineering.ComputerRecommender.converter.ChipsetConverter;
 import ftn.knowledge.engineering.ComputerRecommender.converter.DesktopConverter;
-import ftn.knowledge.engineering.ComputerRecommender.converter.GPUConverter;
 
 import ftn.knowledge.engineering.ComputerRecommender.service.ontology.OntologyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import ftn.knowledge.engineering.ComputerRecommender.converter.MotherboardConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -107,7 +104,7 @@ public class OntologyController {
             @RequestParam(value = "priceMin", required = false)  Double minPrice,
             @RequestParam(value = "priceMax", required = false)  Double maxPrice)
     {
-        return ResponseEntity.ok(this.service.recommendSPowerSupply(manufacturer != null ? manufacturer : "", type != null ? type : "", wattage != null ? wattage : 0, inputVoltageMin != null ? inputVoltageMin : Integer.MAX_VALUE, inputVoltageMax != null ? inputVoltageMax : Integer.MAX_VALUE, outputVoltage != null ? outputVoltage : Integer.MAX_VALUE, inputAmperage != null ? inputAmperage : Integer.MAX_VALUE, outputAmperage != null ? outputAmperage : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
+        return ResponseEntity.ok(this.service.recommendPowerSupply(manufacturer != null ? manufacturer : "", type != null ? type : "", wattage != null ? wattage : 0, inputVoltageMin != null ? inputVoltageMin : Integer.MAX_VALUE, inputVoltageMax != null ? inputVoltageMax : Integer.MAX_VALUE, outputVoltage != null ? outputVoltage : Integer.MAX_VALUE, inputAmperage != null ? inputAmperage : Integer.MAX_VALUE, outputAmperage != null ? outputAmperage : Integer.MAX_VALUE, minPrice != null ? minPrice : 0, maxPrice != null ? maxPrice : Integer.MAX_VALUE));
     }
 
 
@@ -123,7 +120,7 @@ public class OntologyController {
     @GetMapping("/desktop")
     @ApiOperation(value = "Get desktops ", httpMethod = "GET")
     public ResponseEntity<?> getDesktops(){
-        return ResponseEntity.ok(this.desktopConverter.convertFromOwlIndividuals(this.service.getDesktops()));
+        return ResponseEntity.ok((this.service.getDesktops()));
     }
 
 }

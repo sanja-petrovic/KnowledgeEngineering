@@ -26,3 +26,10 @@ export const getComponentRecommendation = async (
   ).toString()}`;
   return await api.get(path);
 };
+
+export const getDesktops = async () => await api.get(`${prefix}/desktop`);
+
+export const getUpgrades = async (desktop: string, componentType: string) =>
+  await api.get(
+    `${prefix}/upgrade?desktop=${desktop}&componentType=${componentType}`
+  );

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Desktop extends Base{
+public class Desktop extends Base {
     private Motherboard motherboard;
     private GPU gpu;
     public Desktop(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility,Motherboard motherboard, GPU gpu){

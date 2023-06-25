@@ -283,7 +283,7 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendSPowerSupply(String manufacturer, String type, Integer wattage, Integer inputVoltageMin, Integer inputVoltageMax, Integer outputVoltage, Double inputAmperage, Double outputAmperage, Double minPrice, Double maxPrice) {
+    public List<String> recommendPowerSupply(String manufacturer, String type, Integer wattage, Integer inputVoltageMin, Integer inputVoltageMax, Integer outputVoltage, Double inputAmperage, Double outputAmperage, Double minPrice, Double maxPrice) {
         List<OWLNamedIndividual> powerSupplyIndividuals = repository.getPowerSupplyIndividuals();
         List<String> recommendations = new ArrayList<>();
         for (OWLNamedIndividual individual : powerSupplyIndividuals) {
@@ -419,6 +419,7 @@ public class OntologyServiceImpl implements OntologyService {
     public List<OWLNamedIndividual> getDesktops() {
         return this.repository.getDesktopIndividuals();
     }
+
 
 
 }

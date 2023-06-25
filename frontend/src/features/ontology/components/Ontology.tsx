@@ -1,13 +1,27 @@
 import Button from "@/common/components/button/Button";
-import { Collapse, Divider, Form, Input, InputNumber, Select, Tag } from "antd";
+import {
+  Collapse,
+  Divider,
+  Form,
+  Input,
+  InputNumber,
+  Select,
+  Tag,
+  Tooltip,
+} from "antd";
 import { useForm } from "antd/lib/form/Form";
-import { useState } from "react";
-import { getComponentRecommendation } from "../services/ontology.service";
+import { useEffect, useState } from "react";
+import {
+  getComponentRecommendation,
+  getDesktops,
+  getUpgrades,
+} from "../services/ontology.service";
 import styles from "../styles/ontology.module.scss";
 import { Parameters } from "../types/ComponentParameters";
+import { Desktop } from "../types/Desktop";
 const Ontology = () => {
   const [componentForm] = useForm();
-  const [recommendationForm] = useForm();
+  const [upgradeForm] = useForm();
   const [selectedComponent, setSelectedComponent] = useState();
   const ramTypes = ["DDR", "DDR2", "DDR3", "DDR4", "DDR5"];
   const [componentRecomendations, setComponentRecommendations] = useState<
@@ -15,6 +29,17 @@ const Ontology = () => {
   >([]);
   const [selectedComponentForUpgrade, setSelectedComponentForUpgrade] =
     useState();
+  const [desktops, setDesktops] = useState<Desktop[]>([]);
+  const [upgrades, setUpgrades] = useState<string[]>([]);
+
+  useEffect(() => {
+    getDesktops()
+      .then((response) => setDesktops(response.data))
+      .catch((error) => console.log(error));
+  }, []);
+
+  const formatDesktop = (desktopName: string) =>
+    desktopName.replaceAll("_", " ");
 
   const getComponentOptions = () => [
     {
@@ -43,6 +68,28 @@ const Ontology = () => {
     },
   ];
 
+  const getComponentOptionsUpgrade = () => [
+    {
+      label: "CPU",
+      value: "cpu",
+    },
+    {
+      label: "RAM",
+      value: "ram",
+    },
+    {
+      label: "Motherboard",
+      value: "motherboard",
+    },
+    {
+      label: "GPU",
+      value: "gpu",
+    },
+    {
+      label: "Chipset",
+      value: "chipset",
+    },
+  ];
   const getCpuInputFields = () => {
     return (
       <>
@@ -309,7 +356,27 @@ const Ontology = () => {
       componentForm.getFieldsValue() as Parameters
     )
       .then((response) => {
-        setComponentRecommendations(response.data);
+        console.log(response.data.length);
+        if (response.data.length === 0) {
+          setComponentRecommendations(["-1"]);
+        } else {
+          setComponentRecommendations(response.data);
+        }
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const handleUpgradeFinish = async () => {
+    getUpgrades(
+      upgradeForm.getFieldValue("desktop"),
+      upgradeForm.getFieldValue("componentType")
+    )
+      .then((response) => {
+        if (response.data.length === 0) {
+          setUpgrades(["-1"]);
+        } else {
+          setUpgrades(response.data);
+        }
       })
       .catch((error) => console.log(error));
   };
@@ -383,32 +450,83 @@ const Ontology = () => {
               </Divider>
               {componentRecomendations
                 .filter((item) => item != "Evo" && item != "p")
-                .map((result) => (
-                  <Tag color="#90b3ff" key={result}>
-                    {result}
-                  </Tag>
-                ))}
+                .map((result) =>
+                  result === "-1" ? (
+                    <>
+                      The system did not find a suitable component to recommend.
+                    </>
+                  ) : (
+                    <Tag color="#90b3ff" key={result}>
+                      {result}
+                    </Tag>
+                  )
+                )}
             </>
           )}
         </Collapse.Panel>
         <Collapse.Panel header={<h2>Upgrade recommendation</h2>} key="2">
-          <Form form={recommendationForm}>
+          <Form form={upgradeForm} onFinish={handleUpgradeFinish}>
             <Form.Item name="componentType">
               <Select
                 allowClear
                 style={{ width: "500px" }}
-                options={getComponentOptions()}
+                options={getComponentOptionsUpgrade()}
                 placeholder="Select component type"
-                onChange={(e) => setSelectedComponentForUpgrade(e)}
               ></Select>
             </Form.Item>
-            <Form.Item name="componentName"></Form.Item>
+            <Form.Item name="desktop">
+              <Select
+                allowClear
+                style={{ width: "500px" }}
+                placeholder="Select desktop"
+              >
+                {desktops?.map((desktop) => (
+                  <Select.Option value={desktop.name} key={desktop.name}>
+                    <Tooltip
+                      placement="left"
+                      title={
+                        <>
+                          <b>{formatDesktop(desktop.name)}</b> <br />{" "}
+                          Motherboard: {desktop.motherboard.name}
+                          <br />
+                          RAM: {desktop.motherboard.ram}
+                          <br />
+                          GPU: {desktop.gpu.name}
+                          <br />
+                          CPU: {desktop.motherboard.cpu.name}
+                          <br />
+                          Chipset: {desktop.motherboard.chipset.name}
+                        </>
+                      }
+                    >
+                      {formatDesktop(desktop.name)}
+                    </Tooltip>
+                  </Select.Option>
+                ))}
+              </Select>
+            </Form.Item>
             <Button
               type="primary"
               text="Submit"
               style={{ width: "500px" }}
             ></Button>
           </Form>
+          {upgrades.length > 0 && (
+            <>
+              <Divider orientation="left" orientationMargin={0}>
+                Results
+              </Divider>
+              {upgrades.map((result) =>
+                result === "-1" ? (
+                  <>No upgrades found for this desktop and component.</>
+                ) : (
+                  <Tag color="#90b3ff" key={result}>
+                    {result}
+                  </Tag>
+                )
+              )}
+            </>
+          )}
         </Collapse.Panel>
       </Collapse>
     </div>

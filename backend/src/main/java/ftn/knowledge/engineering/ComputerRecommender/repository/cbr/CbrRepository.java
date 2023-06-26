@@ -11,4 +11,6 @@ public interface CbrRepository extends Connector {
     Collection<CBRCase> getCases();
     List<ComputerDescription> getDescriptions();
     ComputerDescription getDescription(String name);
+    void save(ComputerDescription computerDescription);
+
 }

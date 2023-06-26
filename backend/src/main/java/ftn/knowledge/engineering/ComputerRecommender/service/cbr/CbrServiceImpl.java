@@ -69,6 +69,29 @@ public class CbrServiceImpl implements CbrService {
     }
 
     @Override
+    public List<CbrResult> getSimilar(ComputerDescription input) {
+        List<CbrResult> similar = new ArrayList<>();
+        CBRQuery query = new CBRQuery();
+        query.setDescription(input);
+        try {
+            this.configure();
+            this.preCycle();
+            Collection<RetrievalResult> evaluated = NNScoringMethod.evaluateSimilarity(cbrCaseBase.getCases(), query, simConfig);
+            Collection<RetrievalResult> selected = SelectCases.selectTopKRR(evaluated, 5);
+            for (RetrievalResult selection : selected) {
+                ComputerDescription description = (ComputerDescription) selection.get_case().getDescription();
+                similar.add(new CbrResult(description, selection.getEval()));
+
+            }
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        }
+
+        this.repository.save(input);
+        return similar;
+    }
+
+    @Override
     public void configure() {
         this.simConfig.setDescriptionSimFunction(new Average());
         this.addMappingToConfig("releaseYear", new Threshold(4));

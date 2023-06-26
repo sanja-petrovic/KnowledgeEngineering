@@ -32,4 +32,11 @@ public class CbrController {
     public ResponseEntity<CbrOutput> getSimilar(@RequestParam String name) {
         return ResponseEntity.ok(new CbrOutput(this.service.getSimilar(name)));
     }
+
+    @GetMapping("/similar/v2")
+    @ApiOperation(value = "Get top 5 most similar computers.")
+    public ResponseEntity<CbrOutput> getSimilar(ComputerDescription computerDescription) {
+        return ResponseEntity.ok(new CbrOutput(this.service.getSimilar(computerDescription)));
+    }
+
 }

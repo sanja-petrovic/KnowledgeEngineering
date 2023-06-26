@@ -1,10 +1,22 @@
 import Button from "@/common/components/button/Button";
 import { CbrResult } from "@/features/types/CbrResult";
 import { ComputerDescription } from "@/features/types/ComputerDescription";
-import { Descriptions, Divider, Drawer, Form, Select } from "antd";
+import {
+  Descriptions,
+  Divider,
+  Drawer,
+  Form,
+  Input,
+  InputNumber,
+  Select,
+} from "antd";
 import { useForm } from "antd/lib/form/Form";
 import { useEffect, useState } from "react";
-import { getAllDescriptions, getSimilar } from "../services/cbr.service";
+import {
+  getAllDescriptions,
+  getSimilar,
+  getSimilarV2,
+} from "../services/cbr.service";
 import styles from "../styles/cbr.module.scss";
 
 const CaseBasedReasoning = () => {
@@ -13,6 +25,9 @@ const CaseBasedReasoning = () => {
   const [form] = useForm();
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<CbrResult | null>(null);
+  const [componentsForm] = useForm();
+  const ramTypes = ["DDR", "DDR2", "DDR3", "DDR4", "DDR5"];
+  const [selectedComputer, setSelectedComputer] = useState<string>("");
 
   const showDrawer = (result: CbrResult) => {
     setOpen(true);
@@ -40,9 +55,20 @@ const CaseBasedReasoning = () => {
   };
 
   const handleEvaluate = () => {
-    console.log(form.getFieldsValue());
     getSimilar(form.getFieldValue("computer"))
-      .then((response) => setSimilar(response.data.results))
+      .then((response) => {
+        setSimilar(response.data.results);
+        setSelectedComputer(form.getFieldValue("computer"));
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const handleEvaluateComponents = async () => {
+    await getSimilarV2(componentsForm.getFieldsValue() as ComputerDescription)
+      .then((response) => {
+        setSimilar(response.data.results);
+        setSelectedComputer(componentsForm.getFieldValue("name"));
+      })
       .catch((error) => console.log(error));
   };
 
@@ -77,16 +103,18 @@ const CaseBasedReasoning = () => {
       <Divider style={{ marginTop: "-1rem" }} />
       <h2>Similarity evaluation</h2>
       <div style={{ marginTop: "-1rem" }}>
-        Select a computer from the list below to get the top 5 computers most
-        similar to it.
+        <div style={{ maxWidth: "500px" }}>
+          Select a computer from the list below to get the top 5 computers most
+          similar to it.
+        </div>
       </div>
-      <Form form={form} className={styles.form} onFinish={handleEvaluate}>
+      <Form form={form} onFinish={handleEvaluate}>
         <Form.Item
           rules={[{ required: true, message: "Please select a computer." }]}
           name="computer"
         >
           <Select
-            style={{ width: "300px" }}
+            style={{ width: "500px" }}
             allowClear
             placeholder="Select a computer"
             options={computers.map((item) => ({
@@ -95,7 +123,114 @@ const CaseBasedReasoning = () => {
             }))}
           ></Select>
         </Form.Item>
-        <Button type="primary" text="Evaluate" />
+        <Button type="primary" style={{ width: "500px" }} text="Evaluate" />
+      </Form>
+      <Divider
+        style={{
+          width: "500px",
+          minWidth: "500px",
+        }}
+      >
+        Or
+      </Divider>
+      <div style={{ maxWidth: "500px" }}>
+        Enter the properties of a computer below to get the top 5 computers most
+        similar to it.
+      </div>
+      <Form
+        form={componentsForm}
+        onFinish={handleEvaluateComponents}
+        className={styles.secondForm}
+      >
+        <Form.Item
+          name="name"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <Input style={{ width: "500px" }} placeholder="Computer name" />
+        </Form.Item>
+        <Form.Item
+          name="manufacturer"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <Input style={{ width: "500px" }} placeholder="Manufacturer" />
+        </Form.Item>
+        <Form.Item
+          name="releaseYear"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber style={{ width: "500px" }} placeholder="Release year" />
+        </Form.Item>
+        <Form.Item
+          name="cpuSpeedGhz"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber
+            style={{ width: "500px" }}
+            placeholder="CPU speed"
+            addonAfter="GHz"
+          />
+        </Form.Item>
+        <Form.Item
+          name="cpuCores"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber style={{ width: "500px" }} placeholder="CPU cores" />
+        </Form.Item>
+        <Form.Item
+          name="gpuSpeedMhz"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber
+            style={{ width: "500px" }}
+            placeholder="GPU speed"
+            addonAfter="MHz"
+          />
+        </Form.Item>
+        <Form.Item
+          name="ramType"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <Select
+            style={{ width: "500px" }}
+            options={ramTypes.map((ramType) => ({
+              label: ramType,
+              value: ramType,
+            }))}
+            placeholder="RAM type"
+          />
+        </Form.Item>
+        <Form.Item
+          name="ramSizeGb"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber
+            style={{ width: "500px" }}
+            placeholder="RAM size"
+            addonAfter="GB"
+          />
+        </Form.Item>
+        <Form.Item
+          name="ramSpeedMhz"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber
+            style={{ width: "500px" }}
+            placeholder="RAM speed"
+            addonAfter="MHz"
+          />
+        </Form.Item>
+        <Form.Item
+          name="storageGb"
+          rules={[{ required: true, message: "This field is required." }]}
+        >
+          <InputNumber
+            style={{ width: "500px" }}
+            placeholder="Storage capacity"
+            addonAfter="GB"
+          />
+        </Form.Item>
+
+        <Button type="primary" style={{ width: "500px" }} text="Evaluate" />
       </Form>
       {similar.length > 0 && (
         <>
@@ -108,7 +243,7 @@ const CaseBasedReasoning = () => {
           </Divider>
           <Descriptions
             title={`Top 5 most similar computers to ${formatName(
-              form.getFieldValue("computer")
+              selectedComputer
             )}`}
           >
             {similar.map((result) => (

@@ -1,6 +1,7 @@
 package ftn.knowledge.engineering.ComputerRecommender.service.ontology;
 
 import ftn.knowledge.engineering.ComputerRecommender.constants.PropertyIris;
+import ftn.knowledge.engineering.ComputerRecommender.converter.DesktopConverter;
 import ftn.knowledge.engineering.ComputerRecommender.model.*;
 import ftn.knowledge.engineering.ComputerRecommender.repository.ontology.OntologyRepository;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
@@ -89,7 +90,7 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendCpuUpgrades(Desktop desktop) {
+    public List<String> recommendCpuUpgradesForDesktop(Desktop desktop) {
         List<OWLNamedIndividual> cpuIndividuals = this.repository.getCpuIndividuals();
         List<String> possibleUpgrades = new ArrayList<>();
 
@@ -129,7 +130,7 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendRamUpgrades(Desktop desktop) {
+    public List<String> recommendRamUpgradesForDesktop(Desktop desktop) {
         List<OWLNamedIndividual> ramIndividuals = this.repository.getRamIndividuals();
         List<String> possibleUpgrades = new ArrayList<>();
 
@@ -159,6 +160,43 @@ public class OntologyServiceImpl implements OntologyService {
         }
 
         return possibleUpgrades;
+    }
+
+    @Override
+    public List<String> recommendUpgradesDesktop(Desktop desktop, String componentType) {
+        List<String> upgrades = new ArrayList<>();
+        switch (componentType) {
+            case "cpu":
+                upgrades = this.recommendCpuUpgradesForDesktop(desktop);
+                break;
+            case "ram":
+                upgrades = this.recommendRamUpgradesForDesktop(desktop);
+                break;
+            case "gpu":
+                upgrades = this.upgradeGPU(desktop.getGpu());
+                break;
+            case "motherboard":
+                upgrades = this.upgradeMotherboard(desktop.getMotherboard());
+                break;
+            case "chipset":
+                upgrades = this.upgradeChipset(desktop.getMotherboard().getChipset());
+                break;
+            case "storage":
+                upgrades = this.upgradeStorage(desktop.getStorage());
+                break;
+            case "powerSupply":
+                upgrades = this.upgradePowerSupply(desktop.getPowerSupply());
+                break;
+            default:
+                break;
+        }
+
+        return upgrades;
+    }
+
+    @Override
+    public List<String> recommendUpgradesComponents(List<String> components, String componentType) {
+        return null;
     }
 
     @Override
@@ -253,7 +291,7 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<String> recommendSPowerSupply(String manufacturer, String type, Integer wattage, Integer inputVoltageMin, Integer inputVoltageMax, Integer outputVoltage, Double inputAmperage, Double outputAmperage, Double minPrice, Double maxPrice) {
+    public List<String> recommendPowerSupply(String manufacturer, String type, Integer wattage, Integer inputVoltageMin, Integer inputVoltageMax, Integer outputVoltage, Double inputAmperage, Double outputAmperage, Double minPrice, Double maxPrice) {
         List<OWLNamedIndividual> powerSupplyIndividuals = repository.getPowerSupplyIndividuals();
         List<String> recommendations = new ArrayList<>();
         for (OWLNamedIndividual individual : powerSupplyIndividuals) {
@@ -292,15 +330,15 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<OWLNamedIndividual> upgradeChipset(Chipset chipset) {
+    public List<String> upgradeChipset(Chipset chipset) {
         List<OWLNamedIndividual> chipsets = repository.getChipsetIndividuals();
-        List<OWLNamedIndividual> upgrades = new ArrayList<>();
+        List<String> upgrades = new ArrayList<>();
         for (OWLNamedIndividual individual : chipsets) {
             var ct = this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.chipsetTypeIri);
             String chipsetType = ct.get(0).getLiteral();
             if (chipset.getType().toString().equals(chipsetType)) {
                 if (!chipset.getName().equals(individual.getIRI().getShortForm())) {
-                    upgrades.add(individual);
+                    upgrades.add(individual.getIRI().getShortForm());
                 }
             }
         }
@@ -340,6 +378,16 @@ public class OntologyServiceImpl implements OntologyService {
         return this.getByName(name, this.getDesktops());
     }
 
+    @Override
+    public OWLNamedIndividual getStorageByName(String name) {
+        return this.getByName(name, this.repository.getStorageIndividuals());
+    }
+
+    @Override
+    public OWLNamedIndividual getPowerSupplyByName(String name) {
+        return this.getByName(name, this.repository.getPowerSupplyIndividuals());
+    }
+
     public OWLNamedIndividual getByName(String name, List<OWLNamedIndividual> individuals){
         for(OWLNamedIndividual individual : individuals){
             if(individual.getIRI().getShortForm().equals(name)){
@@ -350,14 +398,41 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<OWLNamedIndividual> upgradeMotherboard(Motherboard motherboard) {
+    public List<String> upgradeMotherboard(Motherboard motherboard) {
         List<OWLNamedIndividual> upgradeCandidates = getMotherboardsByType(motherboard.getType());
-        List<OWLNamedIndividual> upgrades = new ArrayList<>();
+        List<String> upgrades = new ArrayList<>();
         for (OWLNamedIndividual individual : upgradeCandidates) {
             if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.numberOfRAMSlotsIri).get(0).getLiteral()) > motherboard.getNumberOfRAMSlots()) {
-                upgrades.add(individual);
+                upgrades.add(individual.getIRI().getShortForm());
             }
         }
+        return upgrades;
+    }
+
+    @Override
+    public List<String> upgradePowerSupply(PowerSupply powerSupply) {
+        List<OWLNamedIndividual> upgradeCandidates = this.repository.getPowerSupplyIndividuals();
+        List<String> upgrades = new ArrayList<>();
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.powerSupplyTypeIri).get(0).getLiteral().equalsIgnoreCase("psu") && Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.wattageIri).get(0).getLiteral()) > powerSupply.getWattage()) {
+                upgrades.add(individual.getIRI().getShortForm());
+            }
+        }
+
+        return upgrades;
+    }
+
+
+    @Override
+    public List<String> upgradeStorage(Storage storage) {
+        List<OWLNamedIndividual> upgradeCandidates = this.repository.getStorageIndividuals();
+        List<String> upgrades = new ArrayList<>();
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.memoryCapacityIri).get(0).getLiteral()) > storage.getMemoryCapacity()) {
+                upgrades.add(individual.getIRI().getShortForm());
+            }
+        }
+
         return upgrades;
     }
 
@@ -373,13 +448,13 @@ public class OntologyServiceImpl implements OntologyService {
     }
 
     @Override
-    public List<OWLNamedIndividual> upgradeGPU(GPU gpu) {
+    public List<String> upgradeGPU(GPU gpu) {
         List<OWLNamedIndividual> upgradeCandidates = getGPUByManufacturer(gpu.getManufacturer());
-        List<OWLNamedIndividual> upgrades = new ArrayList<>();
+        List<String> upgrades = new ArrayList<>();
         for (OWLNamedIndividual individual : upgradeCandidates) {
             if ((Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.vRAMSizeIri).get(0).getLiteral()) > gpu.getVRAMSize())&&
             (Double.parseDouble(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.boostClockSpeedIri).get(0).getLiteral()) > gpu.getBoostClockSpeed())) {
-                upgrades.add(individual);
+                upgrades.add(individual.getIRI().getShortForm());
             }
         }
         return upgrades;
@@ -389,5 +464,7 @@ public class OntologyServiceImpl implements OntologyService {
     public List<OWLNamedIndividual> getDesktops() {
         return this.repository.getDesktopIndividuals();
     }
+
+
 
 }

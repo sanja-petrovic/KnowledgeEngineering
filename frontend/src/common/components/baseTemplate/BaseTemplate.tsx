@@ -1,43 +1,88 @@
-import classNames from 'classnames';
-import { ReactNode, useEffect, useState } from 'react';
-import NavigationBar from '../navigationBar/NavigationBar';
-import styles from './BaseTemplate.module.scss';
+import {
+  ApartmentOutlined,
+  BarChartOutlined,
+  BlockOutlined,
+  DeploymentUnitOutlined,
+  ReadOutlined,
+  ShareAltOutlined,
+} from "@ant-design/icons";
+import type { MenuProps } from "antd";
+import { Layout, Menu, Typography } from "antd";
+import { useRouter } from "next/router";
+import { ReactNode } from "react";
 
+const { Text, Link } = Typography;
+
+const { Header, Footer, Sider, Content } = Layout;
+type MenuItem = Required<MenuProps>["items"][number];
+
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[]
+): MenuItem {
+  return {
+    key,
+    icon,
+    children,
+    label,
+  } as MenuItem;
+}
 interface BaseTemplateProps {
   children?: ReactNode;
 }
 
+import styles from "./BaseTemplate.module.scss";
+
 const BaseTemplate = ({ children }: BaseTemplateProps) => {
-  const [navbar, setNavbar] = useState(false);
+  const router = useRouter();
+  const items: MenuItem[] = [
+    getItem("Introduction", "/", <ReadOutlined />),
+    { type: "divider" },
+    getItem("Ontology", "ontology", <ApartmentOutlined />),
+    getItem("Fuzzy systems", "fuzzy-systems", <BarChartOutlined />),
+    getItem("Bayesian network", "bayesian-network", <DeploymentUnitOutlined />),
+    getItem("Case-based reasoning", "case-based-reasoning", <BlockOutlined />),
+  ];
 
-  useEffect(() => {
-    const changeBackground = () => {
-      console.log(window.scrollY);
-      if (window.scrollY >= 15) {
-        setNavbar(true);
-      } else {
-        setNavbar(false);
-      }
-    };
-    window.addEventListener('scroll', changeBackground);
-    return () => {
-      window.removeEventListener('scroll', changeBackground);
-    };
-  }, []);
-
+  const onClick: MenuProps["onClick"] = (e) => {
+    router.push(e.key);
+  };
   return (
-    <div className={classNames(styles.layout)}>
-      <div className={styles.contentLayout}>
-        <div
-          className={classNames(styles.header, {
-            [styles.activeHeader]: navbar,
-          })}
-        >
-          <NavigationBar />
+    <Layout hasSider style={{ minHeight: "100vh" }}>
+      <Sider
+        theme="light"
+        width="300px"
+        style={{
+          overflow: "auto",
+          height: "100vh",
+          position: "fixed",
+          left: 0,
+          top: 0,
+          bottom: 0,
+        }}
+      >
+        <div className={styles.siderHeader}>
+          <ShareAltOutlined style={{ color: "white" }} />
+          <h1>Knowledge Engineering</h1>
         </div>
-        <>{children}</>
-      </div>
-    </div>
+        <Menu
+          onClick={onClick}
+          items={items}
+          defaultSelectedKeys={[router.pathname.substring(1)]}
+        ></Menu>
+      </Sider>
+      <Layout style={{ marginLeft: 300 }}>
+        <Content
+          style={{
+            backgroundColor: "#fafaff",
+          }}
+        >
+          {children}
+        </Content>
+      </Layout>
+    </Layout>
   );
 };
 

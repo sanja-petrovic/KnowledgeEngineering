@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+  line-height: 1.5rem;
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+}
+
+.form {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.button {
+  background-color: #90b3ff;
+  color: white;
+}

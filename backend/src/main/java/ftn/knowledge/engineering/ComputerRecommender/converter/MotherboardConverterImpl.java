@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 @Service
-public class MotherboardConverterImpl implements MotherboardConverter{
+public class MotherboardConverterImpl implements MotherboardConverter {
     private final OntologyRepository repository;
     private final OntologyService service;
     private final CpuConverter cpuConverter;

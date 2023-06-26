@@ -26,4 +26,10 @@ public class BayesController {
     public ResponseEntity<List<BayesOutput>> evaluateCause(@RequestBody BayesInput input) {
         return ResponseEntity.ok(service.evaluateCause(input));
     }
+
+    @GetMapping("/symptoms")
+    @ApiOperation(value = "Get all symptoms.", httpMethod = "GET")
+    public ResponseEntity<List<String>> getSymptoms() {
+        return ResponseEntity.ok(service.getSymptoms());
+    }
 }

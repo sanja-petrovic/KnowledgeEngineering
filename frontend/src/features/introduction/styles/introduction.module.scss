@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+  line-height: 1.5rem;
+  ul {
+    margin: -1.5rem;
+  }
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+}

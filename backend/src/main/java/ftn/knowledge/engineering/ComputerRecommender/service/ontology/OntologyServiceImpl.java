@@ -181,6 +181,14 @@ public class OntologyServiceImpl implements OntologyService {
             case "chipset":
                 upgrades = this.upgradeChipset(desktop.getMotherboard().getChipset());
                 break;
+            case "storage":
+                upgrades = this.upgradeStorage(desktop.getStorage());
+                break;
+            case "powerSupply":
+                upgrades = this.upgradePowerSupply(desktop.getPowerSupply());
+                break;
+            default:
+                break;
         }
 
         return upgrades;
@@ -370,6 +378,16 @@ public class OntologyServiceImpl implements OntologyService {
         return this.getByName(name, this.getDesktops());
     }
 
+    @Override
+    public OWLNamedIndividual getStorageByName(String name) {
+        return this.getByName(name, this.repository.getStorageIndividuals());
+    }
+
+    @Override
+    public OWLNamedIndividual getPowerSupplyByName(String name) {
+        return this.getByName(name, this.repository.getPowerSupplyIndividuals());
+    }
+
     public OWLNamedIndividual getByName(String name, List<OWLNamedIndividual> individuals){
         for(OWLNamedIndividual individual : individuals){
             if(individual.getIRI().getShortForm().equals(name)){
@@ -388,6 +406,33 @@ public class OntologyServiceImpl implements OntologyService {
                 upgrades.add(individual.getIRI().getShortForm());
             }
         }
+        return upgrades;
+    }
+
+    @Override
+    public List<String> upgradePowerSupply(PowerSupply powerSupply) {
+        List<OWLNamedIndividual> upgradeCandidates = this.repository.getPowerSupplyIndividuals();
+        List<String> upgrades = new ArrayList<>();
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.powerSupplyTypeIri).get(0).getLiteral().equalsIgnoreCase("psu") && Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.wattageIri).get(0).getLiteral()) > powerSupply.getWattage()) {
+                upgrades.add(individual.getIRI().getShortForm());
+            }
+        }
+
+        return upgrades;
+    }
+
+
+    @Override
+    public List<String> upgradeStorage(Storage storage) {
+        List<OWLNamedIndividual> upgradeCandidates = this.repository.getStorageIndividuals();
+        List<String> upgrades = new ArrayList<>();
+        for (OWLNamedIndividual individual : upgradeCandidates) {
+            if (Integer.parseInt(this.repository.getDataPropertyValueOfIndividual(individual, PropertyIris.memoryCapacityIri).get(0).getLiteral()) > storage.getMemoryCapacity()) {
+                upgrades.add(individual.getIRI().getShortForm());
+            }
+        }
+
         return upgrades;
     }
 

@@ -3634,6 +3634,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel600p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel600p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">550.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel660p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel660p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">124.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1394.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel670p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel670p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1660.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel760p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel760p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">256</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">898.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MD04ACA600 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#MD04ACA600">
@@ -3803,6 +3855,71 @@
     
 
 
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung850Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung850Evo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">434.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung860Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung860Evo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">188.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">440.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung870Evo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung870Evo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">405.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung970EvoPlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung970EvoPlus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2034.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung980Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung980Pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
+        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
+        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
+        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2792.0</untitled-ontology-24:WriteSpeed>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltimateSU800 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#UltimateSU800">
@@ -3932,123 +4049,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#600p -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#600p">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">512</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">550.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#660p -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#660p">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">124.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1394.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1660.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#IntelSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>INTEL</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">256</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">898.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">434.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">188.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">440.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">405.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#970EvoPlus -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#970EvoPlus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2034.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-24#SamsungSsd"/>
-        <untitled-ontology-2:HardwareManufacturer>SAMSUNG</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-24:MemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-24:MemoryCapacity>
-        <untitled-ontology-24:StorageType>ssd</untitled-ontology-24:StorageType>
-        <untitled-ontology-24:WriteSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2792.0</untitled-ontology-24:WriteSpeed>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#A15-120P1A">
@@ -4141,6 +4141,18 @@
         <untitled-ontology-42:OutputAmperage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.31</untitled-ontology-42:OutputAmperage>
         <untitled-ontology-42:OutputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</untitled-ontology-42:OutputVoltage>
         <untitled-ontology-42:PowerSupplyType>acadapter</untitled-ontology-42:PowerSupplyType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
+        <untitled-ontology-2:HardwareManufacturer>EVGA</untitled-ontology-2:HardwareManufacturer>
+        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</untitled-ontology-2:PriceEur>
+        <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
+        <untitled-ontology-42:Watts rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-42:Watts>
     </owl:NamedIndividual>
     
 
@@ -4316,18 +4328,6 @@
         <untitled-ontology-42:OutputAmperage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.37</untitled-ontology-42:OutputAmperage>
         <untitled-ontology-42:OutputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</untitled-ontology-42:OutputVoltage>
         <untitled-ontology-42:PowerSupplyType>acadapter</untitled-ontology-42:PowerSupplyType>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-42#EvgaPsu"/>
-        <untitled-ontology-2:HardwareManufacturer>EVGA</untitled-ontology-2:HardwareManufacturer>
-        <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</untitled-ontology-2:PriceEur>
-        <untitled-ontology-42:PowerSupplyType>psu</untitled-ontology-42:PowerSupplyType>
-        <untitled-ontology-42:Watts rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</untitled-ontology-42:Watts>
     </owl:NamedIndividual>
     
 
@@ -7091,8 +7091,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6900_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_Pro_RS"/>
-        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#980Pro"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung980Pro"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7104,7 +7104,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_R9_Fury_X"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_B760M_PG_Riptide"/>
-        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE"/>
         <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#XPGSX8200"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
@@ -7130,7 +7130,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_970"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_AM4_TUF_Gaming_X570-Plus"/>
-        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE"/>
         <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">435</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
@@ -7144,7 +7144,7 @@
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6500_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_X570S_AORUS_ELITE"/>
         <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA450GM"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#850Evo"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung850Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">439.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7170,7 +7170,7 @@
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_6950_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASRock_Industrial_IMB-123"/>
         <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#FOCUSGX-750"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#760p"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel760p"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">956.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7183,7 +7183,7 @@
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#Radeon_RX_7900_XT"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
         <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#870Evo"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung870Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1699.99</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7196,7 +7196,7 @@
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4090"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_Prime_H770-PLUS"/>
         <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#RM1200XSHIFT"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#860Evo"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Samsung860Evo"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">900</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     
@@ -7208,7 +7208,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/3/untitled-ontology-2#Desktop"/>
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_GTX_980"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#ASUS_M4A77TD_Pro_AM3"/>
-        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#500GE"/>
+        <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#Evga500GE"/>
         <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#SU650"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
@@ -7222,7 +7222,7 @@
         <ComputerGpu rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2023/4/untitled-ontology-211#GeForce_RTX_4070_Ti"/>
         <ComputerMotherboard rdf:resource="http://www.semanticweb.org/sanja/ontologies/2023/4/untitled-ontology-9#GIGABYTE_GA-MA770T-UD3"/>
         <ComputerPowerSupply rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-44#SuperNOVA650P5"/>
-        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#670p"/>
+        <ComputerStorage rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2023/4/untitled-ontology-32#Intel670p"/>
         <untitled-ontology-2:PriceEur rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250</untitled-ontology-2:PriceEur>
     </owl:NamedIndividual>
     

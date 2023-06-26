@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface DesktopConverter {
     List<Desktop> convertFromOwlIndividuals(List<OWLNamedIndividual> individuals);
-    Desktop convertFromOwlIndivudal(OWLNamedIndividual individual);
+    Desktop convertFromOwlIndividual(OWLNamedIndividual individual);
 }

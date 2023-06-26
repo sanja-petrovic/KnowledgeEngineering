@@ -12,10 +12,14 @@ import lombok.Setter;
 public class Desktop extends Base {
     private Motherboard motherboard;
     private GPU gpu;
-    public Desktop(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility,Motherboard motherboard, GPU gpu){
+    private PowerSupply powerSupply;
+    private Storage storage;
+    public Desktop(String name, String manufacturer, double priceEur, PlatformCompatibility platformCompatibility,Motherboard motherboard, GPU gpu, PowerSupply powerSupply, Storage storage){
         super(name,manufacturer,priceEur,platformCompatibility);
         this.motherboard = motherboard;
         this.gpu = gpu;
+        this.powerSupply = powerSupply;
+        this.storage = storage;
 
     }
 }

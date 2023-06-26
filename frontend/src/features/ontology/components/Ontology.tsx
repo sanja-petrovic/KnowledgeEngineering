@@ -89,6 +89,14 @@ const Ontology = () => {
       label: "Chipset",
       value: "chipset",
     },
+    {
+      label: "Storage",
+      value: "storage",
+    },
+    {
+      label: "Power supply",
+      value: "powerSupply",
+    },
   ];
   const getCpuInputFields = () => {
     return (
@@ -496,6 +504,12 @@ const Ontology = () => {
                           CPU: {desktop.motherboard.cpu.name}
                           <br />
                           Chipset: {desktop.motherboard.chipset.name}
+                          <br />
+                          Storage: {desktop.storage.name}{" "}
+                          {desktop.storage.type.toUpperCase()}{" "}
+                          {desktop.storage.memoryCapacity}GB
+                          <br />
+                          Power supply: {desktop.powerSupply.name}
                         </>
                       }
                     >

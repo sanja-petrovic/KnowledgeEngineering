@@ -51,4 +51,6 @@ public class PropertyIris {
     public static final String amdCpuChipsetIri = "http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AMDCpuChipsetCompatibility";
     public static final String intelCpuChipsetIri = "http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#IntelCpuChipsetCompatibility";
     public static final String appleCpuChipsetIri = "http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#AppleCpuChipsetCompatibility";
+    public static final String computerPowerSupplyIri = "http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerPowerSupply";
+    public static final String computerStorage = "http://www.semanticweb.org/tim1/ontologies/2023/4/knowledge-base#ComputerStorage";
 }

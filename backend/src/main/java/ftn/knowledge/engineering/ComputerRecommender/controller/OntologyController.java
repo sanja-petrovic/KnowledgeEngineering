@@ -114,7 +114,7 @@ public class OntologyController {
             @RequestParam(required = false) String desktop,
             @RequestParam String componentType) {
 
-        return ResponseEntity.ok(this.service.recommendUpgradesDesktop(this.desktopConverter.convertFromOwlIndivudal(this.service.getDesktopByName(desktop)), componentType));
+        return ResponseEntity.ok(this.service.recommendUpgradesDesktop(this.desktopConverter.convertFromOwlIndividual(this.service.getDesktopByName(desktop)), componentType));
     }
 
     @GetMapping("/desktop")

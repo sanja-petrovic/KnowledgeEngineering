@@ -1,11 +1,14 @@
 # KnowledgeEngineering
+This is a project by senior undergraduate students at the Faculty of Technical Sciences, University of Novi Sad in the year 2023.
+<hr>
 
-Backend: Spring Boot, OWL API. 
-Frontend: Next.js 13
+### Tech stack
+- Backend: Spring Boot
+- Frontend: Next.js 13
 
-Modules per person
-- RA 142/2019: CPU, RAM
-- RA 153/2019: Motherboard, GPU
-- RA 172/2019: Storage, Power Supply
-
-Each student did everything regarding their own module, including research, creating the respective ontologies, and program manipulation (recommending components based on user-entered properties, and suggesting component upgrades).
+### Features
+- Component recommendation based on desired properties, using ontologies
+- Component upgrade recommendation, using ontologies
+- Evaluation of the suitability of a computer for different purposes, using fuzzy systems
+- Evaluation of possible causes behind a computer malfunction based on the entered symptoms, using Bayesian networks
+- Evaluation of top 5 computers most similar to the entered one, using case-based reasoning
